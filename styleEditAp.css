@@ -9,6 +9,27 @@
 
 
 }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 241, 241);
+    
+  }
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+  .button {
+background-color: #4466d6;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;}
 
 header{
     background-color: #bdc2c9;
@@ -28,16 +49,34 @@ header{
     font-weight: 650;
     font-size: 1.5em;
 }
-.layan{
+
+.navigationn a{
     text-decoration: none;
-}
-.layan{
-    
     color: rgb(18, 18, 150);
     font-size: 1em;
     font-weight: 400;
-    padding-left: 100px;
+    padding-left: 30px;
 }
-.layan a:hover{
+.navigationn a:hover{
     color: black;
 }
+
+
+
+
+.navbar {
+      
+    background-color: rgb(66, 117, 228);
+   
+    width: 100%;
+  }
+  .navbar a {
+    float:  left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
