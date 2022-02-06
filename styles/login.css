@@ -13,7 +13,7 @@ body{
     flex-direction: column;
     margin: auto;
     align-items: center;
-    background-color:rgb(149, 197, 211);
+    background-color:rgb(201, 230, 238);
     border-radius: 15px;
     padding: 25px 10x;
 }
@@ -37,7 +37,6 @@ input{
 }
 .loginbut{
     margin: 15px auto;
-    
 }
 button{
     background-color: white;
