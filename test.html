@@ -4,44 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="styleEditAp.css">
-    <title>Appointment</title>
-    </head>
+    <title>tesd</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+
+.navbar {
+      
+      background-color: rgb(66, 117, 228);
+     
+      width: 100%;
+    }
+    .navbar a {
+      float:  left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(247, 241, 241);
+      
+    }
+    .main {
+      padding: 16px;
+      margin-bottom: 30px;
+    }
+    .button {
+  background-color: #4466d6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+    
+</style>
 </head>
 <body>
 
-    <header>
-        <a href="#" class="logo">Pets Care </a>
-        <nav class="navigationn">
-            <a href="ownerHomePage.html">Home</a>
-            <a href="ownerAboutUs.html">AboutUs</a>
-            <a href="ownerProfile.html" >Account</a>
-            <a href="#contact" >Contact</a>
-            
-        </nav>
-
-    </header>
-
-    <h6>Appointment requests:</h6>
+    
    <div class="navbar">
-    <a href="#appointment requests "class= "active">Appointment requests</a>
-    <a href="upcomingAppointments.html">Upcoming requests</a>
-    <a href="previousAppointments.html">Previous requests</a>
-  </div>
-  
- 
-  
-  
-    <section class="main">
-   
-  
-        
-
-
-        <a href="newAppointment.html" class="main-btn">Add </a>
-</section>
-<div class="navbar">
 
     <a href="editAppointment.html">Upcoming requests</a>
     <a href="ownerPreviousAppointment.html">Previous requests</a>
@@ -56,6 +67,7 @@
       <th scope="col">Note</th>
       <th scope="col">Date</th>
       <th scope="col">Time</th>
+      <th scope="col">Edit</th>
       
 
        
@@ -69,6 +81,7 @@
       <td>---</td>
       <td>2 Feb 2022</td>
       <td>02:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
       
 
        
@@ -79,6 +92,7 @@
       <td>---</td>
       <td>2 Feb 2022</td>
       <td>03:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
       
 
     </tr>
@@ -88,6 +102,7 @@
       <td>---</td>
       <td>2 Feb 2022</td>
       <td>04:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
      
 
     </tr>
@@ -97,6 +112,7 @@
       <td>---</td>
       <td>2 Feb 2022</td>
       <td>05:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
      
 
     </tr>
@@ -106,6 +122,7 @@
       <td>---</td>
       <td>2 Feb 2022</td>
       <td>06:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
       
 
     </tr>
@@ -115,6 +132,7 @@
       <td>---</td>
       <td>3 Feb 2022</td>
       <td>12:00 am</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
 
     </tr>
     <tr>
@@ -123,6 +141,7 @@
       <td>---</td>
       <td>3 Feb 2022</td>
       <td>01:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
 
     </tr>
     <tr>
@@ -131,6 +150,7 @@
       <td>---</td>
       <td>3 Feb 2022</td>
       <td>02:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
 
     </tr>
     <tr>
@@ -139,6 +159,7 @@
       <td>---</td>
       <td>3 Feb 2022</td>
       <td>03:30 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
 
     </tr>
     <tr>
@@ -147,6 +168,7 @@
       <td>---</td>
       <td>3 Feb 2022</td>
       <td>06:00 pm</td>
+      <td> <a href="appointmentDetails.html">Edit</a></td>
 
     </tr>
     <tr>
@@ -155,6 +177,7 @@
         <td>---</td>
         <td>3 Feb 2022</td>
         <td>06:00 pm</td>
+        <td> <a href="appointmentDetails.html">Edit</a></td>
   
       </tr>
      
@@ -163,8 +186,5 @@
 </table>
 <a href="newAppointment.html" class="button">New appointment</a>
     
- 
-
-
 </body>
 </html>
