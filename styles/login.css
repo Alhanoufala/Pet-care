@@ -9,13 +9,15 @@ body{
 
 .container{
     width: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
     background-color:rgb(201, 230, 238);
     border-radius: 15px;
-    padding: 25px 10x;
+    padding: 25px 10px ;
+   
 }
 form{
     display: flex;
