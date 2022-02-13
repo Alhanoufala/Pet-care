@@ -3,28 +3,33 @@
   <head>
     <meta charset = "utf-8">
     <title>ownerLogIn</title>
+    <link rel="stylesheet" href="styles/login.css">
   </head>
 
 
   <body>
-   <h1>Welcome</h1>
+   
+    <div class="container">
+      <h2>Login</h2>
+      <form method="post" >
+          <input type="text" name="email" id="email" placeholder="email">
+          <input type="password" name="pass" id="pass" placeholder="password">
 
-   <p><label>Email 
-    <input name = "email" type="text" size= "30" maxlength="30">
-    </label></p>
+         <div class="loginbut">
+          
+          <a href="ownerHomePage.html"><button type="button">Login</button></a>
+         </div>
+         
+          
+      </form>
+      
+       <p>Forgot password?<a href="Forget Password.html">  Click Here</a></p>
+       <p>New user?<a href="ownerRegistration.html">   SignUp</a></p>
+ 
 
-    <p><label>PassWord 
-        <input name = "password" type="text" size= "30" maxlength="30">
-        </label></p>
+  </div>
 
-    <p>
-        <a href = "ownerHomePage.html"><input type = "submit" value="submit"></a>
-    </p>
-
-    
-    <h4>Forgot password?<a href="Forget Password.html">Click Here</a></h4>
-    
-    <h4>New user?<a href="ownerRegistration.html">SignUp</a></h4>
+ 
 
   </body>
 
