@@ -3,14 +3,33 @@
 <head>
     <meta charset = "utf-8">
     <title>Available appointments</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-     
+    <link rel="stylesheet" href="styles/datatable.css">
+     <style>
+       #navbar a{
+float:  right;
+display: block;
+color: BLACK;
+text-align: center;
+padding: 30px 175px;
+text-decoration: none;
+font-size: 18px;
+}
+     </style>
 </head>
 <body>
-   <h6>Appointments:</h6>
-   <table class="table table-striped">
-   
+  <div>
+    <div  > 
+        <div class="navbar" id= "navbar">
+  <a href="availableAppointments.html">Appointments </a>
+  <a href="setAppointment.html">Set a new appointment</a>
+  <a href="managerHomePage.html"> Home</a>
+
+   <img src="images/logo.png" alt= "logo of pet care" id= "logo" > </div> 
+      </div> 
+    </div>
+   <table class="content-table" id= "center">
+  <thead>
+
       <tr>
         <th scope="col">Service</th>
         <th scope="col">Date</th>
@@ -148,6 +167,5 @@
     </tbody>
   </table>
    
-   <a href="setAppointment.html">Set a new appointment</a>
 </body>
 </html>

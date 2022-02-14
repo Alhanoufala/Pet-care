@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tesd</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>tesd</title> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
+    <title>Previous Appointments</title>
+    <link rel="stylesheet" href="styles/datatable.css">
+<!-- 
 <style>
 
 .navbar {
@@ -47,29 +50,36 @@
   cursor: pointer;
 }
     
-</style>
+</style> -->
 </head>
 <body>
 
-    
-   <div class="navbar">
+  <div>
+    <div> 
+        <div class="navbar">
+  
+          <a href="editAppointment.html">Upcoming requests</a>
+          <a href="ownerPreviousAppointment.html">Previous requests</a>
+          <a href="newAppointment.html" >new Appointment</a>
 
-    <a href="test.html">Upcoming requests</a>
-    <a href="ownerPreviousAppointment.html">Previous requests</a>
-  </div>
+       
+  <a href="ownerHomePage.html"> Home</a>
 
-   
-  <table class="table table-striped">
- 
+   <img src="images/logo.png" alt= "logo of pet care" id= "logo" > </div> 
+      </div> 
+    </div>
+  
+
+  <!-- <table class="table table-striped"> -->
+    <table class="content-table" id= "center">
+    <thead>
+
     <tr>
       <th scope="col">Pet name</th>
       <th scope="col">Service </th>
       <th scope="col">Note</th>
       <th scope="col">Date</th>
       <th scope="col">Time</th>
-      
-
-       
     </tr>
   </thead>
   <tbody>
@@ -142,7 +152,7 @@
   
   </tbody>
 </table>
-<a href="newAppointment.html" class="button">New appointment</a>
+<!-- <a href="newAppointment.html" class="button">New appointment</a> -->
     
 </body>
 </html>
