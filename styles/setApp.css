@@ -6,15 +6,11 @@ body{
     color: rgb(119, 119, 119);
     padding-top: 25vh;
     text-align: center;
-    
-       
-        background-image: url('/Users/ahanoufalawwad/Desktop/Pet-care/images/gryDog.JPG');
-        background-position: right top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        
-        
+     background-image: url('/Users/ahanoufalawwad/Desktop/Pet-care/images/gryDog.JPG');
+     background-position: right top;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: scroll;                
 }
 
 .container{
@@ -56,12 +52,6 @@ button{
 }
 button:hover{
     background-color: rgb(226, 226, 228);
-}
-div mg{
-    position: relative;
-    float: right;
-  
-  
 }
 
 
