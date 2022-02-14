@@ -1,5 +1,8 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(226, 226, 228);
-   
+background-color: #fff8f8;
+background-image: url('/Users/ahanoufalawwad/Desktop/Pet-care/images/gryDog.JPG');
+background-position: right top;
+background-repeat: no-repeat;
+background-attachment: scroll;
+
 }
