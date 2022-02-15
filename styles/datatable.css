@@ -4,11 +4,10 @@
 
 .navbar{ 
 background-color: #E2EAEC;
-width:1550px;
-height:100px; 
-margin: 0px; 
-padding:0px; 
-}
+width:100%;
+height: 90px;
+margin:-10px; 
+ }
 .navbar a:hover {
   background: #f1f1f1;
   color: black;
@@ -18,7 +17,7 @@ float:  right;
 display: block;
 color: BLACK;
 text-align: center;
-padding: 30px 115px;
+padding: 40px 85px;
 text-decoration: none;
 font-size: 18px;
 }
@@ -27,8 +26,7 @@ font-size: 18px;
 width:95px ;
 height:95px ;
 margin-left:30px;
-max-width: 225;
-max-height: 225;
+
 }
 
 #center {
@@ -46,7 +44,7 @@ border-collapse: collapse;
 margin: 25px 0;
 background-color:#E2EAEC;
 font-size: 0.9em;
-min-width: 1400px;
+min-width: 1300px;
 border-radius: 5px 5px 0 0;
 overflow: hidden;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
