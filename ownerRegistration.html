@@ -3,45 +3,42 @@
   <head>
     <meta charset = "utf-8">
     <title>ownerRegistration</title>
+    <link rel="stylesheet" href="styles/Registration.css">
+
   </head>
 
   <body>     
-   <h1>Owner Registration</h1>
+    <div class="container">
+        <h2>Register</h2>
+        <form method="post">
+            <input type="text" name="Fname" id="Fname" placeholder="First name">
+            <input type="text" name="Lname" id="Lname" placeholder="Last name">
+            <input type="text" name="email" id="email" placeholder="Email">
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number">
+            <input type="password" name="pass" id="pass" placeholder="Password">
 
-   <p><label>First name <br>
-      <input name = "Fname" type="text" size= "30" maxlength="30">
-      </label></p>
+            <p>Gender</p>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="famale">Female</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
 
-    <p><label>Last name <br>
-        <input name = "Lname" type="text" size= "30" maxlength="30">
-        </label></p>
+            <p>Add profile photo (optional)</p>
+            <label for="profilePhotoFile">Select a photo:</label>
+            <input type="file" id="profilePhotoFile" name="profilePhotoFile">
 
-    <p><label>Email <br>
-       <input name = "email" type="text" size= "30" maxlength="30">
-       </label></p>
-
-    <p><label>Phone Number <br>
-        <input name = "phonenumber" type="number" size= "30" maxlength="15">
-        </label></p>
-
-    <p><label>PassWord <br>
-        <input name = "password" type="text" size= "30" maxlength="30">
-        </label></p>
-    
-    <p>Gender</p>
-       <input type="radio" id="female" name="gender" value="Female">
-       <label for="famale">Female</label><br>
-       <input type="radio" id="male" name="gender" value="Male">
-       <label for="male">Male</label><br>
-
-    <p>Add profile photo (optional)</p>
-    <label for="profilePhotoFile">Select a photo:</label>
-    <input type="file" id="profilePhotoFile" name="profilePhotoFile">
-
-    
-    <p><a href = "ownerHomePage.html"><input type = "submit" value="submit"></a></p>
-    
-
+           <div class="registerbut">
+            
+            <a href="ownerHomePage.html"><button type="button">Register</button></a>
+           </div>
+           
+        
+        </form>
+        
+   
+ 
+    </div>
+ 
   </body>
 
 </html>
