@@ -2,8 +2,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#fff8f8;
-     
+    background-color:#fff8f8;  
     color: rgb(119, 119, 119);
     padding-top: 25vh;
 }
@@ -58,7 +57,7 @@ p{
     font-size: 15px;
     align-items: center;
 }
-img{
+.logo{
     position: absolute;
     top: 0px;
     left: 0px;
