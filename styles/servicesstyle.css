@@ -38,6 +38,24 @@ display: inline-block;
   .space{
       margin-bottom: 0.2px;
   }
+
+  .addservice{
+    margin: 15px auto;
+}
+button{
+    background-color: #d6e4e6;
+    color: rgb(119, 119, 119);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px 25px;
+    align-items: center;
+   
+}
+button:hover{
+    background-color: rgb(226, 226, 228);
+}
   /*
 .container1{
     width: 350px;
