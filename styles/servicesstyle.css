@@ -17,14 +17,22 @@ display: inline-block;
   }
   
   .cont > div {
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;
     width: 500px;
     height: 500 ;
     margin: 10px;
     text-align:center ;
     line-height: 60px;
     font-size: 15px;
+    */
+    background: #f1f1f1; 
+    width: 400px;
+    height: 400px;
     
+    margin: 30px;
+    text-align:center ;
+
+
   }
   
   .space{
