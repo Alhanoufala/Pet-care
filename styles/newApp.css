@@ -1,62 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:#fff8f8;
+    background-color: #F1F7F8;
     color: rgb(119, 119, 119);
     padding-top: 25vh;
-}
+    text-align: left;
 
-.container{
-    width: 400px;
-    height: 325px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    background-color:rgb(227, 231, 233);
-    background-color: #E2EAEC;
-    border-radius: 15px;
-    padding: 25px 10px ;
-   
 }
-form{
+.container{
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    width: 90%;
-    
+    margin-left: 120px;
+    align-items: center ;
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 25px 10x;
+   
+
+}
+#n{
+      font-size: 18px;
+  
 }
 input{
     height: 40px;
+    width: 200px;
     border-radius: 10px;
     border: none;
     outline: none;
-    margin: 15px ;
-    padding-left: 10px;
+    margin: 5px ;
     text-align: center;
     font-size: 18px;
-    color: rgb(119, 119, 119);
-    background-color: white;
+    background-color: #F1F7F8;
 
 }
-.restbutton{
-    margin: 15px auto;
+select{
+    height: 20px;
+    width: 200px;
+    margin: 5px ; 
 }
 button{
-    background-color: white;
+    background-color: #F1F7F8;
     color: rgb(119, 119, 119);
     border: none;
     padding: 8px 30px;
     border-radius: 10px;
     font-size: 18px;
-    margin: 5px 25px;
-    align-items: center;
-   
+    margin: 5px 15px;
 }
 button:hover{
     background-color: rgb(226, 226, 228);
 }
-p{
-    font-size: 15px;
-    align-items: center;
-}
+ label{
+    font-size: 15px;   
+ }
+
