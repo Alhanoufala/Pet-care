@@ -1,3 +1,6 @@
+* {
+    font-family: serif; /* Change your font family */
+  }
 body{ 
     margin-bottom: auto;
     background-color:white;
@@ -31,9 +34,20 @@ display: inline-block;
     
     margin: 80px;
     text-align:center ;
+    border-image-width: 40;
+    
 
 
   }
+  .box{
+    width: 50px;        
+    
+}    
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
   
   .space{
       margin-bottom: 0.2px;
