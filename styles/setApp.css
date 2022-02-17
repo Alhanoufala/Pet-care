@@ -9,6 +9,11 @@ body{
     color: rgb(119, 119, 119);
     padding-top: 25vh;
     text-align: center;
+    background: url('../images/dog.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
                
 }
 
@@ -21,7 +26,9 @@ body{
     background-color: #E2EAEC;
     border-radius: 15px;
     padding: 25px 10x;
+    margin-left: 125px;
 }
+
 
 input{
     height: 40px;
