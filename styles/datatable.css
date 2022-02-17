@@ -22,6 +22,12 @@ text-decoration: none;
 font-size: 18px;
 }
 
+#logo{ 
+width:95px ;
+height:95px ;
+margin-left:30px;
+
+}
 
 #center {
 margin-left: auto;
@@ -52,7 +58,6 @@ color: black;
 text-align: left;
 font-weight: bold;
 text-align: center; 
-padding: 12px 15px;
 }
 
 .content-table th,
@@ -77,14 +82,5 @@ border-bottom: 1px solid lightgrey;
 font-weight: light;
 color: black;
 font-family: Arial, Helvetica, sans-serif;
-
-}
-img{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  margin-top: -40px;
- width: 160px;
- height: 170px;
 
 }
