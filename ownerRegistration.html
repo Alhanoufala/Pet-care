@@ -16,12 +16,16 @@
             <input type="text" name="email" id="email" placeholder="Email">
             <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number">
             <input type="password" name="pass" id="pass" placeholder="Password">
-
-            <p>Gender</p>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="famale">Female</label><br>
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label><br>
+             
+            <div class="content">
+              <div class="radio">
+               <label for="gender">Gender</label>
+                  <input type="radio" name="gender" value="Male" required>
+                  <label for="male">male</label>
+                  <input type="radio" name="gender" value="Female" required>
+                  <label for="female">female</label>
+              </div></div>
+          
 
             <p>Add profile photo (optional)</p>
             <label for="profilePhotoFile">Select a photo:</label>
