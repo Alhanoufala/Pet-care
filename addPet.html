@@ -3,9 +3,60 @@
   <head>
     <meta charset = "utf-8">
     <title>addPet</title>
+    <link rel="stylesheet" href="styles/addPet.css">
   </head>
 
   <body>
+
+      <div class="container">
+          <h2>Add Pet</h2>
+          <form method="post">
+              <input type="text" name="Pname" id="Pname" placeholder="Pet name">
+              <input type="date" name="PetBD" id="PetBD" placeholder="Pet birth date">
+              <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number">
+              <input type="password" name="pass" id="pass" placeholder="Password">
+               
+              <div class="content">
+                <div class="radio">
+                 <label for="gender">Gender</label>
+                    <input type="radio" name="gender" value="Male" required>
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" value="Female" required>
+                    <label for="female">female</label>
+                </div></div>
+
+                <div class="content">
+                  <div class="radio">
+                   <label for="Status">Status</label>
+                      <input type="radio" name="Status" value="Spayed" required>
+                      <label for="Spayed">Spayed</label>
+                      <input type="radio" name="Status" value="Neutered" required>
+                      <label for="Neutered">Neutered</label>
+                  </div></div>
+
+                <p>vaccinations list and medical history (optional)</p>
+                <label for="petFile">Select a file:</label>
+                <input type="file" id="petFile" name="petFile" >
+  
+              <p>Add profile photo (optional)</p>
+              <label for="profilePhotoFile">Select a photo:</label>
+              <input type="file" id="profilePhotoFile" name="profilePhotoFile">
+  
+             <div class="submitbut">
+              
+              <a href = "#"><input type = "submit" value="submit"></a>
+              
+             </div>
+
+             
+          
+          </form>
+          
+     
+   
+      </div>
+
+
 
     <p><label>Pet name <br>
         <input name = "Pname" type="text" size= "30" maxlength="30">
