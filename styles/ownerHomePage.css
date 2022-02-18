@@ -1,38 +1,12 @@
 * {font-family: cursive; }
 body{
     background-color: #d6e4e6;
-    
+  /*margin-bottom: auto;
+    background-color:white;
+    background: url('../images/CatOwnerHP.jpeg') no-repeat center center fixed; 
+    */
     }
-    .navbar{ 
-        background-color: #E2EAEC;
-        width:100%;
-        height:100px; 
-        margin-top:-10px;
-        }
-        .navbar a:hover {
-          background: #f1f1f1;
-          color: black;
-        }
-        .navbar a{
-            float:  right;
-            display: block;
-            color: BLACK;
-            text-align: center;
-            padding: 25px 70px;
-            text-decoration: none;
-            font-size: 18px;
-            padding-top: 40px;
-        }
-        
-        .logo{
-          position: absolute;
-              top: 0px;
-              left: 0px;
-              margin-top: -40px;
-             width: 160px;
-             height: 170px;
-          
-         }
+    
 
            .profile{
             position: absolute;
@@ -47,8 +21,8 @@ body{
         }
 
            button{
-            background-color: white;
-            color: rgb(119, 119, 119);
+            background-color: #E2EAEC;
+            color: #00556D;
             border: none;
             padding: 8px 30px;
             border-radius: 10px;
