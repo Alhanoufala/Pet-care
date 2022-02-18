@@ -1,4 +1,4 @@
-
+ 
 *{
     margin: 0;
     padding: 0;
@@ -7,16 +7,9 @@
     
 }
 
-#Book{
-    text-align: center;
-    color: #00556D;
-    font-family:Cursive;  
-}
-
-
 body{
     background-color: #532424;
-    background: url('../images/background3.jpeg'); 
+    background: url('../images/background-layan.jpeg'); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,20 +29,21 @@ body{
     height: 380px;
     display: flex;
     flex-direction: column;
-    margin-left: 172px;
+    margin-left: 450px;
     align-items: center ;
-    background-color:#ffffff;
+    background-image: linear-gradient(rgb(255, 255, 255), #B3E7E6);
     border-radius: 15px;
     padding: 25px 10x;
     font-family:Cursive;     
       line-height: 330%;
       color: #00556D;
      
+     
     
 
 }
 .butt{
-    background-color: #D8F5FD;}
+    background-color: #ffffff;}
 #n{
       font-size: 18px;
       
@@ -73,17 +67,19 @@ input{
     margin: 5px ;
     text-align: center;
     font-size: 15px;
-    background-color:#D8F5FD;
-    color: #00556D;
+    background-color:#ffffff;
+     color: #00556D;
 
 }
 text{
-    background-color: rgb(59, 59, 59);
+    background-color:#00556D;
+    color: #00556D;
 }
 select{
     height: 20px;
     width: 200px;
     margin: 5px ; 
+    color: #425458;
 }
 button{
     background-color: #ffffff;
