@@ -18,12 +18,10 @@
 }*/
 #Book{
     text-align: center;
-    
-   
+    color: rgb(84, 85, 87);
+    font-family:Cursive;  
 }
-.top-align {
-	vertical-align: top;
-}  
+
 
 body{
     background-color: #91c3ca;
@@ -33,19 +31,19 @@ body{
     background-size: 60%;
         padding: 0;
         margin: 0;
-        padding-top: 20vh;
-        text-align: left;
+        padding-top: 25vh;
+       
 
     
     }
 
 .container{
-   
+    
     width: 350px;
     height: 350px;
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    margin-left: 180px;
     align-items: center ;
     background-color:hsl(206, 53%, 92%);
     border-radius: 15px;
@@ -64,6 +62,15 @@ body{
       
   
 }
+.dog{
+    position: absolute;
+        top:130px;
+        left: 450px;
+        margin-top: 100px;
+       width:850px;
+       height: 300px;
+    
+   }
 input{
     height: 40px;
     width: 200px;
