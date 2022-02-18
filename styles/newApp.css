@@ -81,12 +81,13 @@ input{
     outline: none;
     margin: 5px ;
     text-align: center;
-    font-size: 18px;
-    background-color:#EDFAFE;
+    font-size: 15px;
+    background-color:#D8F5FD;
+    color: rgb(75, 75, 75);
 
 }
 text{
-    background-color: #000;
+    background-color: rgb(59, 59, 59);
 }
 select{
     height: 20px;
@@ -95,11 +96,11 @@ select{
 }
 button{
     background-color: #ffffff;
-    color: rgb(121, 121, 121);
+    color: rgb(119, 119, 119);
     border: none;
     padding: 8px 30px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 17px;
     margin: 5px 15px;
 }
 button:hover{
