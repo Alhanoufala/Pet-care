@@ -4,11 +4,7 @@
 body{ 
 margin-bottom: auto;
 background-color:white;
-<<<<<<< Updated upstream
-background: url('../images/about.jpg') no-repeat center center fixed; 
-=======
-background: url('../images/') no-repeat center center fixed; 
->>>>>>> Stashed changes
+background: url('../images/bg.jpg') no-repeat center center fixed; 
 
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,9 +19,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .edit{
   position: absolute;
-<<<<<<< Updated upstream
-  left: 100px;
-=======
+  
+
   right: 0px;
 }
 .map{
@@ -43,7 +38,7 @@ font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   display:table;
   
->>>>>>> Stashed changes
+
 }
 .navbar{ 
   background-color: #E2EAEC;
@@ -75,7 +70,6 @@ font-family: Arial, Helvetica, sans-serif;
      height: 170px;
         
      }
-<<<<<<< Updated upstream
      .mapouter{
        height: 200;
        width: 200 ;
@@ -83,7 +77,5 @@ font-family: Arial, Helvetica, sans-serif;
      .about{
       margin-left: 170px;
      }
-=======
     
     
->>>>>>> Stashed changes
