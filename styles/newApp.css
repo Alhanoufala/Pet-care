@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     padding: 0;
     margin: 0;
@@ -11,8 +12,8 @@ body{
     color: rgb(119, 119, 119);
     padding-top: 25vh;
     text-align: left;
-
 }
+
 .container{
     width: 300px;
     height: 300px;
