@@ -73,3 +73,6 @@ p{
     align-items: center;
     justify-content: center;
   }
+  .addPetbut {
+      margin-right: 1000px;
+  }

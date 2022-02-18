@@ -4,7 +4,7 @@
 body{ 
 margin-bottom: auto;
 background-color:white;
-background: url('../images/background-Raseel.jpeg') no-repeat center center fixed; 
+background: url('../images/about.jpg') no-repeat center center fixed; 
 
 font-family: Arial, Helvetica, sans-serif;
 }
@@ -19,7 +19,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .edit{
   position: absolute;
-  left: 0px;
+  left: 100px;
 }
 .navbar{ 
   background-color: #E2EAEC;
@@ -54,4 +54,7 @@ font-family: Arial, Helvetica, sans-serif;
      .mapouter{
        height: 200;
        width: 200 ;
+     }
+     .about{
+      margin-left: 170px;
      }
