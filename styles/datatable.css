@@ -106,3 +106,6 @@ font-family: Arial, Helvetica, sans-serif;
    width: 70px;
    height: 70px;
  }
+ a{
+   text-decoration: none;
+ }
