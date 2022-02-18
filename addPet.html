@@ -24,21 +24,21 @@
       <div class="container">
           <h2>Add Pet</h2>
           <form method="post">
-              <input type="text" name="Pname" id="Pname" placeholder="Pet name" required>
-              <input type="date" name="PetBD" id="PetBD" placeholder="Pet birth date" required>
-              <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
+              <h3><label>Pet name: <input type="text" name="Pname" id="Pname" placeholder="Pet name" required></label></h3>
+              <h3><label>Pet birth date: <input type="date" name="PetBD" id="PetBD" placeholder="Pet birth date" required></label></h3>
                
               <div class="content">
                 <div class="radio">
-                 <label for="gender">Gender</label>
+                 <label for="gender">Gender: </label>
                     <input type="radio" name="gender" value="Male" required>
                     <label for="male">male</label>
                     <input type="radio" name="gender" value="Female" required>
                     <label for="female">female</label>
                 </div></div>
 
-                <input type="text" name="Pbreed" id="Pbreed" placeholder="Pet breed" required>
-
+                
+              <h3><label>Pet breed: <input type="text" name="Pbreed" id="Pbreed" placeholder="Pet breed" required></label></h3>
+                
                 <div class="content">
                   <div class="radio">
                    <label for="Status">Status</label>
@@ -48,8 +48,7 @@
                       <label for="Neutered">Neutered</label>
                   </div></div>
 
-                <p>Pet photo</p>
-                <input type="file" id="petPhotoFile" name="petPhotoFile" required>
+                <h3>Pet photo: <input type="file" id="petPhotoFile" name="petPhotoFile" required></h3>
 
                 <p>vaccinations list and medical history (optional)</p>
                 <input type="file" id="petFile" name="petFile" >

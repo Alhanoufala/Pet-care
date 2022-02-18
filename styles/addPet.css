@@ -2,7 +2,7 @@
   {font-family: cursive; }
   body{
     background-color: #ffffff; 
-    
+    text-align: left;
     }
 
 .container{
@@ -16,6 +16,7 @@
     background-color:rgb(201, 230, 238);
     border-radius: 15px;
     padding: 25px 10px ;
+    color: #00556D;
    
 }
 form{
@@ -38,10 +39,11 @@ input{
 }
 .submitbut{
     margin: 15px auto;
+    color: #00556D;
 }
 button{
     background-color: white;
-    color: rgb(119, 119, 119);
+    color: #00556D;
     border: none;
     padding: 8px 30px;
     border-radius: 10px;

@@ -1,6 +1,9 @@
 * {font-family: cursive; }
 body{
     background-color: #d6e4e6;
+    margin-bottom: auto;
+    background-color:white;
+    background: url('../images/CatOwnerHP.jpeg') no-repeat center center fixed; 
     
     }
     .navbar{ 
@@ -11,12 +14,12 @@ body{
         }
         .navbar a:hover {
           background: #f1f1f1;
-          color: black;
+          color: #00556D;
         }
         .navbar a{
             float:  right;
             display: block;
-            color: BLACK;
+            color: #00556D;
             text-align: center;
             padding: 25px 70px;
             text-decoration: none;
@@ -47,8 +50,8 @@ body{
         }
 
            button{
-            background-color: white;
-            color: rgb(119, 119, 119);
+            background-color: #E2EAEC;
+            color: #00556D;
             border: none;
             padding: 8px 30px;
             border-radius: 10px;
