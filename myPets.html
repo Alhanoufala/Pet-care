@@ -3,32 +3,28 @@
   <head>
     <meta charset = "utf-8">
     <title>myPets</title>
-
+    <link rel="stylesheet" href="styles/ownerHomePage.css" >
     <link rel="stylesheet" href="styles/datatable.css">
 
-      <style>
-      #navbar a{
-        float:  right;
-        display: block;
-        color: BLACK;
-        text-align: center;
-        padding: 30px 235px;
-        text-decoration: none;
-        font-size: 18px;
-        }
-             </style>
   </head>
 
   <body>
      
-      <div class="navbar" id= "navbar">
-     <p><a href = "addPet.html">Add pet</button></a></p>
-    <a href="ownerHomePage.html"> Home</a>
+
+
+    <div class="navbar">
+      <a href = "ownerProfile.html"><img src = "images/Profile.png"  class= "profile"  alt= "Profile image" ></a>
+    <a href="ManagerAboutUs.html">About us</a>
+   <a href="Services.html" class= "active"> Services</a>
+   <a href = "myPets.html">My Pets</a>
+   <a href = "MyAppointment.html">My Appointments</a>
+   
+       </div> 
+       
+       <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
   
-      </div> 
        
 
-    <!-- <table class="table table-striped"> -->
       <table class="content-table" id= "center">
         <thead>
       <tr>
@@ -53,8 +49,8 @@
       </table>
       
 
-    <!-- <p><a href = "addPet.html"><button type="button">Add pet</button></a></p> -->
-
-    <img src="images/logo.png" alt= "logo of pet care" class= "logo" >
+    <div class="addPetbut">
+    <a href="addPet.html"><button type="button">Add pet</button></a>
+  </div>
   </body>
 </html>
