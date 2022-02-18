@@ -4,14 +4,18 @@
 body{ 
 margin-bottom: auto;
 background-color:white;
+<<<<<<< Updated upstream
 background: url('../images/about.jpg') no-repeat center center fixed; 
+=======
+background: url('../images/') no-repeat center center fixed; 
+>>>>>>> Stashed changes
 
 font-family: Arial, Helvetica, sans-serif;
 }
 .container{
     background: #f1f1f1; 
     width: 400px;
-    height: 400px;
+    height: 350px;
     border-radius: 15px;
     border-spacing: 11px ;
     position: absolute;
@@ -19,7 +23,27 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .edit{
   position: absolute;
+<<<<<<< Updated upstream
   left: 100px;
+=======
+  right: 0px;
+}
+.map{
+  position: absolute;
+  left: 0px;
+  top: 600px ;
+  margin: 0 auto;
+  display: table;
+  
+  
+}
+.map iframe{
+  padding-bottom: 44px;
+  padding-right: 0px;
+  margin: 0 auto;
+  display:table;
+  
+>>>>>>> Stashed changes
 }
 .navbar{ 
   background-color: #E2EAEC;
@@ -51,6 +75,7 @@ font-family: Arial, Helvetica, sans-serif;
      height: 170px;
         
      }
+<<<<<<< Updated upstream
      .mapouter{
        height: 200;
        width: 200 ;
@@ -58,3 +83,7 @@ font-family: Arial, Helvetica, sans-serif;
      .about{
       margin-left: 170px;
      }
+=======
+    
+    
+>>>>>>> Stashed changes
