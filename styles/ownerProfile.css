@@ -2,18 +2,19 @@
 {font-family: cursive; }
  
 body{
-    background-color: #d6e4e6; 
+    background-color: #ffffff; 
     
     }
 
 .container{
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin-top: 50px;
+    margin-left: 300px;
     align-items: center;
-    background-color:rgb(201, 230, 238);
+    background-color:#add5e0;
     border-radius: 15px;
     padding: 25px 10px ;
    
