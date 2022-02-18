@@ -3,36 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/appointmentDetails.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-  .button {
-  background-color: #4466d6;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-    </style>
+    <title>edit</title>
+
 </head>
 <body>
 
-    <div class="request-details">
-        <h3 class="title">Appointment details</h3>
-          <div class="request-text">
-              <p> <h2> Milo </h2> </p> <p> service :boarding </p> <p>Note :--</p> <p>appointmetn date : 2 Feb 2022 </p> <p> appontment time: 02:00 pm</p> </div>
-     
-          <div class="request-btn-wrapper">
-         <p>   <button class="request-btn">submit</button> </P> 
- 
-            <a href="test.html" class="button">Back</a>
-      </div> 
-      </div>
+    <body>
+        <!--<h1 id="Book">Book Now</h1>-->
+          <div class = "container">
+                  
+                      <h1 id="n">Edit Appointment</h1>
+                 
+      
+                  <div>
+                   <label for="petName">Name</label>
+                   <input type="text"  id="petName">   
+                  </div>
+      
+                  <div>
+                      <label >Service
+                          <select name="services">
+                              <option selected>Choose </option>
+                          <option>Checkup</option>
+                          <option>Grooming</option>
+                          <option>Boarding</option>
+                      
+                  </select>
+                  </label>
+                  </div>
+      
+                  <div>
+                      <label for="note">Note</label>
+                      <input type="text"  id="note">   
+                     </div>
+              
+                     <div>
+                      <label for="dob">Date</label>
+                      <input type="date"  id="dob">   
+                     </div>
+      
+                     <div>
+                      <label for="time">Time</label>
+                      <input type="time" id="appt" name="appt"
+                       min="09:00" max="18:00" required>
+      
+                      
+             
+                     
+                     </div>
+                     
+                     <p><a href="MyAppointment.html"><button class="butt" type="button">Cancel</button></a><a href="MyAppointment.html"><button class="butt" type="button">Edit</button></a>
+                  </div>
+                 
+                  <!--<img  src= "images/dog-layan (1).png"  class = "dog" alt="dog"> -->
+                  <div class="navbar">
+                      <a href = "ownerProfile.html"><img src = "images/Profile.png"  class= "profile"  alt= "Profile image" ></a>
+                    <a href="ManagerAboutUs.html">About us</a>
+                   <a href="Services.html" class= "active"> Services</a>
+                   <a href = "myPets.html">My Pets</a>
+                   <a href = "MyAppointment.html">My Appointments</a>
+                   
+                       </div> 
+              
+              
+                       <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
+      
+          
+      </body>
     
 </body>
 </html>

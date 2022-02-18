@@ -1,25 +1,35 @@
-* {
-  font-family: serif; /* Change your font family */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Cursive;  
+   
+  
+}
+body{
+  background-image: linear-gradient(rgb(255, 255, 255), #B3E7E6);
 }
 
 .navbar{ 
-background-color: #E2EAEC;
+background-color: #ffffff;
 width:100%;
-height: 90px;
+height:100px; 
+
 margin:-10px; 
  }
-.navbar a:hover {
+ .navbar a:hover {
   background: #f1f1f1;
-  color: black;
+  color: #00556D;
 }
 .navbar a{
 float:  right;
 display: block;
-color: BLACK;
+color: #00556D;
 text-align: center;
-padding: 40px 85px;
+padding: 25px 70px;
 text-decoration: none;
 font-size: 18px;
+padding-top: 40px;
 }
 
 
@@ -81,10 +91,18 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
   position: absolute;
-  top: 0px;
-  left: 0px;
-  margin-top: -40px;
- width: 160px;
- height: 170px;
+              top: 0px;
+              left: 0px;
+              margin-top: -40px;
+             width: 160px;
+             height: 170px;
 
 }
+
+.profile{
+  position: absolute;
+   top: 15px;
+   right: 20px;
+   width: 70px;
+   height: 70px;
+ }

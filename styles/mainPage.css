@@ -4,19 +4,20 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:cursive;
     background: url('../images/main.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: rgb(119, 119, 119);
+       color:#00556D ;
+   
     padding-top: 25vh;
     
 }
 
 .navbar{ 
-    background-color:#FFFAF0;
+    background-color:#ffffff;
 
     width:100%;
     height:100px; 
@@ -24,12 +25,14 @@ body{
     }
     .navbar a:hover {
       background: #f1f1f1;
-      color: black;
+      color:#00556D ;
+
     }
     .navbar a{
         float:  right;
         display: block;
-        color: BLACK;
+        color:#00556D ;
+
         text-align: center;
         padding: 25px 70px;
         text-decoration: none;
