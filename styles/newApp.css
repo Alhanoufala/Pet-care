@@ -16,6 +16,15 @@
     padding-top: 25vh;
     text-align: left;
 }*/
+#Book{
+    text-align: center;
+    
+   
+}
+.top-align {
+	vertical-align: top;
+}  
+
 body{
     background-color: #91c3ca;
     background: url('../images/petFootSteps.png') no-repeat center center fixed; 
@@ -24,13 +33,14 @@ body{
     background-size: 60%;
         padding: 0;
         margin: 0;
-       
+        padding-top: 20vh;
         text-align: left;
-        padding-top: 25vh;
+
     
     }
 
 .container{
+   
     width: 350px;
     height: 350px;
     display: flex;
@@ -42,10 +52,13 @@ body{
     padding: 25px 10x;
     font-family:Cursive;     
       line-height: 300%;
-       text-align: left;
+      color: rgb(77, 74, 74);
+     
     
 
 }
+.butt{
+    background-color: #ffffff;}
 #n{
       font-size: 18px;
       
