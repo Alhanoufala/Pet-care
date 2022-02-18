@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    font-family:Cursive;  
      
     
 }
@@ -25,13 +25,13 @@
 
 body{
     background-color: #91c3ca;
-    background: url('../images/petFootSteps.png') no-repeat center center fixed; 
+    background: url('../images/background-removebg-preview.png') no-repeat center center fixed; 
     background-position: left;
-    background-repeat: repeat;
+    background-repeat: repeat-x;
     background-size: 60%;
         padding: 0;
         margin: 0;
-        padding-top: 25vh;
+        padding-top: 30vh;
        
 
     
@@ -39,19 +39,19 @@ body{
 
 .container{
     
-    width: 350px;
-    height: 350px;
+    width: 380px;
+    height: 380px;
     display: flex;
     flex-direction: column;
-    margin-left: 180px;
+    margin-left: 172px;
     align-items: center ;
-    background-color:hsl(206, 53%, 92%);
+    background-color:#d5e4e6;
     border-radius: 15px;
     padding: 25px 10x;
     font-family:Cursive;     
-      line-height: 300%;
-      color: rgb(77, 74, 74);
-     
+      line-height: 330%;
+      color: rgb(51, 51, 51);
+     opacity: 0.6;
     
 
 }
@@ -64,11 +64,11 @@ body{
 }
 .dog{
     position: absolute;
-        top:130px;
-        left: 450px;
-        margin-top: 100px;
-       width:850px;
-       height: 300px;
+        top:100px;
+        left: 550px;
+        margin-top: 60px;
+       width:700px;
+       height: 400px;
     
    }
 input{
@@ -80,7 +80,7 @@ input{
     margin: 5px ;
     text-align: center;
     font-size: 18px;
-    background-color: #F1F7F8;
+    background-color: #ffffff;
 
 }
 select{
@@ -103,4 +103,46 @@ button:hover{
  label{
     font-size: 15px;   
  }
+
+ .navbar{ 
+        background-color: #E2EAEC;
+        width:100%;
+        height:100px; 
+        margin-top:-570px;
+        }
+        .navbar a:hover {
+          background: #f1f1f1;
+          color: black;
+        }
+        .navbar a{
+            float:  right;
+            display: block;
+            color: BLACK;
+            text-align: center;
+            padding: 25px 70px;
+            text-decoration: none;
+            font-size: 18px;
+            padding-top: 40px;
+        }
+        
+        .logo{
+          position: absolute;
+              top: 0px;
+              left: 0px;
+              margin-top: -40px;
+             width: 160px;
+             height: 170px;
+          
+         }
+
+           .profile{
+            position: absolute;
+             top: 15px;
+             right: 20px;
+             width: 70px;
+             height: 70px;
+           }
+
+
+           
 
