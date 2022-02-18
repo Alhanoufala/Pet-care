@@ -24,11 +24,13 @@
 
 
 body{
-    background-color: #91c3ca;
-    background: url('../images/background-removebg-preview.png') no-repeat center center fixed; 
-    background-position: left;
-    background-repeat: repeat-x;
-    background-size: 60%;
+    background-color: #532424;
+    background: url('../images/background3.jpeg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
         padding: 0;
         margin: 0;
         padding-top: 30vh;
@@ -45,18 +47,18 @@ body{
     flex-direction: column;
     margin-left: 172px;
     align-items: center ;
-    background-color:#d5e4e6;
+    background-color:#ffffff;
     border-radius: 15px;
     padding: 25px 10x;
     font-family:Cursive;     
       line-height: 330%;
       color: rgb(51, 51, 51);
-     opacity: 0.6;
+     
     
 
 }
 .butt{
-    background-color: #ffffff;}
+    background-color: #D8F5FD;}
 #n{
       font-size: 18px;
       
@@ -80,8 +82,11 @@ input{
     margin: 5px ;
     text-align: center;
     font-size: 18px;
-    background-color: #ffffff;
+    background-color:#EDFAFE;
 
+}
+text{
+    background-color: #000;
 }
 select{
     height: 20px;
@@ -89,8 +94,8 @@ select{
     margin: 5px ; 
 }
 button{
-    background-color: #F1F7F8;
-    color: rgb(119, 119, 119);
+    background-color: #ffffff;
+    color: rgb(121, 121, 121);
     border: none;
     padding: 8px 30px;
     border-radius: 10px;
@@ -105,7 +110,7 @@ button:hover{
  }
 
  .navbar{ 
-        background-color: #E2EAEC;
+        background-color: #ffffff;
         width:100%;
         height:100px; 
         margin-top:-570px;
