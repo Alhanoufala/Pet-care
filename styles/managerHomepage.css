@@ -1,6 +1,9 @@
+* {
+    font-family: serif; /* Change your font family */
+  }
 body{
 background-color: #d6e4e6;
-background: url('/Users/ahanoufalawwad/Desktop/Pet-care/images/dog-mangerHome.jpg') no-repeat center center fixed; 
+background: url('../images/dog-mangerHome.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
