@@ -3,18 +3,30 @@
   <head>
     <meta charset = "utf-8">
     <title>addPet</title>
+    <link rel="stylesheet" href="styles/ownerHomePage.css">
     <link rel="stylesheet" href="styles/addPet.css">
   </head>
 
   <body>
 
+    <div class="navbar">
+      <a href = "ownerProfile.html"><img src = "images/Profile.png"  class= "profile"  alt= "Profile image" ></a>
+    <a href="ManagerAboutUs.html">About us</a>
+   <a href="Services.html" class= "active"> Services</a>
+   <a href = "myPets.html">My Pets</a>
+   <a href = "MyAppointment.html">My Appointments</a>
+   
+       </div> 
+       
+       <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
+
+
       <div class="container">
           <h2>Add Pet</h2>
           <form method="post">
-              <input type="text" name="Pname" id="Pname" placeholder="Pet name">
-              <input type="date" name="PetBD" id="PetBD" placeholder="Pet birth date">
-              <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number">
-              <input type="password" name="pass" id="pass" placeholder="Password">
+              <input type="text" name="Pname" id="Pname" placeholder="Pet name" required>
+              <input type="date" name="PetBD" id="PetBD" placeholder="Pet birth date" required>
+              <input type="number" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
                
               <div class="content">
                 <div class="radio">
@@ -25,6 +37,8 @@
                     <label for="female">female</label>
                 </div></div>
 
+                <input type="text" name="Pbreed" id="Pbreed" placeholder="Pet breed" required>
+
                 <div class="content">
                   <div class="radio">
                    <label for="Status">Status</label>
@@ -34,17 +48,15 @@
                       <label for="Neutered">Neutered</label>
                   </div></div>
 
+                <p>Pet photo</p>
+                <input type="file" id="petPhotoFile" name="petPhotoFile" required>
+
                 <p>vaccinations list and medical history (optional)</p>
-                <label for="petFile">Select a file:</label>
                 <input type="file" id="petFile" name="petFile" >
-  
-              <p>Add profile photo (optional)</p>
-              <label for="profilePhotoFile">Select a photo:</label>
-              <input type="file" id="profilePhotoFile" name="profilePhotoFile">
   
              <div class="submitbut">
               
-              <a href = "#"><input type = "submit" value="submit"></a>
+              <a href = "#"><input type = "button" value="Add"></a>
               
              </div>
 
@@ -57,31 +69,5 @@
       </div>
 
 
-
-    <p><label>Pet name <br>
-        <input name = "Pname" type="text" size= "30" maxlength="30">
-        </label></p>
-  
-    <p><label>Date of birth <br> 
-        <input name = "date" type="date"></label></p>
-
-    <p>Gender</p>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="famale">Female</label><br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br>
-
-    <p>Status</p>
-        <input type="radio" id="spayed" name="Status" value="Spayed">
-        <label for="spayed">Spayed</label><br>
-        <input type="radio" id="neutered" name="Status" value="Neutered">
-        <label for="neutered">Neutered</label><br>
-
-    <p>vaccinations list and medical history (optional)</p>
-    <label for="petFile">Select a file:</label>
-    <input type="file" id="petFile" name="petFile">
-
-    <p><a href = "myPets.html"><input type = "submit" value="submit"></a></p>
-    
   </body>
 </html>
