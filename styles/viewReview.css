@@ -1,0 +1,69 @@
+body{
+  background: url('../images/petFootSteps-left.png') repeat center center fixed; 
+  margin-bottom: auto;
+
+
+}
+
+
+.container{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left:500px;
+  align-items: center;
+  background-color:rgb(201, 230, 238);
+   padding: 25px 10px ;}
+.navbar{ 
+    background-color: #E2EAEC;
+    width:100%;
+    height:100px; 
+    
+    margin:-10px; 
+     }
+     .navbar a:hover {
+      background: #f1f1f1;
+      color: #00556D;
+    }
+    .navbar a{
+    float:  right;
+    display: block;
+    color: #00556D;
+    text-align: center;
+    padding: 25px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 40px;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-top: -40px;
+       width: 160px;
+       height: 170px;
+          
+       }
+
+.petPic{
+  width: 200px;
+  height: 200px;
+  padding-left:20px;
+  padding-top:10px;
+
+}
+.area{
+  margin-left: 29px;
+}
+#p{
+ text-align: center;
+}
+#label{
+  text-align: center;
+  margin-left: 29px;
+
+
+}
