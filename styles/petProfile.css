@@ -23,6 +23,19 @@ body{
   
  
 }
+
+input{
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 5px ;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(119, 119, 119);
+  background-color: white;
+}
+
 form{
   display: flex;
   flex-direction: column;
