@@ -19,9 +19,9 @@ font-family: 'optima', sans-serif	; }
 }
 .edit{
   position: absolute;
-  top: 50px;
+  top: 80px;
   display: table;
-
+margin-left: 100px;
   left: 0px;
 }
 .map{
