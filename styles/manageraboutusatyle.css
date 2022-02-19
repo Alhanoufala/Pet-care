@@ -22,23 +22,24 @@ font-family: Arial, Helvetica, sans-serif;
 .edit{
   position: absolute;
   top: 50px;
+  display: table;
 
   left: 0px;
 }
 .map{
   position: absolute;
   left: 0px;
-  top: 520px ;
+  top: 500px ;
   margin: 0 auto;
-  display: table;
   left: 70px;
-  
+  display: table;
+
 }
 .map iframe{
   padding-bottom: 44px;
   padding-right: 0px;
   margin: 0 auto;
-  display:table;
+
   
 
 }
