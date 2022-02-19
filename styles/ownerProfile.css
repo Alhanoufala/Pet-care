@@ -2,8 +2,8 @@
 {font-family: cursive; }
  
 body{
-    background-color: #ffffff; 
-    
+    background: url('../images/petFootSteps-left.png') repeat center center fixed; 
+  margin-bottom: auto;
     }
 
 .container{
@@ -14,7 +14,7 @@ body{
     margin-top: 50px;
     margin-left: 300px;
     align-items: center;
-    background-color:#add5e0;
+    background-color:rgb(201, 230, 238);
     border-radius: 15px;
     padding: 25px 10px ;
    
@@ -40,8 +40,9 @@ input{
 }
 
 .container .profilePic{
-    position: relative;
-    top: 0px; left: 40px;
+    position: absolute;
+    top: 200px; right: 350px;
+
 }
 
 
