@@ -15,7 +15,10 @@ body{
   margin-left:500px;
   align-items: center;
   background-color:rgb(201, 230, 238);
-   padding: 25px 10px ;}
+   padding: 25px 10px ;
+   border-radius: 10px;
+     opacity: 0.8;
+    }
 .navbar{ 
     background-color: #E2EAEC;
     width:100%;
