@@ -63,8 +63,8 @@ button:hover{
 }
 
 .navbar{ 
-    background-color: #E2EAEC;
-    position: absolute;
+  background-color: #ffffff;
+  position: absolute;
     width:100%;
     height:100px; 
     margin-top:-210px;
