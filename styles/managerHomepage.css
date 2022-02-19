@@ -70,39 +70,10 @@ background: url('../images/mangerHomePage.jpg') no-repeat center center fixed;
            }
            p{
             font-size: 15px; 
-<<<<<<< Updated upstream
             font-family: 'Times New Roman', Times, serif;  
            }
-=======
-            font-family: 'optima', sans-serif	;
-          }
            
-           .dropdown {
-            position: relative;
-            display: inline-block;
-            opacity: 0.5;
           
-          }
-          .dropbtn {
-         
->>>>>>> Stashed changes
-           
-          .dropdown-content{
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-          
-        .navbar a:hover div .dropdown-content {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            background-color: #ddd;
-          }
           
           
          
