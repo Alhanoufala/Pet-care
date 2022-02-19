@@ -85,14 +85,14 @@ button:hover{
   }
   .navbar a:hover {
     background: #f1f1f1;
-    color: #00556D;
+    color: black;
   }
   .navbar a{
       float:  right;
       display: block;
-      color: #00556D;
+      color: #00556D;;
       text-align: center;
-      padding: 25px 70px;
+      padding: 25px 40px;
       text-decoration: none;
       font-size: 18px;
       padding-top: 40px;
