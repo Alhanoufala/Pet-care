@@ -1,6 +1,3 @@
-* {
-  font-family: optima, sans-serif;
-}
 body{
     background: url('../images/petFootSteps-left.png') repeat center center fixed; 
     margin-bottom: auto;
@@ -63,6 +60,8 @@ body{
   }
   .area{
     margin-left: 29px;
+    margin-top: 0px;
+
   }
   #p{
    text-align: center;
@@ -73,3 +72,19 @@ body{
   
   
   }
+  button{
+    background-color: white;
+    color: #00556D;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px 25px;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(226, 226, 228);
+}
+.loginbut{
+  margin: -1px auto;
+}
