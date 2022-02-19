@@ -85,7 +85,7 @@ border-bottom: 1px solid lightgrey;
 
 .content-table tbody tr.active-row {
 font-weight: light;
-color: black;
+color: #000000;
 font-family: 'optima', sans-serif	;
 
 }
@@ -108,8 +108,8 @@ font-family: 'optima', sans-serif	;
  }
  a{
    text-decoration: none;
-   color: black;
- }
+   color: #00556D;
+  }
  .dropbtn {
   background-color: #04AA6D;
   color: white;
