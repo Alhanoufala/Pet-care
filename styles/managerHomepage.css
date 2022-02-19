@@ -3,7 +3,7 @@
   }
 body{
 background-color: #d6e4e6;
-background: url('../images/top-10-vets-in-kl-selangor.jpeg') no-repeat center center fixed; 
+background: url('../images/mangerHomePage.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -11,27 +11,31 @@ background: url('../images/top-10-vets-in-kl-selangor.jpeg') no-repeat center ce
 
 
 }
-.navbar{ 
-  background-color: #ffffff;
-  width:100%;
-    height:70px; 
-    margin-top:-10px;
-    }
-    .navbar a:hover {
-      background: #f1f1f1;
-      color:#00556D ;
 
+.navbar{ 
+    background-color: #ffffff;
+    width:100%;
+    height:100px; 
+    
+    margin-left:0px;
+    margin-right: 0px;
+    margin-top: -10px;
+   padding: 0px; 
+
+     }
+     .navbar a:hover {
+      background: #f1f1f1;
+      color: #00556D;
     }
     .navbar a{
-        float:  right;
-        display: block;
-        color:#00556D ;
-
-        text-align: center;
-        padding: 10px 60px;
-        text-decoration: none;
-        font-size: 18px;
-        padding-top: 25px;
+    float:  right;
+    display: block;
+    color: #00556D;
+    text-align: center;
+    padding: 25px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 40px;
     }
     
     .logo{
@@ -39,10 +43,11 @@ background: url('../images/top-10-vets-in-kl-selangor.jpeg') no-repeat center ce
         top: 0px;
         left: 0px;
         margin-top: -40px;
-       width: 150px;
-       height: 160px;
+       width: 160px;
+       height: 170px;
           
        }
+  
        .container{
         
      
