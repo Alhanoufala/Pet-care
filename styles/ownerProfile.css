@@ -1,5 +1,7 @@
 *
-{font-family: cursive; }
+{
+    font-family: 'optima', sans-serif	;
+}
  
 body{
     background: url('../images/petFootSteps-left.png') repeat center center fixed; 
