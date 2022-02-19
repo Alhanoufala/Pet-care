@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family:'optima', sans-serif	; 
+  font-family: 'optima', sans-serif	;
    
   
 }
@@ -87,7 +87,7 @@ border-bottom: 1px solid lightgrey;
 .content-table tbody tr.active-row {
 font-weight: light;
 color: black;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'optima', sans-serif	;
 
 }
 .logo{
