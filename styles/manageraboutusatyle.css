@@ -8,7 +8,8 @@ background: url('../images/about.jpg') no-repeat center center fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-font-family: 'optima', sans-serif	; }
+font-family: 'optima', sans-serif	;
+color: #00556D; }
 .container{
     width: 400px;
     height: 350px;
@@ -16,6 +17,7 @@ font-family: 'optima', sans-serif	; }
     border-spacing: 11px ;
     position: absolute;
   left: 30px;
+  color: #00556D;
 }
 .edit{
   position: absolute;
@@ -54,7 +56,7 @@ margin-left: 100px;
   .navbar a{
       float:  right;
       display: block;
-      color: BLACK;
+      color: #00556D;;
       text-align: center;
       padding: 25px 70px;
       text-decoration: none;
