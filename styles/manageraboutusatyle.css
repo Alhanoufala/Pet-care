@@ -21,17 +21,17 @@ font-family: Arial, Helvetica, sans-serif;
 }
 .edit{
   position: absolute;
-  
+  top: 50px;
 
-  right: 0px;
+  left: 0px;
 }
 .map{
   position: absolute;
   left: 0px;
-  top: 600px ;
+  top: 520px ;
   margin: 0 auto;
   display: table;
-  
+  left: 70px;
   
 }
 .map iframe{
