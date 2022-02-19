@@ -1,9 +1,11 @@
 
 * 
-{font-family: cursive; }
+{font-family: optima, sans-serif; }
 body{
   background: url('../images/petFootSteps-left.png') repeat center center fixed; 
   margin-bottom: auto;
+  align-items: center;
+
 
   }
 
@@ -12,11 +14,13 @@ body{
   height: 600px;
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-items: center;
   background-color:rgb(201, 230, 238);
   border-radius: 15px;
   padding: 25px 10px ;
+  margin-top: 30px;
+  margin-left: 550px;
+  
  
 }
 form{
@@ -31,7 +35,7 @@ form{
 }
 button{
   background-color: white;
-  color: rgb(119, 119, 119);
+  color: #00556D;
   border: none;
   padding: 8px 30px;
   border-radius: 10px;
@@ -45,7 +49,7 @@ button:hover{
 p, h2{
   font-size: 15px;
   align-items: center;
-  color:#ffffff;
+  color: #00556D;
 }
 
 .petPic{
