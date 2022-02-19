@@ -41,7 +41,7 @@ input{
 
 .container .profilePic{
     position: relative;
-    top: 40px; left: 40px;
+    top: 0px; left: 40px;
 }
 
 
