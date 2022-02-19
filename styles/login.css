@@ -73,45 +73,40 @@ p{
     font-size: 15px;
     align-items: center;
 }
-.logo{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: -40px;
-   width: 160px;
-   height: 170px;
-
-}
 
 .navbar{ 
     background-color: #ffffff;
     width:100%;
-      height:100px;   
-      margin:0px; 
-      margin-top: -200px;
-       }
-       .navbar a:hover {
-        background: #f1f1f1;
-        color: #00556D;
-      }
-      .navbar a{
-      float:  right;
-      display: block;
+    height:100px; 
+    
+    margin-left:0px;
+    margin-right: 0px;
+    margin-top: -190px;
+    padding: 0px; 
+
+     }
+     .navbar a:hover {
+      background: #f1f1f1;
       color: #00556D;
-      text-align: center;
-      padding: 25px 70px;
-      text-decoration: none;
-      font-size: 18px;
-      padding-top: 40px;
-      }
-      
-      .logo{
-          position: absolute;
-          top: 0px;
-          left: 0px;
-          margin-top: -40px;
-         width: 160px;
-         height: 170px;
-            
-         }
+    }
+    .navbar a{
+    float:  right;
+    display: block;
+    color: #00556D;
+    text-align: center;
+    padding: 25px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 40px;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-top: -40px;
+       width: 160px;
+       height: 170px;
+          
+       }
   
