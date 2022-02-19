@@ -40,19 +40,11 @@ body{
     
     .logo{
         position: absolute;
-<<<<<<< Updated upstream
-            top: 0px;
-        left: 0px;
-        margin-top: -40px;
-       width: 160px;
-       height: 170px;
-=======
         top: 0px;
         left: 0px;
         margin-top: -40px;
        width: 150px;
        height: 160px;
->>>>>>> Stashed changes
           
        }
        
@@ -68,14 +60,10 @@ body{
     border-radius: 15px;
     padding: 25px 10x;
     margin-top: 30px;
-<<<<<<< Updated upstream
-    margin-right: 17px;
-=======
     margin-left: 0px;
->>>>>>> Stashed changes
     font-size: 50px;
     text-align: center;
-        font-family: 'Times New Roman', Times, serif;
+ font-family: 'Times New Roman', Times, serif;
 
        }
        p{
