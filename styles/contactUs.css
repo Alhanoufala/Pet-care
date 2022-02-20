@@ -188,4 +188,28 @@ body{
     padding-top: 40px;
     }
     
- 
+    .edit{
+      position: absolute;
+      top: 90px;
+      display: table;
+    margin-left: 120px;
+      left: 0px;
+    }
+    .but{
+    margin: 15px auto;
+    text-decoration: none;
+
+}
+button{
+    background-color: white;
+    color: rgb(119, 119, 119);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px 25px;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(226, 226, 228);
+}
