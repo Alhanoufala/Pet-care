@@ -48,6 +48,8 @@ input{
 
 .but{
     margin: 15px auto;
+    text-decoration: none;
+
 }
 button{
     background-color: white;
