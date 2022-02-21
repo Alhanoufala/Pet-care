@@ -10,7 +10,7 @@ body{
 .editbut{
   margin: 15px auto;
   text-decoration: none;
-padding-top: 60px;
+padding-top: 30px;
 
 }
 button{
@@ -91,3 +91,17 @@ button:hover{
 
 
 }
+.subcontainer{
+  width: 260px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left:30x;
+  align-items: center;
+  background-color:white;
+   padding: 25px 10px ;
+   border-radius: 10px;
+     opacity: 0.8;
+     color: #00556D;
+    }
