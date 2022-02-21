@@ -7,10 +7,28 @@ body{
 
 }
 
+.editbut{
+  margin: 15px auto;
+  text-decoration: none;
+
+}
+button{
+  background-color: white;
+  color: #00556D;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: center;
+}
+button:hover{
+  background-color: rgb(226, 226, 228);
+}
 
 .container{
   width: 400px;
-  height: 400px;
+  height: 470px;
   display: flex;
   flex-direction: column;
   margin-top: 80px;
