@@ -118,11 +118,18 @@
         <td>3 Feb 2022</td>
         <td>03:30 pm</td>
         <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
         <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
       </tr>
-     
-
+      <tr>
+      <?php 
+      echo $_POST['services'];
+     print(" <th scope='row'>".$_POST['services']."</th>
+     <td>".$_POST['date']."</td>
+     <td>".$_POST['time']."</td>
+     <td> <a href ='editAppointmentManager.html'><img src= 'images/icons8-edit-20.png' ></a></td>
+     <td> <a href ><img src= 'images/icons8-multiply-15.png' ></a></td>");
+     ?>
+</tr>
     </tbody>
   </table>
   <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">

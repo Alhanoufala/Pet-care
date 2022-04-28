@@ -22,7 +22,7 @@
          
     <div class = "container">
         <h2>Set an appointment</h2>
-    <form action="post">
+        <form method="POST" action="availableAppointments.php">
        <p><label>Service: <select name = "services">
            <option>Grooming</option>
            <option>Checkup</option>
@@ -32,7 +32,7 @@
        <p><label>Date: <input name = "date" type="date"></label></p>
        <br>
        <p><label>Time: <input name= "time" type ="time"></label>
-       <p><a href="availableAppointments.html"><button type="button">Add</button></a>
+       <p><a href="availableAppointments.php"><button type="button">Add</button></a>
     
     </form>
     </div>
