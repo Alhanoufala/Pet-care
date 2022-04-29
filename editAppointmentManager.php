@@ -19,6 +19,7 @@
           </div> 
     <div class = "container">
         <h2>Edit an appointment</h2>
+        
         <form method="POST" action="editAppointmentManager.php">
        <p><label>Service: <select name = "services">
            <option>Grooming</option>
@@ -34,20 +35,30 @@
     </form>
     </div>
 
-    <?php
-             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
-                    die( "<p>Could not connect to database</p>" );
+    <?php 
+          
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+                   die( "<p>Could not connect to database</p>" );
 
-                 if ( !mysqli_select_db( $database, "Pet_care") )
-                    die( "<p>Could not open URL database</p>" );
+                if ( !mysqli_select_db( $database, "Pet_care") )
+                   die( "<p>Could not open URL database</p>" );
 
-                    $service =  $_POST["services"];
-                    $date =   $_POST["date"];
-                    $time =  $_POST["time"];
-                  
-             }
-        ?>
+                   $service =  $_POST["services"];
+                   $date =   $_POST["date"];
+                   $time =  $_POST["time"];
+
+                $query="INSERT INTO available_appointments (service, date, time) VALUES ('".$service."','".$date."','".$time."');";
+                $result=mysqli_query($database, $query);
+                if($result)
+                       header("location: availableAppointments.php");
+           
+                   else
+                       echo "An error occured while completing your request.";
+            }
+   
+             ?>
+      
     
     <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
    
