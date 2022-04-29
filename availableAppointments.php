@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,13 +10,14 @@
 
      </style>
 </head>
+
 <body>
  
   <div class="navbar">
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
     <a href="managerContactUs.html">Contact Us</a>
-    <a href="setAppointment.html">Set a new available Appointments</a>
-    <a href="availableAppointments.html">Available appointments</a>
+    <a href="setAppointment.php">Set a new available Appointments</a>
+    <a href="availableAppointments.php">Available appointments</a>
       <a href="Services.html"> Services</a>
       <a href="ManagerAboutUs.html">About us</a>
   <a href="managerHomePage.html">Home</a>
@@ -37,99 +39,33 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">grooming</th>
-        <td>2 Feb 2022</td>
-        <td>01:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-         
-       
-          </button>
-         
-      </tr>
-      <tr>
-        <th scope="row">boarding</th>
-        <td>2 Feb 2022</td>
-        <td>02:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">checkup</th>
-        <td>2 Feb 2022</td>
-        <td>03:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">checkup</th>
-        <td>2 Feb 2022</td>
-        <td>04:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">checkup</th>
-        <td>2 Feb 2022</td>
-        <td>05:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">checkup</th>
-        <td>2 Feb 2022</td>
-        <td>06:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">grooming</th>
-        <td>3 Feb 2022</td>
-        <td>12:00 am</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">checkup</th>
-        <td>3 Feb 2022</td>
-        <td>01:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">boarding</th>
-        <td>3 Feb 2022</td>
-        <td>02:00 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-         
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-        <th scope="row">checkup</th>
-        <td>3 Feb 2022</td>
-        <td>03:30 pm</td>
-        <td> <a href ="editAppointmentManager.html"><img src= "images/icons8-edit-20.png" ></a></td>
-        <td> <a href ><img src= "images/icons8-multiply-15.png" ></a></td>
-      </tr>
-      <tr>
-      <?php 
-      echo $_POST['services'];
-     print(" <th scope='row'>".$_POST['services']."</th>
-     <td>".$_POST['date']."</td>
-     <td>".$_POST['time']."</td>
-     <td> <a href ='editAppointmentManager.html'><img src= 'images/icons8-edit-20.png' ></a></td>
-     <td> <a href ><img src= 'images/icons8-multiply-15.png' ></a></td>");
-     ?>
-</tr>
+        
+      <?php
+  
+
+
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+if ( !mysqli_select_db($database, "Pet_care" ) )
+  die( "<p>Could not open URL database</p>" );
+
+$query="SELECT * FROM available_appointments";
+$result=mysqli_query($database, $query);
+
+
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {
+       print("<tr> <th scope='row'>".$data[0]."</th>
+       <td>".$data[1]."</td>
+       <td>".$data[2]."</td>
+       <td> <a href=\"editAppointmentManager.php?id=".$data[2]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
+     <td> <a href=\"deleteAppointment.php?id=".$data[2]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
+   }
+}
+
+  ?>
+  
     </tbody>
   </table>
   <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">

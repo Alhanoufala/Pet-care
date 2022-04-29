@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,6 @@
     
     <div class="navbar">
         <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-      
         <a href="contactUs.html"> Contact Us </a>
       <a href="appointmentRequests.html">Appointment requests</a>
       <a href="Services.html"> Services</a>
@@ -19,7 +19,7 @@
           </div> 
     <div class = "container">
         <h2>Edit an appointment</h2>
-    <form action="post">
+        <form method="POST" action="editAppointmentManager.php">
        <p><label>Service: <select name = "services">
            <option>Grooming</option>
            <option>Checkup</option>
@@ -29,10 +29,25 @@
        <p><label>Date: <input name = "date" type="date"></label></p>
        <br>
        <p><label>Time: <input name= "time" type ="time"></label>
-       <p><a href="availableAppointments.html"><button type="button">Edit</button></a>
+       <p><a href="editAppointmentManager.php"><button type="submit">Edit</button></a>
     
     </form>
     </div>
+
+    <?php
+             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+                    die( "<p>Could not connect to database</p>" );
+
+                 if ( !mysqli_select_db( $database, "Pet_care") )
+                    die( "<p>Could not open URL database</p>" );
+
+                    $service =  $_POST["services"];
+                    $date =   $_POST["date"];
+                    $time =  $_POST["time"];
+                  
+             }
+        ?>
     
     <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
    
