@@ -13,8 +13,8 @@
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
     <a href="managerContactUs.html">Contact us</a>
     <a href="allReviews.html"> Reviews</a>
-    <a href="previousAppointments.html"> Previous</a>
-    <a href="upcomingAppointments.html"> Upcoming</a>
+    <a href="previousAppointments.php"> Previous</a>
+    <a href="upcomingAppointments.php"> Upcoming</a>
       <a href="appointmentRequests.php"> Requests</a>
     <a href="Services.html">Services</a>
     <a href="ManagerAboutUs.html">About Us</a>
@@ -27,7 +27,6 @@
     <thead>
 
       <tr>
-        <th>#</th>
         <th scope="col">Pet name</th>
         <th scope="col">Service</th>
         <th scope="col">Date</th>
@@ -39,7 +38,6 @@
     </thead>
     <tbody>
       <tr>
-        <th>1</th>
         <th scope="row"><p> Luna </p>
         </th>
         <td>grooming</td>
@@ -50,7 +48,7 @@
          
       </tr>
       <tr>
-        <th>2</th>
+        
         <th scope="row"><p> Milo</p>
         <td>boarding</td>
         <td>2 Feb 2022</td>
@@ -60,7 +58,7 @@
          
       </tr>
       <tr>
-        <th>3</th>
+       
         <th scope="row"><p> Oliver</p>
         <td>checkup</td>
         <td>2 Feb 2022</td>
@@ -69,7 +67,7 @@
 
       
       <tr>
-        <th>4</th>
+       
         <th scope="row"><p> Parrot </p>
         <td>boarding</td>
         <td>3 Feb 2022</td>
@@ -77,6 +75,33 @@
         <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Parrot's Owner  </a> </th> 
 
       </tr>
+      <?php
+  
+
+
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+if ( !mysqli_select_db($database, "Pet_care" ) )
+  die( "<p>Could not open URL database</p>" );
+
+$query="SELECT * FROM upcoming_requests";
+$result=mysqli_query($database, $query);
+
+
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {
+       print("<tr>      
+       <th scope='row'><p>".$data[0]."</p>
+       <td>".$data[1]."</td>
+       <td>".$data[2]."</td>
+       <td>".$data[3]."</td>
+       <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>  </tr>");
+   }
+}
+
+  ?>
+  
     
     </tbody>
   </table>

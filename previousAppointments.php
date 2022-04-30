@@ -12,8 +12,8 @@
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
     <a href="managerContactUs.html">Contact us</a>
     <a href="allReviews.html"> Reviews</a>
-    <a href="previousAppointments.html"> Previous</a>
-    <a href="upcomingAppointments.html"> Upcoming</a>
+    <a href="previousAppointments.php"> Previous</a>
+    <a href="upcomingAppointments.php"> Upcoming</a>
       <a href="appointmentRequests.php"> Requests</a>
     <a href="Services.html">Services</a>
     <a href="ManagerAboutUs.html">About Us</a>
