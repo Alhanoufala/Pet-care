@@ -12,7 +12,7 @@
         <a href="managerContactUs.html">Contact Us</a>
   
         <a href="availableAppointments.php">Available appointments</a>
-          <a href="appointmentRequests.html">Appointments requests</a>
+          <a href="appointmentRequests.php">Appointments requests</a>
           <a href="Services.html"> Services</a>
           <a href="ManagerAboutUs.html">About us</a>
       <a href="managerHomePage.html">Home</a>
