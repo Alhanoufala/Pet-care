@@ -32,6 +32,7 @@
         <th scope="col">Date</th>
         <th scope="col">Time</th>
         <th scope="col"> Contact Owner</th>
+        <th scope="col"> Done</th>
 
          
       </tr>
@@ -44,7 +45,7 @@
         <td>2 Feb 2022</td>
         <td>01:00 pm</td>
         <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Luna's Owner  </a> </th> 
-
+        <th><img src= 'images/check.png' ></a></th>
          
       </tr>
       <tr>
@@ -54,7 +55,7 @@
         <td>2 Feb 2022</td>
         <td>02:00 pm</td>
         <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Milo's Owner  </a> </th> 
-
+        <th><img src= 'images/check.png' ></a></th>
          
       </tr>
       <tr>
@@ -64,7 +65,7 @@
         <td>2 Feb 2022</td>
         <td>03:00 pm</td>
         <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Oliver's Owner  </a> </th> 
-
+        <th><img src= 'images/check.png' ></a></th>
       
       <tr>
        
@@ -73,7 +74,7 @@
         <td>3 Feb 2022</td>
         <td>06:00 pm</td>
         <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Parrot's Owner  </a> </th> 
-
+        <th><img src= 'images/check.png' ></a></th>
       </tr>
       <?php
   
@@ -96,7 +97,8 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-       <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>  </tr>");
+       <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>
+       <th><a href=\"addToPreviousAppointments.php?pet_name=".$data[0]."&service=".$data[1]."&date=".$data[2]."&time=".$data[3]."&owner_email=".$data[4]."\"><img src= 'images/check.png'></a></th></tr>");
    }
 }
 
