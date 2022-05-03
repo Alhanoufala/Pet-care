@@ -116,19 +116,20 @@
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
 
-$query="SELECT * FROM appointments_requests";
+$query="SELECT * FROM appointments_requests WHERE status IS NULL";
 $result=mysqli_query($database, $query);
 
 
 if ($result) {
    while ($data = mysqli_fetch_row($result)) {
+  
        print("<tr>      
        <th scope='row'><p> <a href='managerPetProfile.html'>".$data[0]."</a></p>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-       <th><a href=\"addToUpcomingAppointments.php?pet_name=".$data[0]."&service=".$data[1]."&date=".$data[2]."&time=".$data[3]."&owner_email=".$data[4]."\"><input type='button' name='accept' value='Accept' style ='background-color:rgb(88, 194, 88);'></a>
-       <a href=\"deleteRequests.php?id=".$data[0]."\"> <input type='button' name='decline' value='Decline' style ='background-color:rgb(255, 8, 8);'></a> </th>
+       <th><a href=\"addToUpcomingAppointments.php?id=".$data[4]."\"><input type='button' name='accept' value='Accept' style ='background-color:rgb(88, 194, 88);'></a>
+       <a href=\"declineAppointments.php?id=".$data[4]."\"> <input type='button' name='decline' value='Decline' style ='background-color:rgb(255, 8, 8);'></a> </th>
        <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>  </tr>");
    }
 }

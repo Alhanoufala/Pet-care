@@ -6,16 +6,13 @@
 
               if ( !mysqli_select_db( $database, "Pet_care") )
                  die( "<p>Could not open URL database</p>" );
-                 $pet_name = $_GET["pet_name"];
-                 $service =  $_GET["service"];
-                 $date =   $_GET["date"];
-                 $time =  $_GET["time"];
-                 $owner_email =  $_GET["owner_email"];
-                 mysqli_query($database ,"DELETE FROM upcoming_requests WHERE owner_email='".$owner_email."'");
-                 $query= "INSERT INTO previous_requests(pet_name,service, date,time,owner_email) VALUES ('".$pet_name."','".$service."','".$date."','".$time."','".$owner_email."');";
-                 $result=mysqli_query($database, $query);
+                 $id= $_GET['id'];
                 
-                     header("location: upcomingAppointments.php");
+                 mysqli_query($database ,"UPDATE appointments_requests SET status = 'completed' WHERE owner_email='".$id."'");
+                // $query= "INSERT INTO previous_requests(pet_name,service, date,time,owner_email) VALUES ('".$pet_name."','".$service."','".$date."','".$time."','".$owner_email."');";
+                // $result=mysqli_query($database, $query);
+                
+                     header("location: previousAppointments.php");
          
                 
       

@@ -86,7 +86,7 @@
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
 
-$query="SELECT * FROM upcoming_requests";
+$query="SELECT * FROM appointments_requests WHERE status='accepted'";
 $result=mysqli_query($database, $query);
 
 
@@ -98,9 +98,11 @@ if ($result) {
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
        <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>
-       <th><a href=\"addToPreviousAppointments.php?pet_name=".$data[0]."&service=".$data[1]."&date=".$data[2]."&time=".$data[3]."&owner_email=".$data[4]."\"><img src= 'images/check.png'></a></th></tr>");
+       <th><a href=\"addToPreviousAppointments.php?id=".$data[4]."\"><img src= 'images/check.png'></a></th></tr>");
    }
 }
+else
+echo "An error occured while completing your request.";
 
   ?>
   

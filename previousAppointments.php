@@ -63,7 +63,7 @@
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
 
-$query="SELECT * FROM previous_requests";
+$query="SELECT * FROM appointments_requests WHERE status='completed'";
 $result=mysqli_query($database, $query);
 
 
