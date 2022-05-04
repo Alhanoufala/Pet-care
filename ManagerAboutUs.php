@@ -59,6 +59,7 @@ if ($result) {
    while ($data = mysqli_fetch_row($result)) {
     print("<tr> <th scope='row'>".$data[0]."</th>
        <td>".$data[1]."</td>
+       
        <td>".$data[3]."</td>
        
       

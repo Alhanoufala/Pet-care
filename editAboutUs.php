@@ -34,8 +34,8 @@
 
     
                <div class="editbut">
-                <a href="ManagerAboutUs.html"><button type="button">Cancel</button></a>
-                <a href="ManagerAboutUs.html"><button type="button" id = "Update">Update</button></a>
+                <a href="ManagerAboutUs.php"><button type="button">Cancel</button></a>
+                <a href="ManagerAboutUs.php"><button type="button" id = "Update">Update</button></a>
 
                </div>
                 
