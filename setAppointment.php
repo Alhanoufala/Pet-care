@@ -29,9 +29,9 @@
            <option>Boarding</option>
         </select></label></p>
        <br>
-       <p><label>Date: <input name = "date" type="date"></label></p>
+       <p><label>Date: <input name = "date" type="date" required></label></p>
        <br>
-       <p><label>Time: <input name= "time" type ="time"></label>
+       <p><label>Time: <input name= "time" type ="time" required></label>
        <p><a href="availableAppointments.php"><button type="submit">Add</button></a>
     
     </form>
