@@ -9,8 +9,6 @@
                  $id= $_GET['id'];
                 
                  mysqli_query($database ,"UPDATE appointments_requests SET status = 'accepted' WHERE owner_email='".$id."'");
-                // $query= "INSERT INTO upcoming_requests(pet_name,service, date,time,owner_email) VALUES ('".$pet_name."','".$service."','".$date."','".$time."','".$owner_email."');";
-                // $result=mysqli_query($database, $query);
                 
                      header("location: upcomingAppointments.php");
          

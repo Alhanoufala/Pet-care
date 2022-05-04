@@ -8,6 +8,12 @@
     
 
   </head>
+  <script>
+
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url('images/cat-dog.png')";
+
+</script>
 
   <body>
     <div class="navbar">
@@ -43,8 +49,6 @@ Our location :
 -->  
 <?php
   
-
-
   if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
   die( "<p>Could not connect to database</p>" );
 
@@ -57,13 +61,16 @@ $result=mysqli_query($database, $query);
 
 if ($result) {
    while ($data = mysqli_fetch_row($result)) {
-    print("<tr> <th scope='row'>".$data[0]."</th>
-       <td>".$data[1]."</td>
-       
-       <td>".$data[3]."</td>
-       
-      
-     </tr>");
+    print("<div class= 'about'> <h2> ".$data[0]." </h2> </div> 
+    <br>   
+ <div class = 'container' > 
+  <br>".$data[1]."
+  <br> 
+  Our location :
+</div>
+
+<div class = 'map'>
+<iframe src='".$data[3]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>");
    }
 }
 
@@ -73,10 +80,7 @@ if ($result) {
 <div class = "edit"> <br>
 <button type="button" class="edit"><a href = "editAboutUs.php">
 <span class="glyphicon glyphicon-edit"></span></div>
-
-<div class = "map" >
-  
-  
-<img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
+ 
+<img src= "images/logo.png"  class = "logo" alt="logo of pet care">
   </body>
 </html>
