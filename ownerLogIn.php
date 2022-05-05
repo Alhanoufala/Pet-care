@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,5 +39,29 @@
  
   <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
   </body>
+
+  <?php 
+     if ($_SERVER["REQUEST_METHOD"] == "POST") {  
+    if (!( $database = mysqli_connect( "localhost", "root", "" )))
+        die( "<p>Could not connect to database</p>" );
+
+    if (!mysqli_select_db( $database, "Pet_care" ))
+        die( "<p>Could not open URL database</p>" );
+  
+        $email=$_POST['email'];  
+        $password=$_POST['pass'];  
+        $query="select * from owner_ WHERE email='$email'AND password='$password'";  
+
+        $result=mysqli_query($database, $query);  
+
+        if($row=mysqli_fetch_row($result)) {  
+            header("location: ownerHomePage.html");
+
+        }
+        
+        else  
+          echo "<script>alert('Email or password is incorrect!')</script>";  
+    }  
+?>
 
 </html>
