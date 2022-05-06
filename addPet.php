@@ -15,7 +15,7 @@
     <div class="navbar">
       <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
       <a href="contactUs.html">Contact Us</a>
-   <a href = "myPets.html">My Pets</a>
+   <a href = "myPets.php">My Pets</a>
    <a href = "AppointmentRequest.php">My Appointments</a>
    <a href="ownerServices.html" class= "active"> Services</a>
    <a href="ownerAboutUs.html">About us</a>
@@ -99,7 +99,7 @@
 
         $result = mysqli_query($database, $query);
         if($result)
-           header("location: myPets.html");
+           header("location: myPets.php");
          
         else  
            echo "<script>alert('an error occurred, could not add pet.')</script>";  
