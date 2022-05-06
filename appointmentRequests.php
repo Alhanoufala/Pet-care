@@ -15,7 +15,7 @@
     <a href="upcomingAppointments.php"> Upcoming</a>
       <a href="appointmentRequests.php"> Requests</a>
     <a href="Services.html">Services</a>
-    <a href="ManagerAboutUs.html">About Us</a>
+    <a href="ManagerAboutUs.php">About Us</a>
  <a href="managerHomePage.html">Home</a> 
 
 </div> 
@@ -33,79 +33,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-  
-       <th scope="row"><p> <a href="managerPetProfile.html">Luna</a> </p>
-            <td>checkup</td>
-            <td>2 Feb 2022</td>
-            <td>03:00 pm</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Luna's Owner  </a> </th> 
-
-        </tr>
-        <tr class="active-row">
-          
-           <th scope="row"><p> <a href="managerPetProfile.html">Leo</a> </p>
-
-            <td>checkup</td>
-            <td>2 Feb 2022</td>
-            <td>04:00 pm</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Leo's Owner  </a> </th> 
-
-          </tr>
-        <tr>
-         
-          <th scope="row"><p> <a href="managerPetProfile.html">Loki</a> </p>
-            <td>checkup</td>
-            <td>2 Feb 2022</td>
-            <td>05:00 pm</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Loki's Owner  </a> </th> 
-
-        </tr>
-        <tr>
-               
-            <th scope="row"><p> <a href="managerPetProfile.html">Bella</a> </p>
-
-            <td>checkup</td>
-            <td>2 Feb 2022</td>
-            <td>06:00 pm</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Bella's Owner  </a> </th> 
-
-          </tr>
-          <tr>
-                  
-            <th scope="row"><p> <a href="managerPetProfile.html">Charlie</a> </p>
-              <td>grooming</td>
-            <td>3 Feb 2022</td>
-            <td>12:00 am</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Charlie's Owner  </a> </th> 
-
-          </tr>
-          <tr>
-            
-            <th scope="row"><p> <a href="managerPetProfile.html">Lucy</a> </p>
-
-            <td>checkup</td>
-            <td>3 Feb 2022</td>
-            <td>01:00 pm</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Lucy's Owner  </a> </th> 
-
-          </tr>
-          <tr>
-            
-            <th scope="row"><p> <a href="managerPetProfile.html">Molly</a> </p>
-            <td>boarding</td>
-            <td>3 Feb 2022</td>
-            <td>02:00 pm</td>
-            <th> <input type="submit" name="accept" value="Accept" style ="background-color:rgb(88, 194, 88);"> <input type="submit" name="decline" value="Decline" style ="background-color:rgb(255, 8, 8);">  </th>
-            <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Molly's Owner  </a> </th> 
-
-          </tr>
+        
           <?php
   
 

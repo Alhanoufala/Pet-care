@@ -19,7 +19,7 @@
     <a href="setAppointment.php">Set a new available Appointments</a>
     <a href="availableAppointments.php">Available appointments</a>
       <a href="Services.html"> Services</a>
-      <a href="ManagerAboutUs.html">About us</a>
+      <a href="ManagerAboutUs.php">About us</a>
   <a href="managerHomePage.html">Home</a>
 
       </div> 

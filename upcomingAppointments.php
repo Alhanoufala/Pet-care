@@ -17,7 +17,7 @@
     <a href="upcomingAppointments.php"> Upcoming</a>
       <a href="appointmentRequests.php"> Requests</a>
     <a href="Services.html">Services</a>
-    <a href="ManagerAboutUs.html">About Us</a>
+    <a href="ManagerAboutUs.php">About Us</a>
  <a href="managerHomePage.html">Home</a> 
 
 </div> 
@@ -38,44 +38,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row"><p> Luna </p>
-        </th>
-        <td>grooming</td>
-        <td>2 Feb 2022</td>
-        <td>01:00 pm</td>
-        <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Luna's Owner  </a> </th> 
-        <th><img src= 'images/check.png' ></a></th>
-         
-      </tr>
-      <tr>
-        
-        <th scope="row"><p> Milo</p>
-        <td>boarding</td>
-        <td>2 Feb 2022</td>
-        <td>02:00 pm</td>
-        <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Milo's Owner  </a> </th> 
-        <th><img src= 'images/check.png' ></a></th>
-         
-      </tr>
-      <tr>
-       
-        <th scope="row"><p> Oliver</p>
-        <td>checkup</td>
-        <td>2 Feb 2022</td>
-        <td>03:00 pm</td>
-        <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Oliver's Owner  </a> </th> 
-        <th><img src= 'images/check.png' ></a></th>
       
-      <tr>
-       
-        <th scope="row"><p> Parrot </p>
-        <td>boarding</td>
-        <td>3 Feb 2022</td>
-        <td>06:00 pm</td>
-        <th>  <a href="mailto:owner.pet@swe381.ksu"> Contact Parrot's Owner  </a> </th> 
-        <th><img src= 'images/check.png' ></a></th>
-      </tr>
       <?php
   
 

@@ -16,7 +16,7 @@
       <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
       <a href="contactUs.html">Contact Us</a>
    <a href = "myPets.html">My Pets</a>
-   <a href = "AppointmentRequest.html">My Appointments</a>
+   <a href = "AppointmentRequest.php">My Appointments</a>
    <a href="ownerServices.html" class= "active"> Services</a>
    <a href="ownerAboutUs.html">About us</a>
    <a href = "ownerHomePage.html">Home</a>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,23 +8,20 @@
     <link rel="stylesheet" href="styles/manageraboutusatyle.css">
     
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   </head>
-  <script>
+  
 
-  document.body.style.backgroundColor = "#f3f3f3";
-  document.body.style.backgroundImage = "url('images/cat-dog.png')";
-
-</script>
-
+  
   <body>
     <div class="navbar">
-      <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
+      <a href="Pet Care.html"><img  src="images/logout-32.png" alt="logou icon"> </a>
       <a href="managerContactUs.html">Contact Us</a>
 
       <a href="availableAppointments.php">Available appointments</a>
         <a href="appointmentRequests.php">Appointments requests</a>
         <a href="Services.html"> Services</a>
-        <a href="ManagerAboutUs.html">About us</a>
+        <a href="ManagerAboutUs.php">About us</a>
        <a href="managerHomePage.html">Home</a>
 
      
@@ -48,7 +46,8 @@ Our location :
 </div>
 -->  
 <?php
-  
+
+
   if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
   die( "<p>Could not connect to database</p>" );
 
@@ -60,6 +59,7 @@ $result=mysqli_query($database, $query);
 
 
 if ($result) {
+  
    while ($data = mysqli_fetch_row($result)) {
     print("<div class= 'about'> <h2> ".$data[0]." </h2> </div> 
     <br>   
@@ -71,6 +71,8 @@ if ($result) {
 
 <div class = 'map'>
 <iframe src='".$data[3]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>");
+
+
    }
 }
 
