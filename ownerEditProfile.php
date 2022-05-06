@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
+  <head>..
     <meta charset = "utf-8">
     <title>Edit Profile</title>
     <link rel="stylesheet" href="styles/ownerHeader.css">
