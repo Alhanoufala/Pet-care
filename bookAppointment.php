@@ -55,7 +55,7 @@ if ($result) {
        print("<tr> <th scope='row'>".$data[0]."</th>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
-       <td> <a href=\"deleteToEdit.php?id=".$data[2]."\"><h3>Book Appointment<h3></a></td>
+       <td> <a href=\"deleteToEdit.php?id=".$data[2]."\"><h3>Book Appointment<h3></a></td>");
    
    }
 }
