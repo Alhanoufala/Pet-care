@@ -45,10 +45,7 @@
   font-size: 20px;
   margin: 20px 0;
 }
-.stars {
-  color: #00556D;
-  margin-bottom: 20px;
-}
+
 @media screen and (max-width: 960px) {
   .col {
     flex: 100%;

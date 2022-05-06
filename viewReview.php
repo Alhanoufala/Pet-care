@@ -18,23 +18,39 @@
         <a href="Services.html"> Services</a>
         <a href="ManagerAboutUs.php">About us</a>
     <a href="managerHomePage.html">Home</a>
-
-     
         </div> 
-       
         </div> 
     <br>
-    
+    // petnam
  <div class = "container" > 
     <img src="images/lulu.png"  class="petPic" alt= "Picture of Luna" >
     <p id ="p">Luna's Owner</p>
     <div class="subcontainer">
+         
+      <?php
+  
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+if ( !mysqli_select_db($database, "Pet_care" ) )
+  die( "<p>Could not open URL database</p>" );
+
+$query="SELECT * FROM Reviews"; // specify by id 
+$result=mysqli_query($database, $query);
+
+
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {
+       print(" <p> ".$data[0]." </p> <p> ".$data[1]."'s Owner </p> <p> <center> ".$data[2]."</center></p>");
+      }
+}
+// <img src="data:image;base64,'.base64_encode($data['image'//]).'>   
+?>
+
      <center>
    Luna had a good time while i was away! she's in good shape, more energetic. 
    would definitely come to you for boarding again. 
    thank you! 
-  
-  
   </center>  
      </div>
      <div class="editbut">
