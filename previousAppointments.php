@@ -16,7 +16,7 @@
     <a href="upcomingAppointments.php"> Upcoming</a>
       <a href="appointmentRequests.php"> Requests</a>
     <a href="Services.html">Services</a>
-    <a href="ManagerAboutUs.html">About Us</a>
+    <a href="ManagerAboutUs.php">About Us</a>
  <a href="managerHomePage.html">Home</a>
 
 </div>
@@ -40,22 +40,6 @@
     </thead>
     <tbody>
 
-      <tr>
-        <th scope="row">Luna</th>
-        <td>boarding</td>
-        <td>3 Feb 2022</td>
-        <td>12:00 am</td>
-        <td> <a href="viewReview.html"> view </a> </td>
-
-      </tr>
-      <tr>
-        <th scope="row">Lucy</th>
-        <td>checkup</td>
-        <td>3 Feb 2022</td>
-        <td>01:00 pm</td>
-        <td> <a href="viewReview.html"> view </a> </td>
-
-      </tr>
       <?php
       if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
   die( "<p>Could not connect to database</p>" );

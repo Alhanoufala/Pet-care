@@ -6,12 +6,7 @@
     <title>Set Appointment</title>
     <link rel="stylesheet" href="styles/editApp.css">
 </head>
-<script>
 
-  document.body.style.backgroundColor = "#f3f3f3";
-  document.body.style.backgroundImage = "url('images/cat-dog.png')";
-
-</script>
 <body>
     
     <div class="navbar">
@@ -19,7 +14,7 @@
         <a href="contactUs.html"> Contact Us </a>
       <a href="appointmentRequests.php">Appointment requests</a>
       <a href="Services.html"> Services</a>
-      <a href="ManagerAboutUs.html">About us</a>
+      <a href="ManagerAboutUs.php">About us</a>
       <a href="managerHomePage.html"> Home</a>
        
           </div> 
