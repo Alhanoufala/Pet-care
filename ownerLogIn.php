@@ -24,7 +24,7 @@
 
          <div class="loginbut">
           
-          <a href="ownerHomePage.html"><button type="button">Login</button></a>
+          <a href="ownerHomePage.html"><button type="submit">Login</button></a>
          </div>
          
           
@@ -50,7 +50,7 @@
   
         $email=$_POST['email'];  
         $password=$_POST['pass'];  
-        $query="select * from owner_ WHERE email='$email'AND password='$password'";  
+        $query="select * from pet_owner WHERE email='$email'AND password='$password'";  
 
         $result=mysqli_query($database, $query);  
 
