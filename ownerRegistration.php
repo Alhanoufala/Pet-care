@@ -64,7 +64,7 @@
          $profilePhotoFile=$_POST['profilePhotoFile']; 
 
 
-         $query = "INSERT INTO owner_ ".
+         $query = "INSERT INTO pet_owner ".
          "(email, password, Fname, Lname, gender, phone#, photo ) "."VALUES ".
          "('$email','$pass','$Fname','$Lname','$gender','$phonenumber','$profilePhotoFile')";
 
