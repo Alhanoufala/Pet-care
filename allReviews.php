@@ -34,13 +34,7 @@
               <div class="testimonial">
                 <img src="images/lulu.png"  class= "lulu" alt= "logo of pet care" >
                 <div class="name">Leo</div>
-                <div class="stars">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
+       
                 <p>Leo is feeling better now, thank you :) </p>
               </div>
             </div>
@@ -89,22 +83,29 @@
                   <p> Very clean, would definitely visit again!  </p>
                 </div>
               </div>
+          
             <div class="col">
               <div class="testimonial">
-                <img src="images/catR.png"  class= "lulu" alt= "logo of pet care" >
 
-                <div class="name">Bella</div>
-                <div class="stars">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <p>Thank you for the great service! </p>
-              </div>
-            </div>
+      <?php
+  
+    if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+      die( "<p>Could not connect to database</p>" );
+    if ( !mysqli_select_db($database, "Pet_care" ) )
+      die( "<p>Could not open URL database</p>" );
+    $query="SELECT * FROM Reviews";
+    $result=mysqli_query($database, $query);
     
+    
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {
+       print(" <p> ".$data[0]." </p> <p> ".$data[1]."'s Owner </p> <p> <center> ".$data[2]."</center></p>");
+      }
+}
+    
+      ?>
+
+      
           </div>
         </div>
       </div>
