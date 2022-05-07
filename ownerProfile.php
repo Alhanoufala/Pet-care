@@ -1,4 +1,6 @@
-
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +12,7 @@
 
   <body>
     <div class="navbar">
-      <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
+      <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
     <a href="ownercontactUs.html">Contact Us</a>
     <a href = "myPets.php">My Pets</a>
     <a href = "AppointmentRequest.php">My Appointments</a>
@@ -30,30 +32,38 @@
             <img src = "images/profileEdit.png"  class= "profile"  alt= "Profile image" height="200" width="200">
             <input type="file" id="profilePhotoFile" name="profilePhotoFile" accept="image/*">
           </div>
-          
-
-          <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            
-            
-            <input type="text"  value="Sarah"> <br>
-            <input type="text"  value="AlShathri"> <br>
-            <input type="text"  value="S.I.AlShathri@gmail.com"> <br>
-            <input type="text"  value="+966 58 265 3424">
+        
   
-          </div>
-          
-          
-          <br>
+  
+
+      
+  <?php
+  
+
+
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+   if ( !mysqli_select_db($database, "Pet_care" ) )
+    die( "<p>Could not open URL database</p>" );
+
+  $query="SELECT * FROM pet_owner WHERE email='s.i.alshathri@gmail.com'";
+  $result=mysqli_query($database, $query);
+  $row = mysqli_fetch_array($result);
+  echo "<p>".$row[2]."</p>";
+  echo "<p>".$row[3]."</p>";
+  echo "<p>".$row[4]."</p>";
+  echo "<p>".$row[0]."</p>";
+  echo "<p>".$row[5]."</p>";
+  
+  ?>
+  <br>
           <br>
          <div class="editbutton">
-          <a href="ownerEditProfile"><button type="button">Edit profile</button></a>
+          <a href="ownerEditProfile.php"><button type="button">Edit profile</button></a>
           <a href = "#"><button type="button">Delete profile</button></a>
           <a href = "Pet Care.html"><button type="button">Log out</button></a>
         </div> 
-
-      </div>
-
-
+</div>
   </body>
 </html>
