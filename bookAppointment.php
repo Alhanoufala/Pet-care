@@ -12,7 +12,7 @@
 <div class="navbar">
         <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
       <a href="ownercontactUs.html">Contact Us</a>
-      <a href = "myPets.html">My Pets</a>
+      <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.html">My Appointments</a>
       <a href = "newAppointment.html">Book Appointment</a>
       <a href="ownerServices.html" class= "active"> Services</a>
@@ -50,14 +50,21 @@ $query="SELECT * FROM available_appointments";
 $result=mysqli_query($database, $query);
 
 
-if ($result) {
+/*if ($result) {
    while ($data = mysqli_fetch_row($result)) {
        print("<tr> <th scope='row'>".$data[0]."</th>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
-       <td> <a href=\"deleteToEdit.php?id=".$data[2]."\"><h3>Book Appointment<h3></a></td>");
-   
-   }
+       <td> <a href=\"deleteToEdit.php?id=".$data[2]."\"><h3>Book Appointment<h3></a></td><tr>);
+*/
+
+if ($result) {
+  while ($data = mysqli_fetch_row($result)) {
+      print("<tr> <th scope='row'>".$data[0]."</th>
+      <td>".$data[1]."</td>
+      <td>".$data[2]."</td>
+      <td> <a href=\"newAppointment.php?id=".$data[2]."\"><h2>Book now </h2></a></td></tr>");
+  }
 }
 
   ?>

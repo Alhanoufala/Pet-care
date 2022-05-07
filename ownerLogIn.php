@@ -31,7 +31,7 @@
       </form>
       
        <p>Forgot password?<a href="Forget Password.html">  Click Here</a></p>
-       <p>New user?<a href="ownerRegistration.html">   SignUp</a></p>
+       <p>New user?<a href="ownerRegistration.php">   SignUp</a></p>
  
 
   </div>
