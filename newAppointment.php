@@ -34,7 +34,7 @@
         <h2>Book appointment</h2>
         <?php      $service= $_GET['service'];
                     $date = $_GET['date'];
-                    $time = $_GET['time']; ?>
+                    $time = $_GET['time'];  ?>
 
         <form method="POST" action=<?php echo "newAppointment.php?service=".$service."&date=".$date."&time=".$time ?>> 
        <br>
