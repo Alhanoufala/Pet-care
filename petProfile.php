@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,19 +26,32 @@
     
     
 <div class="container">
-
-
   
-    <img src="images/Luna.png"  class="petPic" alt= "Picture of Luna" >
- 
-    
-         <h2> Luna </h2>
-         <p> Date of birth :4 Apr 2020 </p>
-         <p> Gender :Famale </p>
-         <p> Breed: Labradoodle</p>
-         <p> Status: Neutered</p> 
+         <?php
+  
 
-    <div class="editbut">
+
+         if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+         die( "<p>Could not connect to database</p>" );
+       
+          if ( !mysqli_select_db($database, "Pet_care" ) )
+           die( "<p>Could not open URL database</p>" );
+       
+         $query="SELECT * FROM pet WHERE owner_email='s.i.alshathri@gmail.com'";
+         $result=mysqli_query($database, $query);
+         $row = mysqli_fetch_array($result);
+         echo "<p> <img src= 'images/" .$row[1]. "' class= 'petPic' alt='Pet Picture'>  </p>";
+         echo "<p> ".$row[0]."</p>";
+         echo "<p> Date of birth : ".$row[2]."</p>";
+         echo "<p> Gender : ".$row[7]."</p>";
+         echo "<p> Breed: ".$row[3]."</p>";
+         echo "<p> Status: ".$row[4]."</p>";
+         
+         ?>
+    
+    
+    
+      <div class="editbut">
       <a href="editPetProfile.html"><button type="button">Edit</button></a>
       
 

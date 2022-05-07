@@ -61,19 +61,17 @@
          $phonenumber=$_POST['phonenumber']; 
          $pass=$_POST['pass']; 
          $gender=$_POST['gender']; 
-         $profilePhotoFile=$_POST['profilePhotoFile']; 
+         $profilePhotoFile=$_POST["images/"'profilePhotoFile']; 
 
-
-         $query = "INSERT INTO pet_owner ".
-         "(email, password, Fname, Lname, gender, phone#, photo ) "."VALUES ".
-         "('$email','$pass','$Fname','$Lname','$gender','$phonenumber','$profilePhotoFile')";
+          $query = "INSERT INTO pet_owner ".
+         "(email, password, Fname, Lname, gender, phone_no , photo ) "."VALUES ".
+         "('".$email."','".$pass."','".$Fname."','".$Lname."','".$gender."','".$phonenumber."','".$profilePhotoFile."');";
 
         $result = mysqli_query($database, $query);
-        if($result)
-           header("location: ownerHomePage.html");
-         
+        if($result )
+         {  header("location: ownerHomePage.html"); }
         else  
-           echo "<script>alert('an error occurred, could not add pet.')</script>";  
+         {  echo "<script>alert('an error occurred, could not add pet.')</script>";  }
      }  
  ?>
   </body>

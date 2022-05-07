@@ -22,10 +22,7 @@
         </div> 
     <br>
     
- <div class = "container" > 
-    <img src="images/lulu.png"  class="petPic" alt= "Picture of Luna" >
-    <p id ="p">Luna's Owner</p>
-    <div class="subcontainer">
+   
          
       <?php
   
@@ -35,31 +32,31 @@
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
 
-$query="SELECT * FROM Reviews"; // specify by id 
+$query="SELECT * FROM review"; // specify by id 
 $result=mysqli_query($database, $query);
 
 
 if ($result) {
    while ($data = mysqli_fetch_row($result)) {
-       print(" <p> ".$data[0]." </p> <p> ".$data[1]."'s Owner </p> <p> <center> ".$data[2]."</center></p>");
+       print(" 
+       <div class = 'container'> 
+       <p> <img class='petPic' src= 'images/".$data[3]."' alt='cheakup pic'>  </p>
+       <div id='p'>".$data[4]."'s Owner </div>
+       <div class='subcontainer'>
+       <p>  ".$data[2]." </p>
+      </div>
+      <p> <a href="."'".$data[1]."'".">  Contact ".$data[4]. "'s Owner  </a> </p>
+      <p class='editbut'>
+      <a href='previousAppointments.php'><button type='Save'>Back</button></a>
+     </p>
+</div>
+      ");
       }
 }
 // <img src="data:image;base64,'.base64_encode($data['image'//]).'>   
 ?>
 
-     <center>
-   Luna had a good time while i was away! she's in good shape, more energetic. 
-   would definitely come to you for boarding again. 
-   thank you! 
-  </center>  
-     </div>
-     <div class="editbut">
-      <a href="previousAppointments.php"><button type="Save">Back</button></a>
-
-     </div>
-</div>
-
-    
+   
     <br>
     <br>
     <br>

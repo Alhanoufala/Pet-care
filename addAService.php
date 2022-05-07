@@ -13,16 +13,16 @@
             <h2>Add a new Service </h2>
             <form method="post" action = "addAService.php">
                 Service name :
-                <input type="text" name="name" >
+                <input type="text" name="name" required >
 
                 Description :
-                <input type="text" name="Description">
+                <input type="text" name="Description" required >
 
                 Price :
-                <input type="text" name="price" >
+                <input type="text" name="price" required >
 
                 photo: 
-                <input type="file" name="profilePhotoFile" name="profilePhotoFile">
+                <input type="file" name="profilePhotoFile" required>
     
 
                <div class="but">
@@ -44,12 +44,13 @@
                     $name =  $_POST["name"];
                     $Description = $_POST["Description"];
                     $price =  $_POST["price"];
+                    $photo =  $_POST["profilePhotoFile"];
 
-                 $query="INSERT INTO services (servicename, description, price) VALUES ('".$name."','".$Description."','".$price."');";
+                 $query="INSERT INTO services (servicename, description, price , photo ) VALUES ('".$name."','".$Description."' ,'".$price."','".$photo."');";
                  $result=mysqli_query($database, $query);
                  if($result)
                  header("location: Services.php");
-            
+
                     else
                         echo "An error occured while completing your request.";
              }
