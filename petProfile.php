@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +38,30 @@
          <p> Breed: Labradoodle</p>
          <p> Status: Neutered</p> 
 
-    <div class="editbut">
+         <?php
+  
+
+
+         if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+         die( "<p>Could not connect to database</p>" );
+       
+          if ( !mysqli_select_db($database, "Pet_care" ) )
+           die( "<p>Could not open URL database</p>" );
+       
+         $query="SELECT * FROM pet WHERE email='s.i.alshathri@gmail.com'";
+         $result=mysqli_query($database, $query);
+         $row = mysqli_fetch_array($result);
+         echo "<p>".$row[2]."</p>";
+         echo "<p>".$row[3]."</p>";
+         echo "<p>".$row[4]."</p>";
+         echo "<p>".$row[0]."</p>";
+         echo "<p>".$row[5]."</p>";
+         
+         ?>
+    
+    
+    
+      <div class="editbut">
       <a href="editPetProfile.html"><button type="button">Edit</button></a>
       
 
