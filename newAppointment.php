@@ -15,38 +15,14 @@
            
 
             <div>
-             <label for="petName">Name</label>
+             <label for="petName">Pet Name</label>
              <input type="text"  id="petName">   
-            </div>
-
-            <div>
-                <label >Service
-                    <select name="services">
-                        <option selected>Choose </option>
-                    <option>Checkup</option>
-                    <option>Grooming</option>
-                    <option>Boarding</option>
-                
-            </select>
-            </label>
             </div>
 
             <div>
                 <label for="note">Note</label>
                 <input type="text"  id="note">   
                </div>
-        
-               <div>
-                <label for="dob">Date</label>
-                <input type="date"  id="dob">   
-               </div>
-
-               <div>
-                <label for="time">Time</label>
-                <input type="time" id="appt" name="appt"
-                 min="09:00" max="18:00" required>
-
-                
        
                
                </div>

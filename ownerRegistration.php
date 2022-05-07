@@ -68,8 +68,8 @@
          "(email, password, Fname, Lname, gender, phone#, photo ) "."VALUES ".
          "('$email','$pass','$Fname','$Lname','$gender','$phonenumber','$profilePhotoFile')";
 
-        
-        if(mysqli_query($database, $query))
+        $result = mysqli_query($database, $query);
+        if($result)
            header("location: ownerHomePage.html");
          
         else  

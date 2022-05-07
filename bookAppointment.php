@@ -50,14 +50,21 @@ $query="SELECT * FROM available_appointments";
 $result=mysqli_query($database, $query);
 
 
-if ($result) {
+/*if ($result) {
    while ($data = mysqli_fetch_row($result)) {
        print("<tr> <th scope='row'>".$data[0]."</th>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
-       <td> <a href=\"deleteToEdit.php?id=".$data[2]."\"><h3>Book Appointment<h3></a></td>
-   
-   }
+       <td> <a href=\"deleteToEdit.php?id=".$data[2]."\"><h3>Book Appointment<h3></a></td><tr>);
+*/
+
+if ($result) {
+  while ($data = mysqli_fetch_row($result)) {
+      print("<tr> <th scope='row'>".$data[0]."</th>
+      <td>".$data[1]."</td>
+      <td>".$data[2]."</td>
+      <td> <a href=\"newAppointment.php?id=".$data[2]."\"><h4>Book now </h4></a></td></tr>");
+  }
 }
 
   ?>
