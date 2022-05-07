@@ -19,7 +19,6 @@
  <a href="ownerServices.html">Services</a> 
  <a href="ownerAboutUs.html">About Us</a> 
  <a href="ownerHomePage.html">Home</a> 
- 
  <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
  
      </div> 
