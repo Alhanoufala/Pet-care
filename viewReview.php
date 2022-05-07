@@ -31,8 +31,8 @@
 
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
-
-$query="SELECT * FROM review"; // specify by id 
+   $id =$_GET['id'];
+$query="SELECT * FROM review WHERE review_id=$id"; // specify by id 
 $result=mysqli_query($database, $query);
 
 

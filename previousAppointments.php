@@ -58,7 +58,7 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-       <td> <a href='viewReview.html'> view </a> </td>");
+       <td> <a href='viewReview.php?id=".$data[7]."'> view </a> </td>");
    }
 }
 
