@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 07, 2022 at 01:34 AM
+-- Generation Time: May 07, 2022 at 08:34 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -54,19 +54,17 @@ CREATE TABLE `appointments_requests` (
   `date` date NOT NULL,
   `time` time NOT NULL,
   `owner_email` varchar(25) NOT NULL,
-  `status` varchar(30) DEFAULT NULL ,
-  `note` varchar(50) DEFAULT NULL
+  `status` varchar(30) DEFAULT NULL,
+  `note` varchar(150) DEFAULT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `appointments_requests`
 --
 
-INSERT INTO `appointments_requests` (`pet_name`, `service`, `date`, `time`, `owner_email`, `status`) VALUES
-('Lulu', 'grooming', '2022-05-11', '32:52:53', 'alhanouf@gmail.com', 'completed'),
-('sam', 'grooming', '2022-05-04', '28:52:53', 'nada@gmail.com', 'completed'),
-('Lucy', 'grooming', '2022-05-10', '29:54:17', 'raseel@gmail.com', 'declined'),
-('juju', 'Grooming ', '2022-05-10', '32:54:17', 'sara@gmail.com', 'completed');
+INSERT INTO `appointments_requests` (`pet_name`, `service`, `date`, `time`, `owner_email`, `status`, `note`, `id`) VALUES
+('lala', 'Checkup', '2022-05-24', '00:59:00', '666', NULL, NULL, 18);
 
 -- --------------------------------------------------------
 
@@ -77,17 +75,17 @@ INSERT INTO `appointments_requests` (`pet_name`, `service`, `date`, `time`, `own
 CREATE TABLE `available_appointments` (
   `service` varchar(15) NOT NULL,
   `date` varchar(15) NOT NULL,
-  `time` varchar(8) NOT NULL
+  `time` varchar(8) NOT NULL,
+  `appointment_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `available_appointments`
 --
 
-INSERT INTO `available_appointments` (`service`, `date`, `time`) VALUES
-('Checkup', '2022-04-11', '07:05'),
-('Boarding', '2022-04-05', '00:40'),
-('Grooming', '2022-04-19', '04:10');
+INSERT INTO `available_appointments` (`service`, `date`, `time`, `appointment_id`) VALUES
+('Grooming', '2022-04-19', '04:10', 2),
+('Grooming', '2022-05-17', '01:07', 3);
 
 -- --------------------------------------------------------
 
@@ -158,13 +156,14 @@ INSERT INTO `pet_owner` (`email`, `password`, `Fname`, `Lname`, `gender`, `phone
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Reviews`
+-- Table structure for table `review`
 --
 
-CREATE TABLE `Reviews` (
-  `Petimage` blob DEFAULT NULL,
-  `Petname` varchar(25) DEFAULT NULL,
-  `review` varchar(350) DEFAULT NULL
+CREATE TABLE `review` (
+  `review_id` int(11) NOT NULL,
+  `owner_email` varchar(45) NOT NULL,
+  `review` varchar(100) NOT NULL,
+  `photo` longblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -181,7 +180,13 @@ ALTER TABLE `aboutus`
 -- Indexes for table `appointments_requests`
 --
 ALTER TABLE `appointments_requests`
-  ADD PRIMARY KEY (`owner_email`);
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `available_appointments`
+--
+ALTER TABLE `available_appointments`
+  ADD PRIMARY KEY (`appointment_id`);
 
 --
 -- Indexes for table `manager`
@@ -201,6 +206,22 @@ ALTER TABLE `pet`
 --
 ALTER TABLE `pet_owner`
   ADD PRIMARY KEY (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `appointments_requests`
+--
+ALTER TABLE `appointments_requests`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `available_appointments`
+--
+ALTER TABLE `available_appointments`
+  MODIFY `appointment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
