@@ -8,7 +8,7 @@
                  die( "<p>Could not open URL database</p>" );
                  $id= $_GET['id'];
                 
-                 mysqli_query($database ,"UPDATE appointments_requests SET status = 'accepted' WHERE owner_email='".$id."'");
+                 mysqli_query($database ,"UPDATE appointments_requests SET status = 'accepted' WHERE id='".$id."'");
                 
                      header("location: upcomingAppointments.php");
          

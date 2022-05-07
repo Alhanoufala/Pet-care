@@ -60,7 +60,7 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-       <td> <a href='writeReview.php?id=".$data[4]."'> write review </a> </td>");
+       <td> <a href='writeReview.php?id=".$data[7]."'> write review </a> </td>");
    }
 }
 

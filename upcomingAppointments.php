@@ -61,7 +61,7 @@ if ($result) {
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
        <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>
-       <th><a href=\"addToPreviousAppointments.php?id=".$data[4]."\"><img src= 'images/check.png'></a></th></tr>");
+       <th><a href=\"addToPreviousAppointments.php?id=".$data[7]."\"><img src= 'images/check.png'></a></th></tr>");
    }
 }
 else

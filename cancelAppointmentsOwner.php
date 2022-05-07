@@ -6,7 +6,7 @@ if ( !mysqli_select_db($database, "Pet_care" ) )
 die( "<p>Could not open URL database");
 $id = $_GET['id']; 
 
-mysqli_query($database ,"DELETE FROM appointments_requests WHERE owner_email='".$id."'");
+mysqli_query($database ,"DELETE FROM appointments_requests WHERE id='".$id."'");
 mysqli_close($database);
 header("Location: AppointmentRequest.php");
 ?>

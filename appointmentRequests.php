@@ -56,8 +56,8 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-       <th><a href=\"addToUpcomingAppointments.php?id=".$data[4]."\"><input type='button' name='accept' value='Accept' style ='background-color:rgb(88, 194, 88);'></a>
-       <a href=\"declineAppointments.php?id=".$data[4]."\"> <input type='button' name='decline' value='Decline' style ='background-color:rgb(255, 8, 8);'></a> </th>
+       <th><a href=\"addToUpcomingAppointments.php?id=".$data[7]."\"><input type='button' name='accept' value='Accept' style ='background-color:rgb(88, 194, 88);'></a>
+       <a href=\"declineAppointments.php?id=".$data[7]."\"> <input type='button' name='decline' value='Decline' style ='background-color:rgb(255, 8, 8);'></a> </th>
        <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>  </tr>");
    }
 }

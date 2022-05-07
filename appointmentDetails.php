@@ -1,4 +1,4 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,25 +35,23 @@
     
     </form>
     </div>
-         
-
-                  <?php 
+    <?php 
           
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
-                   die( "<p>Could not connect to database</p>" );
+          if ($_SERVER["REQUEST_METHOD"] == "POST") {
+              if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+                 die( "<p>Could not connect to database</p>" );
 
-                if ( !mysqli_select_db( $database, "Pet_care") )
-                   die( "<p>Could not open URL database</p>" );
-                  $pet_name = $_POST["pet_name"];
-                   $service =  $_POST["services"];
-                   $date =   $_POST["date"];
-                   $time =  $_POST["time"];
-                   $email =  $_POST["email"];
-                   $note =  $_POST["note"];// To DO : insert the note
+              if ( !mysqli_select_db( $database, "Pet_care") )
+                 die( "<p>Could not open URL database</p>" );
+                $pet_name = $_POST["pet_name"];
+                 $service =  $_POST["services"];
+                 $date =   $_POST["date"];
+                 $time =  $_POST["time"];
+                 $email =  $_POST["email"];
+                 $note =  $_POST["note"];// To DO : insert the note
 
-                $query="INSERT INTO appointments_requests (pet_name,service, date, time,owner_email) VALUES ('".$pet_name."',"."'".$service."',"."'".$date."','".$time."','".$email."');";
-                $result=mysqli_query($database, $query);
+              $query="INSERT INTO appointments_requests (pet_name,service, date, time,owner_email) VALUES ('".$pet_name."',"."'".$service."',"."'".$date."','".$time."','".$email."');";
+              $result=mysqli_query($database, $query);
                 if($result)
                        header("location: AppointmentRequest.php");
            
