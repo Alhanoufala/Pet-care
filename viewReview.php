@@ -21,7 +21,7 @@
         </div> 
         </div> 
     <br>
-    // petnam
+    
  <div class = "container" > 
     <img src="images/lulu.png"  class="petPic" alt= "Picture of Luna" >
     <p id ="p">Luna's Owner</p>

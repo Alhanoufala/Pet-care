@@ -32,12 +32,18 @@
                  
     <div class = "container">
         <h2>Book appointment</h2>
-        <form method="POST" action="newAppointment.php">
+        <?php      $service= $_GET['service'];
+                    $date = $_GET['date'];
+                    $time = $_GET['time']; ?>
+
+        <form method="POST" action=<?php echo "newAppointment.php?service=".$service."&date=".$date."&time=".$time ?>> 
        <br>
-       <p><label>Pet Name: <input name = "PetName" type="text" required></label></p>
+       <p><label>Pet Name:<input name = "PetName" type="text" required></label></p>
        <br>
-       <p><label>Note: <input name= "note" type ="text" required></label>
-       <p><a href="bookAppointment.php"><button type="submit">Add</button></a>
+       <p><label>Note:  <input name= "note" type ="text" required></label>
+       <br>
+       <p><label>owner email : <input name= "owner_email" type ="text" required></label>
+       <p><a href="bookAppointment.php"><button type="submit">Book</button></a>
     
     </form>
     <?php
@@ -50,11 +56,16 @@
 
                     $name =  $_POST["PetName"];
                     $note =   $_POST["note"];
-                    $id= $_GET['id'];
-                  
-
-                 $query="INSERT INTO appointments_requests (pet_name, service, date , time ,owner_email , status , note ) VALUES ('".$name."','".$service."','".$date."','".$time."','".$owner_email."','".$status."','".$note."');";
+                    $owner_email = $_POST['owner_email'];
+                    $service= $_GET['service'];
+                    $date = $_GET['date'];
+                    $time = $_GET['time'];
+                 $query="INSERT INTO appointments_requests (pet_name, service, date , time ,owner_email , note ) VALUES ('".$name."','".$service."','".$date."','".$time."','".$owner_email."','".$note."');";
                  $result=mysqli_query($database, $query);
+                 if($result)
+                 header("location:AppointmentRequest.php");
+                
+
                
              }
         ?>
