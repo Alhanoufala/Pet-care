@@ -9,26 +9,6 @@
 </head>
 <body>
   <!--<h1 id="Book">Book Now</h1>-->
-    <div class = "container">
-            
-                <h1 id="n">New Appointment</h1>
-           
-
-            <div>
-             <label for="petName">Pet Name</label>
-             <input type="text"  id="petName">   
-            </div>
-
-            <div>
-                <label for="note">Note</label>
-                <input type="text"  id="note">   
-               </div>
-       
-               
-               </div>
-               
-               <p><a href="ownerHomePage.html"><button class="butt" type="button">Cancel</button></a><a href="#"><button class="butt" type="button">Add</button></a>
-            </div>
            
             <!--<img  src= "images/dog-layan (1).png"  class = "dog" alt="dog"> -->
          
@@ -45,6 +25,41 @@
          </div> 
         
                  <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
+
+
+
+
+                 
+    <div class = "container">
+        <h2>Book appointment</h2>
+        <form method="POST" action="newAppointment.php">
+       <br>
+       <p><label>Pet Name: <input name = "PetName" type="text" required></label></p>
+       <br>
+       <p><label>Note: <input name= "note" type ="text" required></label>
+       <p><a href="bookAppointment.php"><button type="submit">Add</button></a>
+    
+    </form>
+    <?php
+             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+                    die( "<p>Could not connect to database</p>" );
+
+                 if ( !mysqli_select_db( $database, "Pet_care") )
+                    die( "<p>Could not open URL database</p>" );
+
+                    $name =  $_POST["PetName"];
+                    $note =   $_POST["note"];
+                    $id= $_GET['id'];
+                  
+
+                 $query="INSERT INTO appointments_requests (pet_name, service, date , time ,owner_email , status , note ) VALUES ('".$name."','".$service."','".$date."','".$time."','".$owner_email."','".$status."','".$note."');";
+                 $result=mysqli_query($database, $query);
+               
+             }
+        ?>
+    </div>
+              
 
     
 </body>

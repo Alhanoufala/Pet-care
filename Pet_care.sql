@@ -54,7 +54,8 @@ CREATE TABLE `appointments_requests` (
   `date` date NOT NULL,
   `time` time NOT NULL,
   `owner_email` varchar(25) NOT NULL,
-  `status` varchar(30) DEFAULT NULL
+  `status` varchar(30) DEFAULT NULL ,
+  `note` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
