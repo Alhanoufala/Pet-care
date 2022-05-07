@@ -30,13 +30,7 @@
 
   
     <img src="images/Luna.png"  class="petPic" alt= "Picture of Luna" >
- 
-    
-         <h2> Luna </h2>
-         <p> Date of birth :4 Apr 2020 </p>
-         <p> Gender :Famale </p>
-         <p> Breed: Labradoodle</p>
-         <p> Status: Neutered</p> 
+
 
          <?php
   
@@ -48,12 +42,12 @@
           if ( !mysqli_select_db($database, "Pet_care" ) )
            die( "<p>Could not open URL database</p>" );
        
-         $query="SELECT * FROM pet WHERE email='s.i.alshathri@gmail.com'";
+         $query="SELECT * FROM pet WHERE owner_email='s.i.alshathri@gmail.com' AND name = 'Luna' ";
          $result=mysqli_query($database, $query);
          $row = mysqli_fetch_array($result);
+         echo "<p>".$row[0]."</p>";
          echo "<p>".$row[2]."</p>";
-         echo "<p>".$row[3]."</p>";
-         echo "<p>".$row[4]."</p>";
+         echo "<p>".$row[1]."</p>";
          echo "<p>".$row[0]."</p>";
          echo "<p>".$row[5]."</p>";
          
