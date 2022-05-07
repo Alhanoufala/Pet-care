@@ -14,11 +14,11 @@
 
     <div class="navbar">
       <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
-      <a href="contactUs.html">Contact Us</a>
+      <a href="contactUs.php">Contact Us</a>
    <a href = "myPets.php">My Pets</a>
    <a href = "AppointmentRequest.php">My Appointments</a>
-   <a href="ownerServices.html" class= "active"> Services</a>
-   <a href="ownerAboutUs.html">About us</a>
+   <a href="ownerServices.php" class= "active"> Services</a>
+   <a href="ownerAboutUs.php">About us</a>
    <a href = "ownerHomePage.html">Home</a>
    
        </div> 

@@ -9,12 +9,12 @@
     
   <div class="navbar">
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
-    <a href="managerContactUs.html">Contact us</a>
-    <a href="allReviews.html"> Reviews</a>
+    <a href="managerContactUs.php">Contact us</a>
+    <a href="allReviews.php"> Reviews</a>
     <a href="previousAppointments.php"> Previous</a>
     <a href="upcomingAppointments.php"> Upcoming</a>
       <a href="appointmentRequests.php"> Requests</a>
-    <a href="Services.html">Services</a>
+    <a href="Services.php">Services</a>
     <a href="ManagerAboutUs.php">About Us</a>
  <a href="managerHomePage.html">Home</a> 
 
@@ -52,7 +52,7 @@ if ($result) {
    while ($data = mysqli_fetch_row($result)) {
   
        print("<tr>      
-       <th scope='row'><p> <a href='managerPetProfile.html'>".$data[0]."</a></p>
+       <th scope='row'><p> <a href='managerPetProfile.php'>".$data[0]."</a></p>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>

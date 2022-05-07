@@ -9,11 +9,11 @@
     
     <div class="navbar">
         <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-        <a href="managerContactUs.html">Contact Us</a>
+        <a href="managerContactUs.php">Contact Us</a>
   
         <a href="availableAppointments.php">Available appointments</a>
           <a href="appointmentRequests.php">Appointments requests</a>
-          <a href="Services.html"> Services</a>
+          <a href="Services.php"> Services</a>
           <a href="ManagerAboutUs.php">About us</a>
       <a href="managerHomePage.html">Home</a>
   

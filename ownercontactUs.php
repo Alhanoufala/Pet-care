@@ -6,8 +6,7 @@
    <!-- <title> Responsive Contact Us Form  | CodingLab </title>
     <link rel="stylesheet" href="style.css">
     <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="styles/contactUs.css">
     
@@ -16,20 +15,19 @@
    </head>
 <body>
 
-    <div class="navbar">
-        <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-        <a href="managerContactUs.html">Contact Us</a>
-    
-      <a href="availableAppointments.php">Available appointments</a>
-        <a href="appointmentRequests.php">Appointments requests</a>
-        <a href="Services.html"> Services</a>
-        <a href="ManagerAboutUs.php">About us</a>
-        <a href="managerHomePage.html">Home</a>
-    
-        
-        
-      </div> 
-         
+  <div class="navbar">
+    <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
+    <a href="ownercontactUs.php">Contact Us</a>
+    <a href = "myPets.php">My Pets</a>
+    <a href = "AppointmentRequest.php">My Appointments</a>
+    <a href = "bookAppointment.php">Book Appointment</a>
+    <a href="ownerServices.php" class= "active"> Services</a>
+    <a href="OwnerAboutUs.php">About us</a>
+    <a href="ownerHomePage.html">Home</a>
+
+
+     </div> 
+     
   <div class="container">
     <div class="content">
       <div class="left-side">
@@ -76,8 +74,6 @@
     </div>
   </div>
   <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
-  <div class = "edit"> <br>
-    <button type="button" class="edit"><a href = "editContactUs.html">
-    <span class="glyphicon glyphicon-edit"></span></div>
+
 </body>
 </html>

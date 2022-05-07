@@ -65,8 +65,8 @@
             <input type="text" placeholder="Enter your message">
         </div>
         <div class="editbut">
-            <a href="managerContactUs.html"><button type="button">Cancel</button></a>
-            <a href="managerContactUs.html"><button type="button">Update</button></a>
+            <a href="managerContactUs.php"><button type="button">Cancel</button></a>
+            <a href="managerContactUs.php"><button type="button">Update</button></a>
 
            </div>
             

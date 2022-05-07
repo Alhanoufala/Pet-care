@@ -10,11 +10,11 @@
 <body>
     <div class="navbar">
       <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
-      <a href="managerContactUs.html">Contact us</a>
+      <a href="managerContactUs.php">Contact us</a>
       <a href="previousAppointments.php"> Previous</a>
       <a href="upcomingAppointments.php"> Upcoming</a>
         <a href="appointmentRequests.php"> Requests</a>
-      <a href="Services.html">Services</a>
+      <a href="Services.php">Services</a>
       <a href="ManagerAboutUs.php">About Us</a>
    <a href="managerHomePage.html">Home</a> 
 
