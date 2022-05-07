@@ -30,7 +30,7 @@ body{
 .container{
     
     width: 380px;
-    height: 380px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     margin-left: 172px;
