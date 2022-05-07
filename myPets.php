@@ -62,9 +62,9 @@
       while ($data = mysqli_fetch_row($result)) {
         ?>
         <tr>
-          <td> <?php echo '<img src="data:image;base64,'.base64_decode($row['photo']).'"alt="pet photo" class="petPic" >'; ?> </td>
-          <td> <?php echo $row['name']; ?> </td>
-          <td> <?php echo $row['gender']; ?> </td>
+          <td> <?php echo '<img src="data:image;base64,'.base64_decode($data[2]).'"alt="pet photo" class="petPic" >'; ?> </td>
+          <td> <?php echo $data[0]; ?> </td>
+          <td> <?php echo $data[7]; ?> </td>
       </tr>
       <?php
       }
