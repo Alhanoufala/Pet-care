@@ -11,7 +11,7 @@
 <body>
  
   <div class="navbar">
-    <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a> 
+    <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a> 
     <a href="ownercontactUs.html">Contact us</a>
     <a href="ownerPreviousAppointment.php"> Previous </a>
     <a href="ownerupcoming.php"> Upcoming </a>

@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 <html>
-  <head>..
+  <head>
     <meta charset = "utf-8">
     <title>Edit Profile</title>
     <link rel="stylesheet" href="styles/ownerHeader.css">
@@ -13,7 +13,7 @@
 
   <body>
     <div class="navbar">
-      <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
+      <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
     <a href="ownercontactUs.html">Contact Us</a>
     <a href = "myPets.php">My Pets</a>
     <a href = "AppointmentRequest.php">My Appointments</a>
@@ -37,11 +37,15 @@
 
           <div class="phone details">
             <i class="fas fa-phone-alt"></i>
-            
+            <p>First name:</p>
             <input type="text" id="Fname" value="Sarah"> <br>
+            <p>Last name:</p>
             <input type="text"  id="Lname" value="AlShathri"> <br>
+            <p>Email:</p>
             <input type="text"  id="email" value="S.I.AlShathri@gmail.com"> <br>
+            <p>Phone number:</p>
             <input type="text"  id="phone#" value="+966 58 265 3424">
+            <p>Phone number:</p>
             <input type="text"  id="pass" value="*****">
   
           </div>
@@ -71,7 +75,7 @@
          $profilePhotoFile=$_POST['profilePhotoFile']; 
 
 
-         $query = "UPDATE owner_ SET ".
+         $query = "UPDATE pet_owner SET ".
          "(email, password, Fname, Lname, phone#, photo ) "."VALUES ".
          "('$email','$pass','$Fname','$Lname','$phonenumber','$profilePhotoFile')";
 

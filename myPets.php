@@ -18,7 +18,7 @@
 
 
     <div class="navbar">
-      <a href = "ownerProfile.html"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>     
+      <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>     
       <a href="ownercontactUs.html">Contact Us</a>
 
       <a href = "myPets.php">My Pets</a>
@@ -31,7 +31,7 @@
        </div> 
        <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
 
-       <form action="myPets.php" method="POST" enctype="multipart/from-data" >
+       <form action="myPets.php" method="POST" enctype="multipart/form-data" >
       <table class="content-table" id= "center">
         <br>
         <h2>My Pets:</h2>
@@ -59,12 +59,12 @@
    
   
    if ($result) {
-      while ($data = mysqli_fetch_row($result)) {
+      while ($row = mysqli_fetch_row($result)) {
         ?>
         <tr>
-          <td> <?php echo '<img src="data:image;base64,'.base64_decode($data[2]).'"alt="pet photo" class="petPic" >'; ?> </td>
-          <td> <?php echo $data[0]; ?> </td>
-          <td> <?php echo $data[7]; ?> </td>
+          <td> <?php echo '<img src="data:image;base64,'.base64_decode($row[1]).'"alt="pet photo" class="petPic" >'; ?> </td>
+          <td> <?php echo $row[0]; ?> </td>
+          <td> <?php echo $row[4]; ?> </td>
       </tr>
       <?php
       }
