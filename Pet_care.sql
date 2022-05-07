@@ -1,18 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.3.0-dev+20220506.44a5cb2d56
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
-<<<<<<< Updated upstream
 -- Host: localhost
--- Generation Time: May 07, 2022 at 08:34 PM
+-- Generation Time: May 07, 2022 at 11:23 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
-=======
--- Host: 127.0.0.1
--- Generation Time: May 07, 2022 at 09:46 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.5
->>>>>>> Stashed changes
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -25,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pet_care`
+-- Database: `Pet_care`
 --
 
 -- --------------------------------------------------------
@@ -62,28 +55,17 @@ CREATE TABLE `appointments_requests` (
   `time` time NOT NULL,
   `owner_email` varchar(25) NOT NULL,
   `status` varchar(30) DEFAULT NULL,
-<<<<<<< Updated upstream
   `note` varchar(150) DEFAULT NULL,
   `id` int(11) NOT NULL
-=======
-  `note` varchar(50) DEFAULT NULL
->>>>>>> Stashed changes
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `appointments_requests`
 --
 
-<<<<<<< Updated upstream
 INSERT INTO `appointments_requests` (`pet_name`, `service`, `date`, `time`, `owner_email`, `status`, `note`, `id`) VALUES
-('lala', 'Checkup', '2022-05-24', '00:59:00', '666', NULL, NULL, 18);
-=======
-INSERT INTO `appointments_requests` (`pet_name`, `service`, `date`, `time`, `owner_email`, `status`, `note`) VALUES
-('Lulu', 'grooming', '2022-05-11', '32:52:53', 'alhanouf@gmail.com', 'completed', NULL),
-('sam', 'grooming', '2022-05-04', '28:52:53', 'nada@gmail.com', 'completed', NULL),
-('Lucy', 'grooming', '2022-05-10', '29:54:17', 'raseel@gmail.com', 'declined', NULL),
-('juju', 'Grooming ', '2022-05-10', '32:54:17', 'sara@gmail.com', 'completed', NULL);
->>>>>>> Stashed changes
+('lala', 'Checkup', '2022-05-24', '00:59:00', '666', 'accepted', NULL, 18),
+('lulu', 'Grooming', '2022-05-17', '01:07:00', 'h@gmail.com', 'completed', '---', 19);
 
 -- --------------------------------------------------------
 
@@ -97,14 +79,6 @@ CREATE TABLE `available_appointments` (
   `time` varchar(8) NOT NULL,
   `appointment_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `available_appointments`
---
-
-INSERT INTO `available_appointments` (`service`, `date`, `time`, `appointment_id`) VALUES
-('Grooming', '2022-04-19', '04:10', 2),
-('Grooming', '2022-05-17', '01:07', 3);
 
 -- --------------------------------------------------------
 
@@ -175,25 +149,23 @@ INSERT INTO `pet_owner` (`email`, `password`, `Fname`, `Lname`, `gender`, `phone
 -- --------------------------------------------------------
 
 --
-<<<<<<< Updated upstream
 -- Table structure for table `review`
 --
 
 CREATE TABLE `review` (
   `review_id` int(11) NOT NULL,
+  `pet_name` varchar(25) NOT NULL,
   `owner_email` varchar(45) NOT NULL,
   `review` varchar(100) NOT NULL,
   `photo` longblob NOT NULL
-=======
--- Table structure for table `reviews`
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `review`
 --
 
-CREATE TABLE `reviews` (
-  `Petimage` blob DEFAULT NULL,
-  `Petname` varchar(25) DEFAULT NULL,
-  `review` varchar(350) DEFAULT NULL
->>>>>>> Stashed changes
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO `review` (`review_id`, `pet_name`, `owner_email`, `review`, `photo`) VALUES
+(19, 'lulu', 'h@gmail.com', 'Testing ', '');
 
 --
 -- Indexes for dumped tables
@@ -244,7 +216,7 @@ ALTER TABLE `pet_owner`
 -- AUTO_INCREMENT for table `appointments_requests`
 --
 ALTER TABLE `appointments_requests`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `available_appointments`
@@ -266,6 +238,3 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-
