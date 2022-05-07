@@ -25,15 +25,15 @@ body{
 
 .container{
     
-    width: 400px;
-    height: 700px;
+    width: 380px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center ;
     background-image: linear-gradient(rgb(255, 255, 255), #B3E7E6);
     border-radius: 15px;
-    padding: 5px 5px;
+    padding: 25px 10px;
     font-family:Cursive;     
       line-height: 330%;
       color: #00556D;
