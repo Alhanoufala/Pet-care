@@ -22,19 +22,42 @@
     <br>
     
  <div class = "container" > 
+
     <img src="images/lulu.png"  class="petPic" alt= "Picture of Luna" >
     <p id ="p">Thank you for visiting <br> please leave under your review on luna's care!</p>
-    <div>
+      <?php
+      $id = $_GET['id'];
+      $pet_name = $_GET['pet_name'];
+      $owner_email = $_GET['owner_email'];?>
+      <form method = "POST" action = <?php echo "\"writeReview.php?id=".$id."&pet_name=".$pet_name."&owner_email=".$owner_email."\"" ?>>
       <label id= "label"> Review: </label>
-      <textarea name = "Review:" class=area rows="4" cols="38"> 
-   </textarea>   
+      <input name = "review" type = "text"> 
+        <div class="loginbut">    
+      <a href="ownerPreviousAppointment.php"><Button type="submit">submit</Button></a>
      </div>
-     <div class="loginbut">
-          
-      <a href="ownerPreviousAppointment.php"><button type="button">submit</button></a>
-     </div>
-     
+</form>
 </div>
+<?php
+             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+                    die( "<p>Could not connect to database</p>" );
+
+                 if ( !mysqli_select_db( $database, "Pet_care") )
+                    die( "<p>Could not open URL database</p>" );
+                    $id = $_GET['id'];
+                    $pet_name = $_GET['pet_name'];
+                    $owner_email = $_GET['owner_email'];
+                    $photo  =NULL;
+                    $review = $_POST['review'];   
+                 $query="INSERT INTO review (review_id,pet_name, owner_email, review , photo ) VALUES ('".$id."','".$pet_name."','".$owner_email."','".$review."','".$photo."');";
+                 $result=mysqli_query($database, $query);
+                 if($result)
+                 header("location:ownerPreviousAppointment.php");
+                
+
+               
+             }
+        ?>
     
     <br>
     <br>
