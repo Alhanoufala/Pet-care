@@ -57,7 +57,7 @@
   echo "<p>".$row[5]."</p>";
   
   ?>
-  <br>
+          <br>
           <br>
          <div class="editbutton">
           <a href="ownerEditProfile.php"><button type="button">Edit profile</button></a>
