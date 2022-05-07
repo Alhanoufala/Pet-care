@@ -31,7 +31,7 @@ display: inline-block;
     background: #f1f1f1; 
     width: 360px;
     height: 345px;
-    
+    transform: translate(0, -50%);
     margin-left: 333px;
     text-align:center ;
     border-image-width: 60;
