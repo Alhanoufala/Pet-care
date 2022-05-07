@@ -29,13 +29,13 @@
   
     <img src="images/Luna.png"  class="petPic" alt= "Picture of Luna" >
  
-    
+<!--     
          <h2> Luna </h2>
          <p> Date of birth :4 Apr 2020 </p>
          <p> Gender :Famale </p>
          <p> Breed: Labradoodle</p>
          <p> Status: Neutered</p> 
-
+ -->
 
       <?php
   
@@ -49,7 +49,13 @@
       
   if ($result) {
      while ($data = mysqli_fetch_row($result)) {
-         print(" <p> ".$data[1]." </p> <p> ".$data[0]."'s Owner </p> <p> Date of birth :".$data[2]."</p>  <p> Breed:".$data[3]." </p>  <p>Status: ".$data[4]." </p>  <p>Medical History: ".$data[5]." </p>  <p>Vaccinations ".$data[6]." </p>) <p>Gender: ".$data[7]." </p> <p> <a href="."'".$data[8]."'"."> Contact ".$data[0]. "'s Owner  </a> </p>");
+         print("
+         <h2>  ".$data[0]."'s Owner  </h2>
+         <p> Date of birth :".$data[2]." </p>
+         <p> Gender :".$data[7]." </p>
+         <p> Breed: ".$data[3]."</p>
+         <p> Status: ".$data[4]." </p> "
+        );
         }
   }
       
