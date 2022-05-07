@@ -37,7 +37,7 @@
       die( "<p>Could not connect to database</p>" );
     if ( !mysqli_select_db($database, "Pet_care" ) )
       die( "<p>Could not open URL database</p>" );
-    $query="SELECT * FROM Reviews";
+    $query="SELECT * FROM review";
 
     $result=mysqli_query($database, $query);
     if ($result) {
@@ -45,9 +45,10 @@
        print("
                <div class='col'>
                    <div class='testimonial'>
-                     <div class='name'>".$data[0]."'s Owner </div>
+                   <p> <img class= 'lulu' src= 'images/".$data[3]."' alt='cheakup pic'>  </p>
+                     <div class='name'>".$data[4]."'s Owner </div>
                      <p>  ".$data[2]." </p>
-                    <p> <a href="."'".$data[3]."'".">  Contact ".$data[0]. "'s Owner  </a> </p>
+                    <p> <a href="."'".$data[1]."'".">  Contact ".$data[4]. "'s Owner  </a> </p>
                    </div>
                  </div>
                  ");
