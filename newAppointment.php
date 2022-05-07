@@ -34,9 +34,10 @@
         <h2>Book appointment</h2>
         <?php      $service= $_GET['service'];
                     $date = $_GET['date'];
-                    $time = $_GET['time'];  ?>
+                    $time = $_GET['time']; 
+                    $id =  $_GET['id']; ?>
 
-        <form method="POST" action=<?php echo "newAppointment.php?service=".$service."&date=".$date."&time=".$time ?>> 
+        <form method="POST" action=<?php echo "newAppointment.php?service=".$service."&date=".$date."&time=".$time."&id=".$id ?>> 
        <br>
        <p><label>Pet Name:<input name = "PetName" type="text" required></label></p>
        <br>
@@ -60,6 +61,8 @@
                     $service= $_GET['service'];
                     $date = $_GET['date'];
                     $time = $_GET['time'];
+                    $id =  $_GET['id'];
+                    mysqli_query($database ,"DELETE FROM available_appointments WHERE appointment_id='".$id."'");
                  $query="INSERT INTO appointments_requests (pet_name, service, date , time ,owner_email , note ) VALUES ('".$name."','".$service."','".$date."','".$time."','".$owner_email."','".$note."');";
                  $result=mysqli_query($database, $query);
                  if($result)

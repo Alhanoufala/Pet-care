@@ -62,7 +62,7 @@ if ($result) {
       print("<tr> <th scope='row'>".$data[0]."</th>
       <td>".$data[1]."</td>
       <td>".$data[2]."</td>
-      <td> <a href=\"newAppointment.php?service=".$data[0]."&date=".$data[1]."&time=".$data[2]."\"><h4>Book now </h4></a></td></tr>");
+      <td> <a href=\"newAppointment.php?service=".$data[0]."&date=".$data[1]."&time=".$data[2]."&id=".$data[3]."\"><h4>Book now </h4></a></td></tr>");
   }
 }
 
