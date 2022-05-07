@@ -89,7 +89,7 @@ if ($result) {
           <td>".$data[3]."</td>
             <td> --- </td>
             <td>Waiting</td>
-            <td> <a href=\"deleteToEditOwner.php?id=".$data[4]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
+            <td> <a href=\"appointmentDetails.php?id=".$data[4]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
             <td> <a href=\"cancelAppointmentsOwner.php?id=".$data[4]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
          }
    }
