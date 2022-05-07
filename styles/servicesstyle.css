@@ -16,6 +16,7 @@ display: inline-block;
     height: 300;
     display: flex;
     flex-wrap:nowrap ; 
+    display: inline-block;
     background-color: #d6e7ed;
   }
   
@@ -31,8 +32,8 @@ display: inline-block;
     background: #f1f1f1; 
     width: 360px;
     height: 345px;
-    
-    margin: 60px;
+    display: inline-block;
+    margin-left: 333px;
     text-align:center ;
     border-image-width: 60;
     color: #00556D;
