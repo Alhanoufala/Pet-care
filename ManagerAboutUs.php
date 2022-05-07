@@ -58,6 +58,7 @@ $query="SELECT * FROM aboutus";
 $result=mysqli_query($database, $query);
 
 
+
 if ($result) {
   
    while ($data = mysqli_fetch_row($result)) {

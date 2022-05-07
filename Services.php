@@ -25,10 +25,10 @@
 
 
 
-
+<!--
 <div class ="cont">
 
-<div class="container1">
+  <div class="container1">
    
      <h4 >Grooming </h4> 
     grooming session consists of the pet being brushed , bathed , and dried. <br> 
@@ -39,7 +39,7 @@
     <div class="container2">
     
      <h4 > Boarding </h4>
-      providing a palce where your pet can stay overnight or longer.<br>  
+      providing a place where your pet can stay overnight or longer.<br>  
       price: 120SR 
       <div class = "image1 "> <img  src= "images/Boarding.jpeg" alt="Boarding pic"> </div>
     </div>
@@ -52,9 +52,45 @@
     </div>
   
    </div> 
-
+-->
    <center> <p class="addservice"><a href = "addAService.html"><button type="button"> Add a new Service </button></a></p> </center>
    <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
+
+   <?php
+  
+
+
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+if ( !mysqli_select_db($database, "Pet_care" ) )
+  die( "<p>Could not open URL database</p>" );
+
+$query="SELECT * FROM services";
+$result=mysqli_query($database, $query);
+
+
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {
+       print(" <div class ='cont'>
+
+       <div class='container1'>
+        
+          <h4 >".$data[0]. "</h4> "
+          .$data[1]. "<br> 
+         price:" .$data[2]."SR
+         
+         </div>
+         
+       
+        </div>"
+       
+       
+       );
+   }
+}
+
+  ?>
 
 
   </body>

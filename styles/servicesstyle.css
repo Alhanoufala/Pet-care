@@ -37,12 +37,14 @@ display: inline-block;
     border-image-width: 60;
     color: #00556D;
     
+    
 
 
   }
   .image1{
     width: 360px;    
     height: 230px;
+    
   }
 img{
     width: 100%;
