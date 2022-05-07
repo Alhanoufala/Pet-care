@@ -11,33 +11,55 @@
         <div class="navbar"></div>
         <div class="container">
             <h2>Add a new Service </h2>
-            <form method="post" >
+            <form method="post" action = "addAService.php">
                 Service name :
-                <input type="text" id="service name" placeholder="">
+                <input type="text" name="name" >
 
                 Description :
-                <textarea name = "Description" id="Description"rows="6" cols = "33"></textarea>
+                <input type="text" name="Description">
 
                 Price :
-                <input type="text" id="service name" placeholder="">
+                <input type="text" name="price" >
 
                 photo: 
-                <input type="file" id="profilePhotoFile" name="profilePhotoFile">
+                <input type="file" name="profilePhotoFile" name="profilePhotoFile">
     
 
                <div class="but">
                 
-                <a href="Services.html"><button type="button">Cancel</button></a>
-                <a href="#"><button type="button">Add</button></a>
+                <a href="Services.php"><button type="button">Cancel</button></a>
+                <a href="Services.php"><button type="submit">Add</button></a>
                </div>
                
                 
             </form>
+      
+        <?php
+             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+                    die( "<p>Could not connect to database</p>" );
+
+                 if ( !mysqli_select_db( $database, "Pet_care") )
+                    die( "<p>Could not open URL database</p>" );
+                    $name =  $_POST["name"];
+                    $Description = $_POST["Description"];
+                    $price =  $_POST["price"];
+
+                 $query="INSERT INTO services (servicename, description, price) VALUES ('".$name."','".$Description."','".$price."');";
+                 $result=mysqli_query($database, $query);
+                 if($result)
+                 header("location: Services.php");
             
-             
-       
-     
+                    else
+                        echo "An error occured while completing your request.";
+             }
+        ?>
+                 
         </div>
+
+
+
+
         <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
        
     </body>
