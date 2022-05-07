@@ -15,7 +15,7 @@
            
 
             <div>
-             <label for="petName">Name</label>
+             <label for="petName">Pet Name</label>
              <input type="text"  id="petName">   
             </div>
 
