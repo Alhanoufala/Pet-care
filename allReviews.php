@@ -45,10 +45,10 @@
        print("
                <div class='col'>
                    <div class='testimonial'>
-                   <p> <img class= 'lulu' src= 'images/".$data[3]."' alt='cheakup pic'>  </p>
-                     <div class='name'>".$data[4]."'s Owner </div>
-                     <p>  ".$data[2]." </p>
-                    <p> <a href="."'".$data[1]."'".">  Contact ".$data[4]. "'s Owner  </a> </p>
+                   <p> <img class= 'lulu' src= 'images/".$data[4]."' alt='cheakup pic'>  </p>
+                     <div class='name'>".$data[1]."'s Owner </div>
+                     <p>  ".$data[3]." </p>
+                    <p> <a href="."mailto:".$data[2]."'".">  Contact ".$data[1]. "'s Owner  </a> </p>
                    </div>
                  </div>
                  ");

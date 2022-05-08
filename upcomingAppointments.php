@@ -60,7 +60,7 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-       <th>  <a href="."'".$data[4]."'"."> Contact ".$data[0]. "'s Owner  </a> </th>
+       <th>  <a href="."mailto:".$data[4].""."> Contact ".$data[0]. "'s Owner  </a> </th>
        <th><a href=\"addToPreviousAppointments.php?id=".$data[7]."\"><img src= 'images/check.png'></a></th></tr>");
    }
 }

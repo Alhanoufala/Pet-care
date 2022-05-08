@@ -23,7 +23,7 @@
     <br>
     
    
-         
+    <div class = 'container'> 
       <?php
   
   if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
@@ -39,24 +39,24 @@ $result=mysqli_query($database, $query);
 if ($result) {
    while ($data = mysqli_fetch_row($result)) {
        print(" 
-       <div class = 'container'> 
-       <p> <img class='petPic' src= 'images/".$data[3]."' alt='cheakup pic'>  </p>
-       <div id='p'>".$data[4]."'s Owner </div>
+      
+       <p> <img class='petPic' src= 'images/".$data[4]."' alt='cheakup pic'>  </p>
+       <div id='p'>".$data[1]."'s Owner </div>
        <div class='subcontainer'>
-       <p>  ".$data[2]." </p>
+       <p>  ".$data[3]." </p>
       </div>
-      <p> <a href="."'".$data[1]."'".">  Contact ".$data[4]. "'s Owner  </a> </p>
+      <p> <a href="."mailto:".$data[2]."'".">  Contact ".$data[1]. "'s Owner  </a> </p>
       <p class='editbut'>
       <a href='previousAppointments.php'><button type='Save'>Back</button></a>
      </p>
-</div>
+
       ");
       }
 }
 // <img src="data:image;base64,'.base64_encode($data['image'//]).'>   
 ?>
 
-   
+</div>
     <br>
     <br>
     <br>

@@ -33,6 +33,7 @@
 .col {
   flex: 33.33%;
   padding: 15px;
+  max-width: 33.33%;
 }
 .testimonial {
   background: #fff;
@@ -45,16 +46,19 @@
   margin: 20px 0;
 }
 
-@media screen  {
+@media screen and (max-width: 960px  {
   .col {
     flex: 100%;
+    max-width: 80%;
 
   
   }
 }
-@media screen  {
+@media screen and (max-width: 600px) {
   .col {
     flex: 100%;
+    max-width: 100%;
+
   }
 }
 .lulu { 
