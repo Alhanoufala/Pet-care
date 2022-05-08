@@ -51,7 +51,7 @@ if ($result) {
    while ($data = mysqli_fetch_row($result)) {
   
        print("<tr>     
-       <th scope='row'><p>  <a href='managerPetProfile.php?owner_email=".$data[2]." && pet_name=".$data[0]."'> ".$data[0]." </a></p>
+       <th scope='row'><p>  <a href='managerPetProfile.php?owner_email=".$data[4]."&pet_name=".$data[0]."'> ".$data[0]." </a></p>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>

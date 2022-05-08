@@ -23,7 +23,7 @@
            <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
     
     
-<div class="container">
+
 
 
   
@@ -44,13 +44,14 @@
         die( "<p>Could not open URL database</p>" );
         $owner_email =$_GET['owner_email'];
         $pet_name =$_GET['pet_name'];
-      $query="SELECT * FROM pet Where owner_email = $owner_email AND name = $pet_name "  ;
+     $query="SELECT * FROM pet WHERE owner_email ='$owner_email' AND name ='$pet_name' " ;
+   
       $result=mysqli_query($database, $query);
       
       
   if ($result) {
      while ($data = mysqli_fetch_row($result)) {
-         print("
+         print("<div class='container'>
         <p> <img class='petPic' src= 'images/".$data[1]."' alt='cheakup pic'>  </p>
          <h2>  ".$data[0]."'s Owner  </h2>
          <p> Date of birth :".$data[2]." </p>

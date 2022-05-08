@@ -8,9 +8,9 @@ $id = $_GET['id'];
 
 mysqli_query($database ,"DELETE FROM appointments_requests WHERE id='".$id."'");
 $result=mysqli_close($database);
-
+if($result)
 
 header("Location: appointmentDetails.php");
-           
-                   
+else           
+echo "An error occured while completing your request.";              
 ?>
