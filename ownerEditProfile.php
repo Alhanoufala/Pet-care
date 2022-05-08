@@ -36,17 +36,17 @@
           
 
           <div class="phone details">
-            <i class="fas fa-phone-alt"></i>
-            <p>First name:</p>
-            <input type="text" id="Fname" value="Sarah"> <br>
-            <p>Last name:</p>
-            <input type="text"  id="Lname" value="AlShathri"> <br>
-            <p>Email:</p>
-            <input type="text"  id="email" value="S.I.AlShathri@gmail.com"> <br>
-            <p>Phone number:</p>
-            <input type="text"  id="phone#" value="+966 58 265 3424">
-            <p>Phone number:</p>
-            <input type="text"  id="pass" value="*****">
+           
+            <p>First name:
+            <input type="text" id="Fname" > </p>
+            <p>Last name:
+            <input type="text"  id="Lname" > </p>
+            <p>Email:
+            <input type="text"  id="email" ></p>
+            <p>Phone number:
+            <input type="text"  id="phone#" ></p>
+            <p>Password:
+            <input type="text"  id="pass" ></p>
   
           </div>
           

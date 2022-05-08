@@ -61,10 +61,10 @@
          $phonenumber=$_POST['phonenumber']; 
          $pass=$_POST['pass']; 
          $gender=$_POST['gender']; 
-         $profilePhotoFile=$_POST["images/"'profilePhotoFile']; 
+         $profilePhotoFile=$_POST['profilePhotoFile']; 
 
           $query = "INSERT INTO pet_owner ".
-         "(email, password, Fname, Lname, gender, phone_no , photo ) "."VALUES ".
+         "(email, password, Fname, Lname, gender, phone#, photo ) "."VALUES ".
          "('".$email."','".$pass."','".$Fname."','".$Lname."','".$gender."','".$phonenumber."','".$profilePhotoFile."');";
 
         $result = mysqli_query($database, $query);

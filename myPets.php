@@ -48,23 +48,25 @@
       
          <?php
   
+  $_SESSION["test"]="teeest";//ضضبططط
      if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
      die( "<p>Could not connect to database</p>" );
    
      if ( !mysqli_select_db($database, "Pet_care" ) )
       die( "<p>Could not open URL database</p>" );
    
-   $query="SELECT * FROM pet";
+    $query="SELECT * FROM pet WHERE owner_email='s.i.alshathri@gmail.com'";
    $result=mysqli_query($database, $query);
    
   
    if ($result) {
+     //retrives owner's pet, needs session
       while ($row = mysqli_fetch_row($result)) {
         ?>
         <tr>
-          <td> <?php echo '<img src="data:image;base64,'.base64_decode($row[1]).'"alt="pet photo" class="petPic" >'; ?> </td>
+          <td> <?php  echo "<p> <img src= 'images/" .$row[1]. "' class= 'petPic' alt='Pet Picture'>  </p>"; ?> </td>
           <td> <?php echo $row[0]; ?> </td>
-          <td> <?php echo $row[4]; ?> </td>
+          <td> <a href="petProfile.php"> Pet Profile </a> </td>
       </tr>
       <?php
       }

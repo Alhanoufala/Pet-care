@@ -32,7 +32,10 @@ form{
 
 .container .profilePic{
     position: absolute;
-    top: 220px; right: 450px;
+    width: 60px;
+    height: 60px;
+    top: 20%; 
+    right: 20%;
 
 }
 

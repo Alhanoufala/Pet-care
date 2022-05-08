@@ -29,8 +29,8 @@
       <div class="container">
         <form method="post">
           <div class="profilePic">
-            <img src = "images/profileEdit.png"  class= "profile"  alt= "Profile image" height="200" width="200">
-            <input type="file" id="profilePhotoFile" name="profilePhotoFile" accept="image/*">
+            <!--<img src = "images/profileEdit.png"  class= "profile"  alt= "Profile image" height="200" width="200">-->
+            <!--<input type="file" id="profilePhotoFile" name="profilePhotoFile" accept="image/*">-->
           </div>
         
   
@@ -55,6 +55,10 @@
   echo "<p>".$row[4]."</p>";
   echo "<p>".$row[0]."</p>";
   echo "<p>".$row[5]."</p>";
+
+  //cheack if not null, edit size
+  //echo "<div class='profilePic'> <img src= 'images/" .$row[6]. "' class= 'profile' alt='Pet Picture'> </div>";
+
   
   ?>
           <br>

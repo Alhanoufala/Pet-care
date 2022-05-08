@@ -3,32 +3,31 @@
 ?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset = "utf-8">
-    <title>add a Pet</title>
-    <link rel="stylesheet" href="styles/ownerHeader.css">
-    <link rel="stylesheet" href="styles/addPet.css">
-  </head>
+<head>
+ <title>Edit Pet Profile</title>
+ <link rel="stylesheet" href="styles/ownerHeader.css">
+ <link rel="stylesheet" href="styles/petProfile.css">
 
-  <body>
+</head>
 
-    <div class="navbar">
-      <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
-      <a href="contactUs.php">Contact Us</a>
-   <a href = "myPets.php">My Pets</a>
-   <a href = "AppointmentRequest.php">My Appointments</a>
-   <a href="ownerServices.php" class= "active"> Services</a>
-   <a href="ownerAboutUs.php">About us</a>
-   <a href = "ownerHomePage.html">Home</a>
-   
-       </div> 
-       
-       <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
+<body>
+     <div class="navbar">
+       <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
+     <a href="ownercontactUs.php">Contact Us</a>
+     <a href = "myPets.php">My Pets</a>
+     <a href = "AppointmentRequest.php">My Appointments</a>
+     <a href = "newAppointment.php">Book Appointment</a>
+     <a href="ownerServices.php" class= "active"> Services</a>
+     <a href="OwnerAboutUs.php">About us</a>
+     <a href="ownerHomePage.html">Home</a>
 
+        </div> 
+           <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
+    
+    
+<div class="container">
 
-      <div class="container">
-          <h2>Add Pet</h2>
-          <form method="post">
+<form method="post">
               <p><label>Pet name:<input type="text" name="Pname" id="Pname"  required></label></p>
               <p><label>Birth date: <input type="date" name="PetBD" id="PetBD"  required></label></p>
                
@@ -60,11 +59,10 @@
                 <p>medical history (optional)
                 <input type="file" id="medFile" name="petFile" ></p>
   
-             <div class="submitbut">
-              
-              <a href = "addPet.php"><input type = "submit" value="Add"></a>
-              
-             </div>
+                <div class="editbut">
+                <a href="petProfile.html"><button type="Save">Save</button></a>
+
+              </div>
 
              
           
@@ -93,7 +91,8 @@
          $ownerEmail="test";
 
 
-         $query = "INSERT INTO pet".
+         //edit for specific pet
+         $query = "UPDATE pet SET ".
          "(name, photo, birthDate, breed, status, medicalHistory, vaccinations, gender, ownerEmail ) "."VALUES ".
          "('$Pname','$petPhotoFile','$PetBD','$Pbreed','$status','$medFile','$vacFile','$gender','$ownerEmail')";
 
@@ -105,6 +104,8 @@
            echo "<script>alert('an error occurred, could not add pet.')</script>";  
      }  
  ?>
+ 
+</div> 
 
-  </body>
+</body>
 </html>
