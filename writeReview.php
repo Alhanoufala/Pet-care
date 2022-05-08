@@ -49,8 +49,11 @@
                     $id = $_GET['id'];
                     $pet_name = $_GET['pet_name'];
                     $owner_email = $_GET['owner_email'];
-                    $photo  =NULL;
-                    $review = $_POST['review'];   
+                    $review = $_POST['review'];  
+                    $photo_query = "SELECT photo from pet WHERE name ='$pet_name' AND owner_email='$owner_email'";
+                   $photo_result  =mysqli_query($database, $photo_query); 
+                   $photo_data = mysqli_fetch_row($photo_result);
+                   $photo = $photo_data[0];
                  $query="INSERT INTO review (review_id,pet_name, owner_email, review , photo ) VALUES ('".$id."','".$pet_name."','".$owner_email."','".$review."','".$photo."');";
                  $result=mysqli_query($database, $query);
                  if($result)
