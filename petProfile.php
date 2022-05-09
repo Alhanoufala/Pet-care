@@ -50,7 +50,6 @@
          echo "<p> Gender : ".$row[7]."</p>";
          echo "<p> Breed: ".$row[3]."</p>";
          echo "<p> Status: ".$row[4]."</p>";
-         echo $_SESSION["test"];
          
          ?>
     

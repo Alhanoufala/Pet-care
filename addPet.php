@@ -48,9 +48,9 @@
                   <div class="radio">
                    <label for="Status">Status: </label>
                       <input type="radio" name="Status" id="status" value="spayed" required>
-                      <label for="Spayed">Spayed</label>
+                      <label for="spayed">Spayed</label>
                       <input type="radio" name="Status" id="status" value="neutered" required>
-                      <label for="Neutered">Neutered</label>
+                      <label for="neutered">Neutered</label>
                   </div></div>
 
                 <p>Pet photo: <input type="file" id="petPhotoFile" name="petPhotoFile" accept="image/*" required></p>
@@ -58,7 +58,7 @@
                 <p>vaccinations list(optional)
                 <input type="file" id="vacFile" name="vacFile" ></p>
                 <p>medical history (optional)
-                <input type="file" id="medFile" name="petFile" ></p>
+                <input type="file" id="medFile" name="medFile" ></p>
   
              <div class="submitbut">
               
@@ -86,17 +86,15 @@
          $PetBD=$_POST['PetBD'];
          $gender=$_POST['gender']; 
          $Pbreed=$_POST['Pbreed']; 
-         $status=$_POST['status']; 
+         $status=$_POST['status']; //array
          $petPhotoFile=$_POST['petPhotoFile']; 
          $vacFile=$_POST['vacFile']; 
          $medFile=$_POST['medFile']; 
-         $ownerEmail="test";
 
+         $OwnerEmail = $_SESSION["OwnerEmail"];
 
-         $query = "INSERT INTO pet".
-         "(name, photo, birthDate, breed, status, medicalHistory, vaccinations, gender, ownerEmail ) "."VALUES ".
-         "('$Pname','$petPhotoFile','$PetBD','$Pbreed','$status','$medFile','$vacFile','$gender','$ownerEmail')";
-
+         $query="INSERT INTO pet (name, photo, birthDate, breed, status, medicalHistory, vaccinations, gender, ownerEmail ) VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$OwnerEmail."');";
+        
         $result = mysqli_query($database, $query);
         if($result)
            header("location: myPets.php");
