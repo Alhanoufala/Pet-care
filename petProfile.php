@@ -57,7 +57,7 @@
     
     
       <div class="editbut">
-      <a href="editPetProfile.html"><button type="button">Edit</button></a>
+      <a href="editPetProfile.php"><button type="button">Edit</button></a>
       
 
 

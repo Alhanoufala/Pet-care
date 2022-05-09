@@ -48,7 +48,7 @@
     if (!mysqli_select_db( $database, "Pet_care" ))
         die( "<p>Could not open URL database</p>" );
   
-        $email=$_POST['email'];  
+        $email=$_POST['email'];  //correct
         $password=$_POST['pass'];  
         $query="select * from pet_owner WHERE email='$email'AND password='$password'";  
 
@@ -56,12 +56,13 @@
 
         if($row=mysqli_fetch_row($result)) {  
             header("location: ownerHomePage.html");
-
+            $_SESSION["OwnerEmail"]=$email;
         }
         
         else  
           echo "<script>alert('Email or password is incorrect!')</script>";  
     }  
-?>
+    
+    ?>
 
 </html>

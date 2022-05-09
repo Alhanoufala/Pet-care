@@ -47,7 +47,9 @@
    if ( !mysqli_select_db($database, "Pet_care" ) )
     die( "<p>Could not open URL database</p>" );
 
-  $query="SELECT * FROM pet_owner WHERE email='s.i.alshathri@gmail.com'";
+    $OwnerEmail = $_SESSION["OwnerEmail"];
+
+  $query="SELECT * FROM pet_owner WHERE email= '$OwnerEmail' ";
   $result=mysqli_query($database, $query);
   $row = mysqli_fetch_array($result);
   echo "<p>".$row[2]."</p>";

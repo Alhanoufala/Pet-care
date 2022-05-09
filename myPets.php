@@ -48,14 +48,16 @@
       
          <?php
   
-  $_SESSION["test"]="teeest";//ضضبططط
+  
      if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
      die( "<p>Could not connect to database</p>" );
    
      if ( !mysqli_select_db($database, "Pet_care" ) )
       die( "<p>Could not open URL database</p>" );
-   
-    $query="SELECT * FROM pet WHERE owner_email='s.i.alshathri@gmail.com'";
+
+    $OwnerEmail = $_SESSION["OwnerEmail"];
+
+    $query="SELECT * FROM pet WHERE owner_email =  '$OwnerEmail' " ;
    $result=mysqli_query($database, $query);
    
   
@@ -71,7 +73,7 @@
       <?php
       }
    }
-   
+
      ?>
  
      </table>

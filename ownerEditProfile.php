@@ -54,7 +54,7 @@
           <br>
           <br>
          <div class="editbutton">
-          <a href="ownerEditProfile"><button type="button">Save changes</button></a>
+          <a href="#"><button type="submit">Save changes</button></a>
         </div> 
 
       </div>
@@ -74,8 +74,9 @@
          $pass=$_POST['pass']; 
          $profilePhotoFile=$_POST['profilePhotoFile']; 
 
-
-         $query = "UPDATE pet_owner SET ".
+         $OwnerEmail = $_SESSION["OwnerEmail"];
+         
+         $query = "UPDATE pet_owner WHERE email =  '$OwnerEmail'  SET ".
          "(email, password, Fname, Lname, phone#, photo ) "."VALUES ".
          "('$email','$pass','$Fname','$Lname','$phonenumber','$profilePhotoFile')";
 
