@@ -38,15 +38,13 @@
           <div class="phone details">
            
             <p>First name:
-            <input type="text" id="Fname" > </p>
+            <input type="text" name="Fname" > </p>
             <p>Last name:
-            <input type="text"  id="Lname" > </p>
-            <p>Email:
-            <input type="text"  id="email" ></p>
+            <input type="text"  name="Lname" > </p>
             <p>Phone number:
-            <input type="text"  id="phone#" ></p>
+            <input type="text"  name="phonenumber" ></p>
             <p>Password:
-            <input type="text"  id="pass" ></p>
+            <input type="text"  name="pass" ></p>
   
           </div>
           
@@ -54,7 +52,7 @@
           <br>
           <br>
          <div class="editbutton">
-          <a href="#"><button type="submit">Save changes</button></a>
+          <a href="ownerEditProfile.php"><button type="submit">Save changes</button></a>
         </div> 
 
       </div>
@@ -68,21 +66,20 @@
          die( "<p>Could not open URL database</p>" );
    
          $Fname=$_POST['Fname'];  
-         $Lname=$_POST['Lname'];
-         $email=$_POST['email']; 
+         $Lname=$_POST['Lname']; 
          $phonenumber=$_POST['phonenumber']; 
          $pass=$_POST['pass']; 
          $profilePhotoFile=$_POST['profilePhotoFile']; 
 
          $OwnerEmail = $_SESSION["OwnerEmail"];
          
-         $query = "UPDATE pet_owner WHERE email =  '$OwnerEmail'  SET ".
-         "(email, password, Fname, Lname, phone#, photo ) "."VALUES ".
-         "('$email','$pass','$Fname','$Lname','$phonenumber','$profilePhotoFile')";
+         //SET label ='".$label."',description = '".$description.
 
+         $query = "UPDATE pet_owner SET password = '".$pass."',Fname = '".$Fname."', Lname = '".$Lname."',phone_no = '".$phonenumber."', photo = '".$profilePhotoFile."' WHERE email =  '$OwnerEmail'"; 
+       
         $result = mysqli_query($database, $query);
         if($result)
-           header("location: ownerProfilePage.html");
+           header("location: ownerProfile.php");
          
         else  
            echo "<script>alert('an error occurred, could not edit profile.')</script>";  

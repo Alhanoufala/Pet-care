@@ -31,7 +31,7 @@
        </div> 
        <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
 
-       <form action="myPets.php" method="POST" enctype="multipart/form-data" >
+       <form action="myPets.php" method="POST" " >
       <table class="content-table" id= "center">
         <br>
         <h2>My Pets:</h2>
@@ -62,15 +62,17 @@
    
   
    if ($result) {
-     //retrives owner's pet, needs session
-      while ($row = mysqli_fetch_row($result)) {
-        ?>
+ 
+      while ($data = mysqli_fetch_row($result)) {
+        print("
         <tr>
-          <td> <?php  echo "<p> <img src= 'images/" .$row[1]. "' class= 'petPic' alt='Pet Picture'>  </p>"; ?> </td>
-          <td> <?php echo $row[0]; ?> </td>
-          <td> <a href="petProfile.php"> Pet Profile </a> </td>
-      </tr>
-      <?php
+          <td> <img src= 'images/" .$data[1]. "' class= 'petPic' alt='Pet Picture'> </td>
+          <td> ".$data[0]." </td>
+          <td> <a href='petProfile.php?name=" .$data[0]. "'> Pet Profile </a> </td>
+          <td> <a href='deletePet.php?name=".$data[0]."'> <img src= 'images/icons8-multiply-15.png' ></a></td>
+      </tr> ");
+     
+
       }
    }
 

@@ -39,9 +39,11 @@
        
           if ( !mysqli_select_db($database, "Pet_care" ) )
            die( "<p>Could not open URL database</p>" );
-       
-          //retrives specific pet, needs session
-         $query="SELECT * FROM pet WHERE owner_email='s.i.alshathri@gmail.com'";
+   
+           $OwnerEmail = $_SESSION["OwnerEmail"]; 
+           $name= $_GET['name'];
+         
+         $query="SELECT * FROM pet WHERE owner_email='$OwnerEmail' AND name = '$name' ";
          $result=mysqli_query($database, $query);
          $row = mysqli_fetch_array($result);
          echo "<p> <img src= 'images/" .$row[1]. "' class= 'petPic' alt='Pet Picture'>  </p>";
@@ -61,7 +63,6 @@
 
 
      </div>
-     <p>  <a href="mailto:owner.pet@swe381.ksu"> contact Luna's Owner  </a> </p> 
 
   
 </div> 

@@ -42,16 +42,16 @@
                 </div></div>
 
                 
-              <p><label>Pet breed: <input type="text" name="Pbreed" id="Pbreed"  required></label></p>
-                
                 <div class="content">
                   <div class="radio">
-                   <label for="Status">Status: </label>
-                      <input type="radio" name="Status" id="status" value="spayed" required>
-                      <label for="spayed">Spayed</label>
-                      <input type="radio" name="Status" id="status" value="neutered" required>
-                      <label for="neutered">Neutered</label>
+                   <label for="status">Status: </label>
+                      <input type="radio" name="status" id="status" value="spayed" required>
+                      <label for="spayed">spayed</label>
+                      <input type="radio" name="status" id="status" value="neutered" required>
+                      <label for="neutered">neutered</label>
                   </div></div>
+
+                <p><label>Pet breed: <input type="text" name="Pbreed" id="Pbreed"  required></label></p>
 
                 <p>Pet photo: <input type="file" id="petPhotoFile" name="petPhotoFile" accept="image/*" required></p>
 
@@ -91,9 +91,9 @@
          $vacFile=$_POST['vacFile']; 
          $medFile=$_POST['medFile']; 
 
-         $OwnerEmail = $_SESSION["OwnerEmail"];
+         $OwnerEmail = '$_SESSION["OwnerEmail"]';
 
-         $query="INSERT INTO pet (name, photo, birthDate, breed, status, medicalHistory, vaccinations, gender, ownerEmail ) VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$OwnerEmail."');";
+         $query="INSERT INTO pet (name, photo, birthDate, breed, pet_status, medicalHistory, vaccinations, gender, ownerEmail ) VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$OwnerEmail."');";
         
         $result = mysqli_query($database, $query);
         if($result)
