@@ -23,7 +23,7 @@
  <div class = "container" > 
 
     <img src="images/lulu.png"  class="petPic" alt= "Picture of Luna" >
-    <p id ="p">Thank you for visiting <br> please leave under your review on luna's care!</p>
+    <p id ="p">Thank you for visiting <br> please leave under your review on pet care!</p>
       <?php
       $id = $_GET['id'];
       $pet_name = $_GET['pet_name'];
