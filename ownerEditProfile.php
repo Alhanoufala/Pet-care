@@ -72,8 +72,7 @@
          $profilePhotoFile=$_POST['profilePhotoFile']; 
 
          $OwnerEmail = $_SESSION["OwnerEmail"];
-         
-         //SET label ='".$label."',description = '".$description.
+        
 
          $query = "UPDATE pet_owner SET password = '".$pass."',Fname = '".$Fname."', Lname = '".$Lname."',phone_no = '".$phonenumber."', photo = '".$profilePhotoFile."' WHERE email =  '$OwnerEmail'"; 
        

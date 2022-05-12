@@ -91,9 +91,9 @@
          $vacFile=$_POST['vacFile']; 
          $medFile=$_POST['medFile']; 
 
-         $OwnerEmail = '$_SESSION["OwnerEmail"]';
+         $OwnerEmail = $_SESSION["OwnerEmail"];
 
-         $query="INSERT INTO pet (name, photo, birthDate, breed, pet_status, medicalHistory, vaccinations, gender, ownerEmail ) VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$OwnerEmail."');";
+         $query="INSERT INTO pet VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$OwnerEmail."');";
         
         $result = mysqli_query($database, $query);
         if($result)

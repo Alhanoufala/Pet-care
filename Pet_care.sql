@@ -109,7 +109,7 @@ CREATE TABLE `pet` (
   `photo` text NOT NULL,
   `birthDate` date NOT NULL,
   `breed` varchar(30) NOT NULL,
-  `status` enum('spayed','neutered') NOT NULL,
+  `pet_status` enum('spayed','neutered') NOT NULL,
   `medicalHistory` longblob DEFAULT NULL,
   `vaccinations` longblob DEFAULT NULL,
   `gender` enum('male','female') NOT NULL,

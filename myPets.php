@@ -72,7 +72,7 @@
           <td> <a href='deletePet.php?name=".$data[0]."'> <img src= 'images/icons8-multiply-15.png' ></a></td>
       </tr> ");
      
-
+      //<a href='managerPetProfile.php?owner_email=".$data[4]."&pet_name=".$data[0]."'>
       }
    }
 
