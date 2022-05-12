@@ -58,6 +58,12 @@
   echo "<p>".$row[0]."</p>";
   echo "<p>".$row[5]."</p>";
 
+  if(is_null($row[6])) {
+    echo "<div class='profilePic'> <img src = 'images/profileEdit.png' class= 'profile' alt='Profile Picture'> </div>";
+  }
+  else {
+    echo "<div class='profilePic'> <img src= 'images/" .$row[6]. "' class= 'profile' alt='Profile Picture'> </div>";
+  }
   //cheack if not null, edit size
   //echo "<div class='profilePic'> <img src= 'images/" .$row[6]. "' class= 'profile' alt='Pet Picture'> </div>";
 
