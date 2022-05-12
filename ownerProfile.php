@@ -13,7 +13,7 @@
   <body>
     <div class="navbar">
       <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
-    <a href="ownercontactUs.php">Contact Us</a>
+    
     <a href = "myPets.php">My Pets</a>
     <a href = "AppointmentRequest.php">My Appointments</a>
     <a href = "newAppointment.php">Book Appointment</a>

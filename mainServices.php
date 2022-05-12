@@ -27,7 +27,7 @@
  <h1 class = "h1"> <center> Our Services : </center> </h1>
  
  
-
+<!--
 <div class ="cont">
 
 <div class="container1">
@@ -54,7 +54,42 @@
     </div>
   
    </div> 
+-->
+<?php
+  
 
+
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+if ( !mysqli_select_db($database, "Pet_care" ) )
+  die( "<p>Could not open URL database</p>" );
+
+$query="SELECT * FROM services";
+$result=mysqli_query($database, $query);
+
+
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {
+       print(" <div class ='cont'>
+
+       <div class='container1'>
+        
+          <h4 >".$data[0]. "</h4> "
+          .$data[1]. "<br> 
+         price:" .$data[2]."SR
+         <div class = 'image1 '> <img  src= 'images/".$data[3]."' alt='cheakup pic'> </div>
+         </div>
+         
+       
+        </div>"
+       
+       
+       );
+   }
+}
+
+  ?>
    <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
   </body>
 </html>
