@@ -10,7 +10,6 @@
   <body>
     <div class="navbar">
     <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
-      <a href="ownercontactUs.php">Contact Us</a>
       <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.php">My Appointments</a>
       <a href = "bookAppointment.php">Book Appointment</a>
@@ -22,12 +21,13 @@
     
  <div class = "container" > 
 
-    <img src="images/lulu.png"  class="petPic" alt= "Picture of Luna" >
-    <p id ="p">Thank you for visiting <br> please leave under your review on luna's care!</p>
+  
+    <p id ="p">Thank you for visiting <br> please leave under your review on pet care!</p>
       <?php
       $id = $_GET['id'];
       $pet_name = $_GET['pet_name'];
       $owner_email = $_GET['owner_email'];?>
+      
       <form method = "POST" action = <?php echo "\"writeReview.php?id=".$id."&pet_name=".$pet_name."&owner_email=".$owner_email."\"" ?>>
       <label id= "label"> Review: </label>
       <input name = "review" type = "text"> 
