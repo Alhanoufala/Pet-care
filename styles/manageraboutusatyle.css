@@ -43,6 +43,30 @@ margin-left: 100px;
   
 
 }
+
+.cont {
+  height: 300;
+  display: flex;
+  flex-wrap:nowrap ; 
+  display: inline-block;
+  background-color: #d6e7ed;
+}
+
+.cont > div {
+  
+  background: #f1f1f1; 
+  width: 360px;
+  display: inline-block;
+  margin-left: 530px;
+  margin-bottom: 33px;
+  text-align:center ;
+  border-image-width: 60;
+  color: #00556D;
+  
+  
+
+
+}
 .navbar{ 
   background-color: #ffffff;
   width:100%;

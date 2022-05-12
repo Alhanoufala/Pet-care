@@ -11,40 +11,51 @@
 
     </head>
     <body>
-        <div class="navbar"></div>
-        <div class="container">
+        <?php
+         
+        
+        
+    
+            if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+               die( "<p>Could not connect to database</p>" );
+
+            if ( !mysqli_select_db( $database, "Pet_care") )
+               die( "<p>Could not open URL database</p>" );
+               $query="SELECT * FROM aboutus";
+       $result=mysqli_query($database, $query);
+
+
+if ($result) {
+   while ($data = mysqli_fetch_row($result)) {  
+print("
+        <div class='navbar'></div>
+        <div class='container'>
             <h2>Edit About us </h2>
-            <form method="POST" action = "editAboutUs.php">
+            <form method='POST' action = 'editAboutUs.php'>
                 Label:
-                <input type="text" name ="label" > 
+                <input type='text' name ='label' value ='".$data[0]."' >
 
                 Description:
-                <input type="text" name ="Description"> 
+                <input type='text' name ='Description' value='".$data[1]."'> 
                
                     photo: 
-                    <input type="file" id="PhotoFile" name="PhotoFile">
+                    <input type='file' id='PhotoFile' name='PhotoFile'>
                     Location :
                 
-                 <input type="text" name ="location" value="location"> 
+                 <input type='text' name ='location' value='".$data[3]."'> 
 
 
     
-               <div class="editbut">
-                <a href="ManagerAboutUs.php"><button type="button">Cancel</button></a>
-                <a href="ManagerAboutUs.php"><button type="submit">Update</button></a>
+               <div class='editbut'>
+                <a href='ManagerAboutUs.php'><button type='button'>Cancel</button></a>
+                <a href='ManagerAboutUs.php'><button type='submit'>Update</button></a>
 
                </div>
                 
             </form>
+            ");}}
             
-            <?php
-             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
-                    die( "<p>Could not connect to database</p>" );
-
-                 if ( !mysqli_select_db( $database, "Pet_care") )
-                    die( "<p>Could not open URL database</p>" );
-
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $label = $_POST["label"];
                     $description =  $_POST["Description"];
                     $photo = $_POST["PhotoFile"];

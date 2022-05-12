@@ -71,8 +71,24 @@ if ($result) {
 </div>
 
 <div class = 'map'>
-<iframe src='".$data[3]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>");
-print("<style> body {background: url('../images/".$data[2]."') no-repeat center center fixed;}</style>");
+<iframe src='".$data[3]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>
+
+<div class ='cont'>
+
+       <div class='container1'>
+        
+          
+         <div class = 'image1 '> <img  src= 'images/".$data[2]."' alt='cheakup pic'> </div>
+         </div>
+         
+       
+        </div>
+
+"
+
+
+);
+
 
 
    }
