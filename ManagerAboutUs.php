@@ -72,6 +72,7 @@ if ($result) {
 
 <div class = 'map'>
 <iframe src='".$data[3]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>");
+print("<style> body {background: url('../images/".$data[2]."') no-repeat center center fixed;}</style>");
 
 
    }
