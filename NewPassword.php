@@ -18,8 +18,8 @@ if (!mysqli_select_db($database, "Pet_care"))
         }else{   
             if ($_SESSION['managerOrOwner'] == "manager") {
                 $query = "UPDATE manager SET password = '$pass' WHERE email = '$email' ";    
-            }else if ( $_SESSION['managerOrOwner'] == "owner"){
-                $query = "UPDATE owner SET password = '$pass' WHERE email = '$email' ";    
+            }else if ( $_SESSION['managerOrOwner'] == "pet_owner"){
+                $query = "UPDATE pet_owner SET password = '$pass' WHERE email = '$email' ";    
             }
 
             $result = mysqli_query($database, $query);

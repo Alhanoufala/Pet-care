@@ -14,8 +14,8 @@ if (!mysqli_select_db($database, "Pet_care"))
       if ($_SESSION['managerOrOwner'] == "manager") {
       $check_code = "SELECT Verification FROM manager WHERE email = '$emaill'"; 
       }
-      else if ( $_SESSION['managerOrOwner'] == "owner"){
-      $check_code = "SELECT Verification FROM owner WHERE email = '$emaill' ";
+      else if ( $_SESSION['managerOrOwner'] == "pet_owner"){
+      $check_code = "SELECT Verification FROM pet_owner WHERE email = '$emaill' ";
       }
 
       $result=mysqli_query($database,$check_code);
