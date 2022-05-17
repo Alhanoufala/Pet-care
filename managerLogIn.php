@@ -32,7 +32,7 @@
             
         </form>
         
-         <p>Forgot password?<a href="Forget Password.html">  Click Here</a></p>
+         <p>Forgot password?<a href="Forget Password.php">  Click Here</a></p>
     </div>
     <?php 
      if ($_SERVER["REQUEST_METHOD"] == "POST") {  

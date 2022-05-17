@@ -6,6 +6,8 @@
     <title>About Us</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/manageraboutusatyle.css">
+    <link href="styles/manageraboutusatyle.css?<?=filemtime("styles/manageraboutusatyle.css")?>" rel="stylesheet" type="text/css" />
+
     
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -16,7 +18,7 @@
   <body>
     <div class="navbar">
       <a href="Pet Care.html"><img  src="images/logout-32.png" alt="logou icon"> </a>
-      <a href="managerContactUs.php">Contact Us</a>
+      
 
       <a href="availableAppointments.php">Available appointments</a>
         <a href="appointmentRequests.php">Appointments requests</a>
@@ -62,18 +64,21 @@ $result=mysqli_query($database, $query);
 if ($result) {
   
    while ($data = mysqli_fetch_row($result)) {
-    print("<div class= 'about'> <h2> ".$data[0]." </h2> </div> 
+    print(" <div class = 'container' >  
+    <div class= 'about'> <h2> ".$data[0]." </h2> </div> 
     <br>   
- <div class = 'container' > 
+ 
   <br>".$data[1]."
   <br> 
   Our location :
+  <div class = 'map'>
+<iframe src='".$data[4]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>
+
 </div>
 
-<div class = 'map'>
-<iframe src='".$data[3]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>
 
-<div class ='cont'>
+
+
 
        <div class='container1'>
         
@@ -82,12 +87,9 @@ if ($result) {
          </div>
          
        
-        </div>
+        
 
-"
-
-
-);
+");
 
 
 
