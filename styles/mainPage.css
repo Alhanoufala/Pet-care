@@ -15,8 +15,11 @@ body{
     
 }
 .fixed-footer a {
-  text-decoration: none; 
+  
   color:#00556D ;
+  font-size: 20px;
+ }
+ .footer{
   font-size: 20px;
  }
 .fixed-footer{
@@ -28,7 +31,7 @@ body{
   bottom: 0;
   padding:10px;
   margin: -7px;
-  font-size: 2px ;
+  font-size: 20px;
 } 
 
 .navbar{ 

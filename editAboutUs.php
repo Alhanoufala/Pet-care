@@ -39,12 +39,12 @@ print("
                 <input type='text' name ='Description' value='".$data[1]."'> 
                
                     photo 1 : 
-                    <input type='file' id='PhotoFile' name='PhotoFile'>
+                    <input type='file' id='PhotoFile' name='Photo1' value='".$data[2]."'>
                     photo 2 : 
-                    <input type='file' id='PhotoFile' name='PhotoFile'>
+                    <input type='file' id='PhotoFile' name='Photo2' value='".$data[3]."'>
                     Location :
                 
-                 <input type='text' name ='location' value='".$data[3]."'> 
+                 <input type='text' name ='location' value='".$data[4]."'> 
 
 
     
@@ -60,9 +60,10 @@ print("
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $label = $_POST["label"];
                     $description =  $_POST["Description"];
-                    $photo = $_POST["PhotoFile"];
+                    $photo1 = $_POST["Photo1"];
+                    $photo2 = $_POST["Photo2"];
                     $location =$_POST["location"];
-                    $query = "UPDATE aboutus SET label ='".$label."',description = '".$description."',photo ='".$photo."',location='".$location."' WHERE id=1;";
+                    $query = "UPDATE aboutus SET label ='".$label."',description = '".$description."',photo ='".$photo1."',photo1 ='".$photo2. "',location='".$location."' WHERE id=1;";
                 // $query=" UPDATE aboutus SET ( label = '.$label ' , description = '.$description ' , photo = '.$photo ' , location = '.$location ' );" ;
                  $result = mysqli_query($database, $query);
                  if($result)
