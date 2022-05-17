@@ -14,9 +14,9 @@
         //check if the email already exist in owner or manager?
         $email = $_POST['Email'];
 
-        $isExist = isEmailExists($database, "owner", $email);
+        $isExist = isEmailExists($database, "pet_owner", $email);
         $manager = false;
-        $_SESSION['managerOrOwner'] = "owner";  
+        $_SESSION['managerOrOwner'] = "pet_owner";  
 
         if($isExist != 1){
             $isExist = isEmailExists($database, "manager", $email);
@@ -39,7 +39,7 @@
             $query = "UPDATE manager SET Verification = '$OTP' WHERE email = '$email' ";
 
         }else{ //owner
-            $query = "UPDATE owner SET Verification = '$OTP' WHERE email = '$email' ";
+            $query = "UPDATE pet_owner SET Verification = '$OTP' WHERE email = '$email' ";
         }
 
         $result = mysqli_query($database, $query);
