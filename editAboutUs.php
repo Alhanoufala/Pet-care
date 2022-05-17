@@ -38,7 +38,9 @@ print("
                 Description:
                 <input type='text' name ='Description' value='".$data[1]."'> 
                
-                    photo: 
+                    photo 1 : 
+                    <input type='file' id='PhotoFile' name='PhotoFile'>
+                    photo 2 : 
                     <input type='file' id='PhotoFile' name='PhotoFile'>
                     Location :
                 

@@ -17,7 +17,7 @@
   
   <body>
     <div class="navbar">
-      <a href="Pet Care.html"><img  src="images/logout-32.png" alt="logou icon"> </a>
+      <a href="Pet Care.html"><img id = "logout" src="images/logout-32.png" alt="logou icon"> </a>
       
 
       <a href="availableAppointments.php">Available appointments</a>
@@ -78,15 +78,18 @@ if ($result) {
 
 
 
-
+<div class='cont'>
 
        <div class='container1'>
         
           
-         <div class = 'image1 '> <img  src= 'images/".$data[2]."' alt='cheakup pic'> </div>
+         <div id = 'image1 '> <img  src= 'images/".$data[2]."' alt='cheakup pic'> </div>
+         </div>
+         <div class='container2'>
+         <div id = 'image1 '> <img  src= 'images/".$data[3]."' alt='cheakup pic'> </div>
          </div>
          
-       
+       </div>
         
 
 ");
