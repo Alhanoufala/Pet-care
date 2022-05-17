@@ -16,7 +16,7 @@
 <a href = "Pet Care.html">Home</a>
      
         </div> 
-       
+      <!-- 
     <div class= "about"> <h2> About us </h2>  </div> 
     <br>
     
@@ -36,6 +36,60 @@ Our location :
   
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.7256444722366!2d46.68682081516388!3d24.77059418409634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd3fc8ec4aeb%3A0x605baa975e4243f9!2sAdvanced%20Pet%20Clinic!5e0!3m2!1sen!2ssa!4v1645211168968!5m2!1sen!2ssa" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 </div>
+  --> 
+  <?php
+
+
+  if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+  die( "<p>Could not connect to database</p>" );
+
+if ( !mysqli_select_db($database, "Pet_care" ) )
+  die( "<p>Could not open URL database</p>" );
+
+$query="SELECT * FROM aboutus";
+$result=mysqli_query($database, $query);
+
+
+
+if ($result) {
+  
+   while ($data = mysqli_fetch_row($result)) {
+    print(" <div class = 'container' >  
+    <div class= 'about'> <h2> ".$data[0]." </h2> </div> 
+    <br>   
+ 
+  <br>".$data[1]."
+  <br> 
+  Our location :
+  <div class = 'map'>
+<iframe src='".$data[4]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>
+
+</div>
+
+
+
+<div class='cont'>
+
+       <div class='container1'>
+        
+          
+         <div id = 'image1 '> <img  src= 'images/".$data[2]."' alt='cheakup pic'> </div>
+         </div>
+         <div class='container2'>
+         <div id = 'image1 '> <img  src= 'images/".$data[3]."' alt='cheakup pic'> </div>
+         </div>
+         
+       </div>
+        
+
+");
+
+
+
+   }
+}
+
+  ?>
 <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
   </body>
 </html>

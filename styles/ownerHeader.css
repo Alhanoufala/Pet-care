@@ -24,7 +24,10 @@ body{
         font-size: 18px;
         padding-top: 40px;
     }
-    
+    #profile{
+        height : 33px ;
+        width : 33px ; 
+      }
     .logo{
       position: absolute;
           top: 0px;

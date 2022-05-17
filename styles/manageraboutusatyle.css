@@ -47,6 +47,10 @@ margin-left: 100px;
   
 
 }
+#profile{
+  height : 33px ;
+  width : 33px ; 
+}
 img{
   height: 300px;
   width : 350px;
