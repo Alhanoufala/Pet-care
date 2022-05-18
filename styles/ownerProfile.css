@@ -30,13 +30,10 @@ form{
 }
 
 
-.container .profilePic{
-    position: absolute;
+.profilePic{
     width: 100px;
     height: 100px;
-    top: 30%; 
-    right: 20%;
-
+padding-left: 760px;
 }
 
 

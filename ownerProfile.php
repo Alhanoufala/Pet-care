@@ -8,6 +8,8 @@
     <title>Profile</title>
     <link rel="stylesheet" href="styles/ownerHeader.css">
     <link rel="stylesheet" href="styles/ownerProfile.css"> 
+    <link href="styles/ownerProfile.css?<?=filemtime("styles/ownerProfile.css")?>" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>

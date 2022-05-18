@@ -5,6 +5,7 @@
     <title>Set New Appointment</title>
     <link rel="stylesheet" href="styles/setApp.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+    <link href="styles/setApp.css?<?=filemtime("styles/setApp.css")?>" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
