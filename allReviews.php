@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/allReviews.css">
-    <link rel="stylesheet" href="styles/ownerHeader.css">
+    <link href="styles/allReviews.css?<?=filemtime("styles/allReviews.css")?>" rel="stylesheet" type="text/css" />
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Reviews</title>
@@ -14,7 +14,6 @@
     <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
     <div class="navbar">
         <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-        <a href="managerContactUs.php">Contact Us</a>
     
       <a href="availableAppointments.php">Available appointments</a>
         <a href="appointmentRequests.php">Appointments requests</a>

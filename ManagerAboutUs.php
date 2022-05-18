@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/manageraboutusatyle.css">
     <link href="styles/manageraboutusatyle.css?<?=filemtime("styles/manageraboutusatyle.css")?>" rel="stylesheet" type="text/css" />
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
 
     
 

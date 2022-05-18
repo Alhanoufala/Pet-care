@@ -6,10 +6,10 @@
    
   
 }
-body{
+ body{
   background-image: linear-gradient(#ECF2F4, #ECF2F4);
 }
-
+/*
 .navbar{ 
 background-color: #ffffff;
 width:100%;
@@ -31,7 +31,7 @@ text-decoration: none;
 font-size: 18px;
 padding-top: 40px;
 }
-
+ */
 
 #center {
 margin-left: auto;
@@ -91,13 +91,13 @@ font-family: 'optima', sans-serif	;
 }
 .logo{
   position: absolute;
-              top: 0px;
-              left: 0px;
-              margin-top: -40px;
-             width: 160px;
-             height: 170px;
-
-}
+  top: 0px;
+  left: 0px;
+  margin-top: -20px;
+ width: 250px;
+ height: 140px;
+    
+ }
 
 .profile{
   position: absolute;
@@ -115,4 +115,11 @@ font-family: 'optima', sans-serif	;
   }
  
 
-  
+  * { 
+    font-family: 'optima', sans-serif	;
+}
+   #profile{
+       height : 33px ;
+       width : 33px ; 
+     }
+   

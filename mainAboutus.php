@@ -4,13 +4,13 @@
     <meta charset = "utf-8">
     <title>About Us</title>
     <link rel="stylesheet" href="styles/manageraboutusatyle.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
 
   <body>
     <div class="navbar">
       <a href="logIn.php">Login</a>
-      <a href="contactUs.php">Contact Us</a>  
      <a href = "mainServices.php">Services </a>
      <a href ="mainAboutus.php">About Us</a>
 <a href = "Pet Care.html">Home</a>

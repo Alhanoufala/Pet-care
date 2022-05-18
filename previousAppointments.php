@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Previous Appointments</title>
     <link rel="stylesheet" href="styles/datatable.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+
    </head>
 
 <body>
 
   <div class="navbar">
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
-    <a href="managerContactUs.php">Contact us</a>
     <a href="allReviews.php"> Reviews</a>
     <a href="previousAppointments.php"> Previous</a>
     <a href="upcomingAppointments.php"> Upcoming</a>
@@ -32,7 +33,6 @@
         <th scope="col">Service</th>
         <th scope="col">Date</th>
         <th scope="col">Time</th>
-        <th scope="col"> Reviews</th>
        
 
 
@@ -57,8 +57,7 @@ if ($result) {
        <th scope='row'><p>".$data[0]."</p>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
-       <td>".$data[3]."</td>
-       <td> <a href='viewReview.php?id=".$data[7]."'> view </a> </td>");
+       <td>".$data[3]."</td>");
    }
 }
 

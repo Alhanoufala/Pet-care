@@ -1,9 +1,40 @@
-* {
-    font-family: 'optima', sans-serif	; 
-}
-* {
+* { 
     font-family: 'optima', sans-serif	;
 }
+.navbar{ 
+   background-color: #ffffff;
+   width:100%;
+   height:100px; 
+   margin-top:-10px;
+   }
+   .navbar a:hover {
+     background: #f1f1f1;
+     color: #00556D;
+   }
+   .navbar a{
+       float:  right;
+       display: block;
+       color: #00556D;
+       text-align: center;
+       padding: 25px 40px;
+       text-decoration: none;
+       font-size: 18px;
+       padding-top: 40px;
+   }
+   #profile{
+       height : 33px ;
+       width : 33px ; 
+     }
+     .logo{
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       margin-top: -20px;
+      width: 400px;
+      height: 140px;
+         
+      }
+
 body{
     padding: 0;
     margin: 0;
@@ -71,44 +102,7 @@ p{
     font-size: 15px;
     align-items: center;
 }
-.logo{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin-top: -40px;
-   width: 160px;
-   height: 170px;
 
-}
-.navbar{ 
-    background-color: #ffffff;
-    position: absolute;
-    width:100%;
-    height:100px; 
-    margin-top:-210px;
-    }
-   
-.navbar{ 
-    background-color: #ffffff;
-    width:100%;
-      height:100px;   
-      margin:0px; 
-      margin-top: -200px;
-       }
-       .navbar a:hover {
-        background: #f1f1f1;
-        color: #00556D;
-      }
-      .navbar a{
-      float:  right;
-      display: block;
-      color: #00556D;
-      text-align: center;
-      padding: 25px 70px;
-      text-decoration: none;
-      font-size: 18px;
-      padding-top: 40px;
-      }
       .loginbut{
         margin: 15px auto;
     }
