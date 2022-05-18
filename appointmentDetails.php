@@ -22,7 +22,7 @@
        <p><label>Email :  <input name= "email" type ="text" required></label>
       
        <p><label>Note :  <input name= "note" type ="text"></label>
-       <p><a href="appointmentDetails.php"><button type="submit">Edit</button></a>
+       <p><a href="appointmentDetails.php"><button class ="l"type="submit">Edit</button></a>
     
     </form>
     </div>
@@ -55,7 +55,7 @@
       <a href="ownercontactUs.php">Contact Us</a>
       <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.php">My Appointments</a>
-      <a href = "newAppointment.php">Book Appointment</a>
+      <a href = "bookAppointment.php">Book Appointment</a>
       <a href="ownerServices.php" class= "active"> Services</a>
       <a href="OwnerAboutUs.php">About us</a>
       <a href="ownerHomePage.html">Home</a>

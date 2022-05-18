@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOK New Appointment</title>
-    <link rel="stylesheet" href="styles/newApp.css">
+    <link rel="stylesheet" href="styles/setApp.css">
 
 </head>
 <body>
@@ -17,7 +17,7 @@
      
       <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.php">My Appointments</a>
-      <a href = "newAppointment.php">Book Appointment</a>
+      <a href = "bookAppointment.php">Book Appointment</a>
       <a href="ownerServices.php" class= "active"> Services</a>
       <a href="OwnerAboutUs.php">About us</a>
       <a href="ownerHomePage.html">Home</a>
