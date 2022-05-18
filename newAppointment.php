@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOK New Appointment</title>
-    <link rel="stylesheet" href="styles/newApp.css">
+    <link rel="stylesheet" href="styles/setApp.css">
 
 </head>
 <body>

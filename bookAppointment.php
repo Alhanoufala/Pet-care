@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
    
     <title>BOOK New Appointment</title>
-    <link rel="stylesheet" href="styles/setApp.css">
+    <link rel="stylesheet" href="styles/datatable.css">
    
 </head>
 
