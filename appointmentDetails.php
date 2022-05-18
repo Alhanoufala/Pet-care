@@ -22,7 +22,7 @@
        <p><label>Email :  <input name= "email" type ="text" required></label>
       
        <p><label>Note :  <input name= "note" type ="text"></label>
-       <p><a href="appointmentDetails.php"><button type="submit">Edit</button></a>
+       <p><a href="appointmentDetails.php"><button class ="l"type="submit">Edit</button></a>
     
     </form>
     </div>

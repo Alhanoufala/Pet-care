@@ -51,7 +51,7 @@ body{
     
 
 }
-/*
+
 .butt{
     background-color: #ffffff;}
 #n{
@@ -69,9 +69,9 @@ body{
     
    }
 input{
-    height: 40px;
+    height: 90px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 70px;
     border: none;
     outline: none;
     margin: 5px ;
@@ -85,14 +85,9 @@ text{
     background-color:#00556D;
     color: #00556D;
 }
-select{
-    height: 20px;
-    width: 200px;
-    margin: 5px ; 
-    color: #425458;
-}
-button{
-    background-color: #ffffff;
+
+.l{
+    background-color: #8d4848;
     color: #00556D;
     border: none;
     padding: 8px 30px;
@@ -145,68 +140,3 @@ button:hover{
              width: 70px;
              height: 70px;
            }
-*/
-input{
-    height: 40px;
-    width: 200px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    margin: 5px ;
-    text-align: center;
-    font-size: 18px;
-    background-color: white;
-
-}
-select{
-    height: 40px;
-    width: 200px;
-    margin: 5px ; 
-}
-button{
-    background-color: white;
-      color:#00556D ;
-
-    border: none;
-    padding: 8px 30px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px 25px;
-}
-button:hover{
-    background-color: rgb(226, 226, 228);
-}
-
-.navbar{ 
-  background-color: #ffffff;
-  position: absolute;
-    width:100%;
-    height:100px; 
-    margin-top:-210px;
-    }
-    .navbar a:hover {
-        background: #f1f1f1;
-        color: black;
-      }
-      .navbar a{
-      float:  right;
-      display: block;
-    color:#00556D ;
-
-      text-align: center;
-      padding: 40px 35px;
-      text-decoration: none;
-      font-size: 18px;
-      }
-      .logo{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        margin-top: -40px;
-       width: 160px;
-       height: 170px;
-    
-    }
-
-           
-
