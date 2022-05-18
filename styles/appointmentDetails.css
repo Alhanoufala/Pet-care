@@ -62,14 +62,20 @@ text{
     font-size: 40px;
 }
 button{
-    background-color: #ffffff;
-    color: #00556D;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(141, 141, 141);
     border: none;
     padding: 8px 30px;
     border-radius: 10px;
-    font-size: 17px;
-    
-    
+    font-size: 18px;
+    margin: 5px 25px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+   
+               
+   /* text-decoration: none;*/
 }
 button:hover{
     background-color: rgb(226, 226, 228);
