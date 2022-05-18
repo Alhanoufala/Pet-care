@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/appointmentDetails.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/appointmentDetails.css?<?=filemtime("styles/appointmentDetails.css")?>" rel="stylesheet" type="text/css" />
+    
     <title>Edit Appointment Request</title>
 
 </head>
@@ -60,7 +61,6 @@
                   <!--<img  src= "images/dog-layan (1).png"  class = "dog" alt="dog"> -->
       <div class="navbar">
         <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
-      <a href="ownercontactUs.php">Contact Us</a>
       <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.php">My Appointments</a>
       <a href = "bookAppointment.php">Book Appointment</a>

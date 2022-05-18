@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/ownerHeader.css" >
     <link rel="stylesheet" href="styles/datatable.css">
     <link rel="stylesheet" href="styles/myPets.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
 

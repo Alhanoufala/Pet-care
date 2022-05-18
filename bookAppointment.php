@@ -5,13 +5,14 @@
    
     <title>BOOK New Appointment</title>
     <link rel="stylesheet" href="styles/datatable.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+
    
 </head>
 
 <body>
 <div class="navbar">
 <a href = "ownerProfile.php"><img src = "images/Profile1.png"  class= "profile"  alt= "Profile image" ></a>
-      <a href="ownercontactUs.php">Contact Us</a>
       <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.php">My Appointments</a>
       <a href = "bookAppointment.php">Book Appointment</a>

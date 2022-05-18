@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 07, 2022 at 11:23 PM
+-- Generation Time: May 18, 2022 at 02:47 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -30,7 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `aboutus` (
   `label` text NOT NULL,
   `description` text NOT NULL,
-  `photo` blob DEFAULT NULL,
+  `photo` text DEFAULT NULL,
+  `photo1` text NOT NULL,
   `location` text NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -39,8 +40,8 @@ CREATE TABLE `aboutus` (
 -- Dumping data for table `aboutus`
 --
 
-INSERT INTO `aboutus` (`label`, `description`, `photo`, `location`, `id`) VALUES
-('About us testing', 'testing', '', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.7256444722366!2d46.68682081516388!3d24.77059418409634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd3fc8ec4aeb%3A0x605baa975e4243f9!2sAdvanced%20Pet%20Clinic!5e0!3m2!1sen!2ssa!4v1645211168968!5m2!1sen!2ssa', 1);
+INSERT INTO `aboutus` (`label`, `description`, `photo`, `photo1`, `location`, `id`) VALUES
+('About Us', 'Welcome to our Petcare Veterinary Clinic! Where animals and their owners are valued and cherished. The clinic first opened its doors in Riyadh in January 2022. In Saudi Arabia, our clinic is the first of its kind. Our staff has been offering unique veterinary medical services and compassion to pets as a primary focus. We are here to keep your pets healthy by treating each client as if they were family and each pet as if it were our own. <br>Our mission is to provide quality, caring, and compassionate veterinary care to pet owners in addition to detecting diseases and providing outstanding health care.<br> We specislize in the care of cats , dogs, rabbits, birds, fish, and turtles.', 'catR2.png', 'catR.png', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.7256444722366!2d46.68682081516388!3d24.77059418409634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd3fc8ec4aeb%3A0x605baa975e4243f9!2sAdvanced%20Pet%20Clinic!5e0!3m2!1sen!2ssa!4v1645211168968!5m2!1sen!2ssa', 1);
 
 -- --------------------------------------------------------
 
@@ -58,14 +59,6 @@ CREATE TABLE `appointments_requests` (
   `note` varchar(150) DEFAULT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `appointments_requests`
---
-
-INSERT INTO `appointments_requests` (`pet_name`, `service`, `date`, `time`, `owner_email`, `status`, `note`, `id`) VALUES
-('lala', 'Checkup', '2022-05-24', '00:59:00', '666', 'accepted', NULL, 18),
-('lulu', 'Grooming', '2022-05-17', '01:07:00', 'h@gmail.com', 'completed', '---', 19);
 
 -- --------------------------------------------------------
 
@@ -88,15 +81,16 @@ CREATE TABLE `available_appointments` (
 
 CREATE TABLE `manager` (
   `email` varchar(35) NOT NULL,
-  `password` int(15) NOT NULL
+  `password` int(15) NOT NULL,
+  `Verification` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `manager`
 --
 
-INSERT INTO `manager` (`email`, `password`) VALUES
-('alhanouf@gmail.com', 12345);
+INSERT INTO `manager` (`email`, `password`, `Verification`) VALUES
+('hano.alawwad@gmail.com', 123456, '5350');
 
 -- --------------------------------------------------------
 
@@ -109,10 +103,10 @@ CREATE TABLE `pet` (
   `photo` text NOT NULL,
   `birthDate` date NOT NULL,
   `breed` varchar(30) NOT NULL,
-  `pet_status` enum('spayed','neutered') NOT NULL,
+  `status` text NOT NULL,
   `medicalHistory` longblob DEFAULT NULL,
   `vaccinations` longblob DEFAULT NULL,
-  `gender` enum('male','female') NOT NULL,
+  `gender` text NOT NULL,
   `owner_email` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -136,15 +130,16 @@ CREATE TABLE `pet_owner` (
   `Lname` varchar(20) NOT NULL,
   `gender` enum('male','female') NOT NULL,
   `phone_no` int(11) NOT NULL,
-  `photo` text DEFAULT NULL
+  `photo` text DEFAULT NULL,
+  `Verification` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `pet_owner`
 --
 
-INSERT INTO `pet_owner` (`email`, `password`, `Fname`, `Lname`, `gender`, `phone_no`, `photo`) VALUES
-('s.i.alshathri@gmail.com', '112233', 'Sarah', 'AlShathri', 'female', 582653424, 'ProfilePhoto.jpg');
+INSERT INTO `pet_owner` (`email`, `password`, `Fname`, `Lname`, `gender`, `phone_no`, `photo`, `Verification`) VALUES
+('s.i.alshathri@gmail.com', '12345', 'Sarah', 'AlShathri', 'female', 582653424, 'ProfilePhoto.jpg', '8819');
 
 -- --------------------------------------------------------
 
@@ -157,15 +152,30 @@ CREATE TABLE `review` (
   `pet_name` varchar(25) NOT NULL,
   `owner_email` varchar(45) NOT NULL,
   `review` varchar(100) NOT NULL,
-  `photo` longblob NOT NULL
+  `photo` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `services`
+--
+
+CREATE TABLE `services` (
+  `servicename` text NOT NULL,
+  `description` text NOT NULL,
+  `price` text NOT NULL,
+  `photo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `review`
+-- Dumping data for table `services`
 --
 
-INSERT INTO `review` (`review_id`, `pet_name`, `owner_email`, `review`, `photo`) VALUES
-(19, 'lulu', 'h@gmail.com', 'Testing ', '');
+INSERT INTO `services` (`servicename`, `description`, `price`, `photo`) VALUES
+('Grooming', '    grooming session consists of the pet being brushed , bathed , and dried.  \r\n', '70', 'grooming.jpeg'),
+('Boarding', 'providing a place where your pet can stay overnight or longer.  \r\n', '120', 'Boarding.jpeg'),
+('Checkup', 'tests that are meant to detect any signs of health issues that your pet may be facing.\r\n', '180', 'cheakup.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -216,13 +226,13 @@ ALTER TABLE `pet_owner`
 -- AUTO_INCREMENT for table `appointments_requests`
 --
 ALTER TABLE `appointments_requests`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `available_appointments`
 --
 ALTER TABLE `available_appointments`
-  MODIFY `appointment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `appointment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables

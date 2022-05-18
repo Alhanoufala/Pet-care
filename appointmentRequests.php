@@ -4,12 +4,13 @@
     <meta charset = "utf-8">
     <title>View Requests</title>
     <link rel="stylesheet" href="styles/datatable.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     
   <div class="navbar">
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
-    <a href="managerContactUs.php">Contact us</a>
     <a href="allReviews.php"> Reviews</a>
     <a href="previousAppointments.php"> Previous</a>
     <a href="upcomingAppointments.php"> Upcoming</a>

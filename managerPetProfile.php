@@ -2,15 +2,15 @@
 <html>
 <head>
  <title>Pet Profile</title>
- <link rel="stylesheet" href="styles/ownerHeader.css">
- <link rel="stylesheet" href="styles/managerPetProfile.css">
+ 
+ <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+ <link href="styles/managerPetProfile.css?<?=filemtime("styles/managerPetProfile.css")?>" rel="stylesheet" type="text/css" />
 
 </head>
 
 <body>
     <div class="navbar">
       <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logout icon"> </a>
-      <a href="managerContactUs.php">Contact us</a>
       <a href="previousAppointments.php"> Previous</a>
       <a href="upcomingAppointments.php"> Upcoming</a>
         <a href="appointmentRequests.php"> Requests</a>

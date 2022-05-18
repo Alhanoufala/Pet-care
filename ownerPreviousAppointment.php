@@ -5,6 +5,7 @@
     
     <title>Previous Appointments</title>
     <link rel="stylesheet" href="styles/AppointmentRequest.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
 
 </head>
 <body>

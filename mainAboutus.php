@@ -4,6 +4,7 @@
     <meta charset = "utf-8">
     <title>About Us</title>
     <link rel="stylesheet" href="styles/manageraboutusatyle.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
 

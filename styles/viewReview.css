@@ -32,6 +32,8 @@ button:hover{
   flex-direction: column;
   margin-top: 80px;
   margin-left:500px;
+  margin-right:500px;
+
   align-items: center;
   background-color:rgb(201, 230, 238);
    padding: 25px 10px ;
@@ -61,14 +63,15 @@ button:hover{
     }
     
     .logo{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        margin-top: -40px;
-       width: 160px;
-       height: 170px;
-          
-       }
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      margin-top: -20px;
+     width: 250px;
+     height: 140px;
+        
+     }
+
 
 .petPic{
   width: 200px;

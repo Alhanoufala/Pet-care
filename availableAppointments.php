@@ -6,6 +6,8 @@
     <title>View Available Appointments</title>
     
     <link rel="stylesheet" href="styles/datatable.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+
      <style>
 
      </style>
@@ -15,7 +17,6 @@
  
   <div class="navbar">
     <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-    <a href="managerContactUs.php">Contact Us</a>
     <a href="setAppointment.php">Set a new available Appointments</a>
     <a href="availableAppointments.php">Available appointments</a>
       <a href="Services.php"> Services</a>

@@ -4,12 +4,13 @@
     <meta charset = "utf-8">
     <title>Set New Appointment</title>
     <link rel="stylesheet" href="styles/setApp.css">
+    <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     
     <div class="navbar">
         <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-        <a href="managerContactUs.php">Contact Us</a>
   
         <a href="availableAppointments.php">Available appointments</a>
           <a href="appointmentRequests.php">Appointments requests</a>
