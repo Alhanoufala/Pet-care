@@ -8,7 +8,7 @@
     <meta charset = "utf-8">
     <title>Edit Profile</title>
     <link rel="stylesheet" href="styles/ownerHeader.css">
-    <link rel="stylesheet" href="styles/ownerProfile.css"> 
+    <link rel="stylesheet" href="styles/ownerEditProfile.css"> 
   </head>
 
   <body>
@@ -30,7 +30,7 @@
       <div class="container">
         <form method="post">
           <div class="profilePic">
-            <img src = "images/profileEdit.png"  class= "profile"  alt= "Profile image" height="200" width="200">
+            <img src = "images/profileEdit.png"  class= "profilePic"  alt= "Profile image" height="200" width="200">
             <input type="file" id="profilePhotoFile" name="profilePhotoFile" accept="image/*">
           </div>
           

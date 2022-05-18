@@ -6,7 +6,7 @@
 <head>
  <title>Edit Pet Profile</title>
  <link rel="stylesheet" href="styles/ownerHeader.css">
- <link rel="stylesheet" href="styles/petProfile.css">
+ <link rel="stylesheet" href="styles/addPet.css">
 
 </head>
 
@@ -27,7 +27,7 @@
     
 <div class="container">
 
-<form method="post">
+<form method="post" action = "editPetProfile.php">
               <p><label>Pet name:<input type="text" name="Pname" id="Pname"  required></label></p>
               <p><label>Birth date: <input type="date" name="PetBD" id="PetBD"  required></label></p>
                
@@ -41,28 +41,29 @@
                 </div></div>
 
                 
-              <p><label>Pet breed: <input type="text" name="Pbreed" id="Pbreed"  required></label></p>
-                
                 <div class="content">
                   <div class="radio">
-                   <label for="Status">Status: </label>
-                      <input type="radio" name="Status" id="status" value="spayed" required>
-                      <label for="Spayed">Spayed</label>
-                      <input type="radio" name="Status" id="status" value="neutered" required>
-                      <label for="Neutered">Neutered</label>
+                   <label for="status">Status: </label>
+                      <input type="radio" name="status" id="status" value="spayed" required>
+                      <label for="spayed">spayed</label>
+                      <input type="radio" name="status" id="status" value="neutered" required>
+                      <label for="neutered">neutered</label>
                   </div></div>
+
+                <p><label>Pet breed: <input type="text" name="Pbreed" id="Pbreed"  required></label></p>
 
                 <p>Pet photo: <input type="file" id="petPhotoFile" name="petPhotoFile" accept="image/*" required></p>
 
                 <p>vaccinations list(optional)
                 <input type="file" id="vacFile" name="vacFile" ></p>
                 <p>medical history (optional)
-                <input type="file" id="medFile" name="petFile" ></p>
+                <input type="file" id="medFile" name="medFile" ></p>
   
-                <div class="editbut">
-                <a href="petProfile.html"><button type="Save">Save</button></a>
-
-              </div>
+             <div class="submitbut">
+              
+              <a href = "editPetProfile.php"><input type = "submit" value="Save"></a>
+              
+             </div>
 
              
           
@@ -88,13 +89,10 @@
          $petPhotoFile=$_POST['petPhotoFile']; 
          $vacFile=$_POST['vacFile']; 
          $medFile=$_POST['medFile']; 
-         $ownerEmail="test";
-
-
-         //edit for specific pet
-         $query = "UPDATE pet SET ".
-         "(name, photo, birthDate, breed, status, medicalHistory, vaccinations, gender, ownerEmail ) "."VALUES ".
-         "('$Pname','$petPhotoFile','$PetBD','$Pbreed','$status','$medFile','$vacFile','$gender','$ownerEmail')";
+         
+         $OwnerEmail = $_SESSION["OwnerEmail"];
+      
+         $query = "UPDATE pet SET name = '".$Pname."' ,photo ='".$petPhotoFile."' , birthDate='".$PetBD."', breed='".$Pbreed."', pet_status='".$status."', medicalHistory='".$medFile."', vaccinations='".$vacFile."', gender='".$gender."' WHERE owner_email='".$OwnerEmail."';";
 
         $result = mysqli_query($database, $query);
         if($result)
