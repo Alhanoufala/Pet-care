@@ -15,26 +15,33 @@
      
         <div class = "container">
         <h2>Edit an appointment</h2>
-        <?php $id = $_GET['id']; ?>
+        <?php $id = $_GET['id'];  ?>
+        <form method='POST' action= <?php 'appointmentDetails.php?id='.$id ?>>
+        <?php 
+         if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+         die( "<p>Could not connect to database</p>" );
+
+      if ( !mysqli_select_db( $database, "Pet_care") )
+         die( "<p>Could not open URL database</p>" );
         
-        <form method="POST" action=<?php echo "appointmentDetails.php?id=".$id?>>
-        <p><label>Pet name: <input name = "pet_name" type="text" required></label></p>
+          $query="SELECT * FROM appointments_requests WHERE id= $id";
+          $result=mysqli_query($database, $query);
+          $data = mysqli_fetch_row($result);
+        print("
+        
+        <p><label>Pet name: <input name = 'pet_name' type='text' value='".$data[0]."' required></label></p>
      
-       <p><label>Email :  <input name= "email" type ="text" required></label>
+       <p><label>Email :  <input name= 'email' type ='text' value='".$data[4]."' required></label>
       
-       <p><label>Note :  <input name= "note" type ="text"></label>
-       <p><a href="appointmentDetails.php"><button class ="l"type="submit">Edit</button></a>
+       <p><label>Note :  <input name= 'note' type ='text' value='".$data[6]."' ></label>
+       <p><a href='appointmentDetails.php'><button class ='l'type='submit'>Edit</button></a>
     
     </form>
     </div>
-    <?php 
+    ");
           
           if ($_SERVER["REQUEST_METHOD"] == "POST") {
-              if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
-                 die( "<p>Could not connect to database</p>" );
-
-              if ( !mysqli_select_db( $database, "Pet_care") )
-                 die( "<p>Could not open URL database</p>" );
+            
                 $pet_name = $_POST["pet_name"];
                  $email =  $_POST["email"];
                  $note =  $_POST["note"];

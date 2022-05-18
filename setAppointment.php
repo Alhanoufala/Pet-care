@@ -23,11 +23,23 @@
     <div class = "container">
         <h2>Set an appointment</h2>
         <form method="POST" action="setAppointment.php">
-       <p><label>Service: <select name = "services">
-           <option>Grooming</option>
-           <option>Checkup</option>
-           <option>Boarding</option>
-        </select></label></p>
+        <p><label>Service: <select name = "services">
+        <?php 
+       if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+       die( "<p>Could not connect to database</p>" );
+
+      if ( !mysqli_select_db( $database, "Pet_care") )
+       die( "<p>Could not open URL database</p>" );
+        //retrive all services
+        $query_allServices="SELECT * FROM services";
+        $result_allServices= mysqli_query($database, $query_allServices);
+        while ($dataS = mysqli_fetch_row( $result_allServices)){
+            print("<option>".$dataS[0]."</option>");
+
+        }
+
+        ?>
+         </select></label></p>
        <br>
        <p><label>Date: <input name = "date" type="date" required></label></p>
        <br>
@@ -37,12 +49,7 @@
     </form>
     <?php
              if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                 if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
-                    die( "<p>Could not connect to database</p>" );
-
-                 if ( !mysqli_select_db( $database, "Pet_care") )
-                    die( "<p>Could not open URL database</p>" );
-
+                
                     $service =  $_POST["services"];
                     $date =   $_POST["date"];
                     $time =  $_POST["time"];

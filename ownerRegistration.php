@@ -71,7 +71,9 @@
          {  header("location: ownerHomePage.html");
             $_SESSION["OwnerEmail"]=$email; }
         else  
-         {  echo "<script>alert('an error occurred, could not add pet.')</script>";  }
+         {  //echo "<script>alert('an error occurred, could not add pet.')</script>"; 
+          die(mysqli_error($database));
+         }
      }  
  ?>
   </body>

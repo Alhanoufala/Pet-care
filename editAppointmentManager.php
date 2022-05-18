@@ -21,29 +21,42 @@
     <div class = "container">
         <h2>Edit an appointment</h2>
         <?php $id = $_GET['id']; ?>
-        <form method="POST" action=<?php echo "editAppointmentManager.php?id=".$id?>>
-       <p><label>Service: <select name = "services">
-           <option>Grooming</option>
-           <option>Checkup</option>
-           <option>Boarding</option>
+        <form method='POST' action= <?php 'editAppointmentManager.php?id='.$id ?>>
+        <?php 
+          if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+          die( "<p>Could not connect to database</p>" );
+
+       if ( !mysqli_select_db( $database, "Pet_care") )
+          die( "<p>Could not open URL database</p>" );
+          //available_appointments
+          $query="SELECT * FROM available_appointments WHERE appointment_id= $id";
+          $result=mysqli_query($database, $query);
+          $data = mysqli_fetch_row($result);
+          //form
+          print(" 
+          <p><label>Service: <select name = 'services'>");
+          //retrive all services
+          $query_allServices="SELECT * FROM services";
+          $result_allServices= mysqli_query($database, $query_allServices);
+          while ($dataS = mysqli_fetch_row( $result_allServices)){
+              print("<option>".$dataS[0]."</option>");
+
+          }
+print("
         </select></label></p>
        <br>
-       <p><label>Date: <input name = "date" type="date"></label></p>
+       <p><label>Date: <input name = 'date' type='date' value='".$data[1]."'></label></p>
        <br>
-       <p><label>Time: <input name= "time" type ="time"></label>
-       <p><a href="editAppointmentManager.php"><button type="submit">Edit</button></a>
+       <p><label>Time: <input name= 'time' type ='time'value='".$data[2]."'></label>
+       <p><a href='editAppointmentManager.php'><button type='submit'>Edit</button></a>
     
     </form>
     </div>
-
-    <?php 
+");
+    
           
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
-                   die( "<p>Could not connect to database</p>" );
-
-                if ( !mysqli_select_db( $database, "Pet_care") )
-                   die( "<p>Could not open URL database</p>" );
+        
 
                    $service =  $_POST["services"];
                    $date =   $_POST["date"];
