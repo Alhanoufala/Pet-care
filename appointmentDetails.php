@@ -55,7 +55,7 @@
       <a href="ownercontactUs.php">Contact Us</a>
       <a href = "myPets.php">My Pets</a>
       <a href = "AppointmentRequest.php">My Appointments</a>
-     
+      <a href = "bookAppointment.php">Book Appointment</a>
       <a href="ownerServices.php" class= "active"> Services</a>
       <a href="OwnerAboutUs.php">About us</a>
       <a href="ownerHomePage.html">Home</a>
