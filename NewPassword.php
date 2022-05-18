@@ -24,7 +24,7 @@ if (!mysqli_select_db($database, "Pet_care"))
 
             $result = mysqli_query($database, $query);
             echo "<script>alert('You have entered incorrect code, try again');</script>";
-            header('Location: managerLogIn.php');
+            header('Location: logIn.php');
 
             //function_alert("Password has been changed successfully!");
             //redirect error???
