@@ -11,7 +11,6 @@
   <body>
     <div class="navbar">
       <a href="Pet Care.html"><img  src="images/logout-32.png " alt="logou icon"> </a>
-      <a href="managerContactUs.php">Contact Us</a>
       <a href="availableAppointments.php">Available appointments</a>
         <a href="appointmentRequests.php">Appointments requests</a>
         <a href="Services.php"> Services</a>

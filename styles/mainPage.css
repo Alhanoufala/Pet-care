@@ -14,25 +14,7 @@ body{
     padding-top: 0vh;
     
 }
-.fixed-footer a {
-  
-  color:#00556D ;
-  font-size: 20px;
- }
- .footer{
-  font-size: 20px;
- }
-.fixed-footer{
-  width: 100%;
-  position: fixed;        
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  text-align: center;
-  bottom: 0;
-  padding:10px;
-  margin: -7px;
-  font-size: 20px;
-} 
+
 
 .navbar{ 
     background-color:#ffffff;

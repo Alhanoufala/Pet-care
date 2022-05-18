@@ -10,7 +10,6 @@
   <body>
     <div class="navbar">
       <a href="logIn.php">Login</a>
-      <a href="contactUs.php">Contact Us</a>  
      <a href = "mainServices.php">Services </a>
      <a href ="mainAboutus.php">About Us</a>
 <a href = "Pet Care.html">Home</a>
