@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles/appointmentDetails.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/appointmentDetails.css?<?=filemtime("styles/appointmentDetails.css")?>" rel="stylesheet" type="text/css" />
     <title>Edit Appointment Request</title>
 
 </head>
