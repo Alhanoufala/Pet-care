@@ -86,8 +86,7 @@
          $PetBD=$_POST['PetBD'];
          $gender=$_POST['gender']; 
          $Pbreed=$_POST['Pbreed']; 
-         $status=$_POST['status']; //array
-         
+         $status=$_POST['status']; 
          $petPhotoFile=$_POST['petPhotoFile']; 
          $vacFile=$_POST['vacFile']; 
          $medFile=$_POST['medFile']; 
