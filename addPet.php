@@ -28,7 +28,7 @@
 
       <div class="container">
           <h2>Add Pet</h2>
-          <form method="post">
+          <form method="post" action = "addPet.php">
               <p><label>Pet name:<input type="text" name="Pname" id="Pname"  required></label></p>
               <p><label>Birth date: <input type="date" name="PetBD" id="PetBD"  required></label></p>
                
@@ -87,20 +87,22 @@
          $gender=$_POST['gender']; 
          $Pbreed=$_POST['Pbreed']; 
          $status=$_POST['status']; //array
+         
          $petPhotoFile=$_POST['petPhotoFile']; 
          $vacFile=$_POST['vacFile']; 
          $medFile=$_POST['medFile']; 
 
          $OwnerEmail = $_SESSION["OwnerEmail"];
 
-         $query="INSERT INTO pet VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$OwnerEmail."');";
+         $query="INSERT INTO pet VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$gender."','".$OwnerEmail."')";
         
         $result = mysqli_query($database, $query);
         if($result)
            header("location: myPets.php");
          
         else  
-           echo "<script>alert('an error occurred, could not add pet.')</script>";  
+        die(mysqli_error($database ));
+         //echo "<script>alert('an error occurred, could not add pet.')</script>";  
      }  
  ?>
 
