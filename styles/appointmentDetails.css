@@ -63,15 +63,19 @@ text{
 }
 button{
     align-items: center;
-    background-color: white;
-    color: rgb(119, 119, 119);
+    background-color: rgb(255, 255, 255);
+    color: rgb(141, 141, 141);
     border: none;
     padding: 8px 30px;
     border-radius: 10px;
     font-size: 18px;
     margin: 5px 25px;
     align-items: center;
-    
+    align-content: center;
+    text-align: center;
+    font-family: cursive;
+               
+   /* text-decoration: none;*/
 }
 button:hover{
     background-color: rgb(226, 226, 228);
