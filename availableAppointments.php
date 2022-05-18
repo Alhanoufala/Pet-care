@@ -59,7 +59,7 @@ if ($result) {
        print("<tr> <th scope='row'>".$data[0]."</th>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
-       <td> <a href=\"deleteToEdit.php?id=".$data[3]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
+       <td> <a href=\"editAppointmentManager.php?id=".$data[3]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
        <td> <a href=\"deleteAppointment.php?id=".$data[3]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
    }
 }

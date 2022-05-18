@@ -19,8 +19,8 @@
     <div class="container">
       <h2>Login</h2>
       <form method="post" >
-          <input type="text" name="email" id="email" placeholder="email">
-          <input type="password" name="pass" id="pass" placeholder="password">
+          <input type="text" name="email" id="email" placeholder="email" required>
+          <input type="password" name="pass" id="pass" placeholder="password" required>
 
          <div class="loginbut">
           
@@ -30,7 +30,7 @@
           
       </form>
       
-       <p>Forgot password?<a href="Forget Password.html">  Click Here</a></p>
+       <p>Forgot password?<a href="Forget Password.php">  Click Here</a></p>
        <p>New user?<a href="ownerRegistration.php">   SignUp</a></p>
  
 
@@ -51,17 +51,29 @@
         $email=$_POST['email'];  //correct
         $password=$_POST['pass'];  
         $query="select * from pet_owner WHERE email='$email'AND password='$password'";  
-
-        $result=mysqli_query($database, $query);  
-
-        if($row=mysqli_fetch_row($result)) {  
+        $result_owner=mysqli_query($database, $query);  
+        if($row=mysqli_fetch_row($result_owner)){//owner
+         
             header("location: ownerHomePage.html");
             $_SESSION["OwnerEmail"]=$email;
-        }
+      }
+      else {
+        $query_m="select * from manager WHERE email='$email'AND password='$password'";  
+        $result_manager=mysqli_query($database, $query_m);
+        if($row=mysqli_fetch_row($result_manager)){//mangaer
+         
+          header("location: managerHomePage.html");
+         
+    }
+    else
+    echo "<script>alert('Email or password is incorrect!')</script>";
+  }
+    
+      }
         
-        else  
-          echo "<script>alert('Email or password is incorrect!')</script>";  
-    }  
+       
+  
+   
     
     ?>
 

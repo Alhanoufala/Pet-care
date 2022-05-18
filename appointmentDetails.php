@@ -14,20 +14,11 @@
      
         <div class = "container">
         <h2>Edit an appointment</h2>
+        <?php $id = $_GET['id']; ?>
         
-        <form method="POST" action="appointmentDetails.php">
+        <form method="POST" action=<?php echo "appointmentDetails.php?id=".$id?>>
         <p><label>Pet name: <input name = "pet_name" type="text" required></label></p>
      
-       <p><label>Service: <select name = "services">
-           <option>Grooming</option>
-           <option>Checkup</option>
-           <option>Boarding</option>
-        </select></label></p>
-   
-       <p><label>Date :   <input name = "date" type="date" required></label></p>
-  
-       <p><label>Time :   <input name= "time" type ="time" required></label>
-   
        <p><label>Email :  <input name= "email" type ="text" required></label>
       
        <p><label>Note :  <input name= "note" type ="text"></label>
@@ -44,13 +35,10 @@
               if ( !mysqli_select_db( $database, "Pet_care") )
                  die( "<p>Could not open URL database</p>" );
                 $pet_name = $_POST["pet_name"];
-                 $service =  $_POST["services"];
-                 $date =   $_POST["date"];
-                 $time =  $_POST["time"];
                  $email =  $_POST["email"];
-                 $note =  $_POST["note"];// To DO : insert the note
-
-              $query="INSERT INTO appointments_requests (pet_name,service, date, time,owner_email) VALUES ('".$pet_name."',"."'".$service."',"."'".$date."','".$time."','".$email."');";
+                 $note =  $_POST["note"];
+                 $id =  $_GET['id'];
+                 $query = "UPDATE appointments_requests SET pet_name ='".$pet_name."',owner_email = '".$email."',note ='".$note."' WHERE id='".$id."'";
               $result=mysqli_query($database, $query);
                 if($result)
                        header("location: AppointmentRequest.php");

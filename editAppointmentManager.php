@@ -20,8 +20,8 @@
           </div> 
     <div class = "container">
         <h2>Edit an appointment</h2>
-        
-        <form method="POST" action="editAppointmentManager.php">
+        <?php $id = $_GET['id']; ?>
+        <form method="POST" action=<?php echo "editAppointmentManager.php?id=".$id?>>
        <p><label>Service: <select name = "services">
            <option>Grooming</option>
            <option>Checkup</option>
@@ -48,8 +48,8 @@
                    $service =  $_POST["services"];
                    $date =   $_POST["date"];
                    $time =  $_POST["time"];
-
-                $query="INSERT INTO available_appointments (service, date, time) VALUES ('".$service."','".$date."','".$time."');";
+                   $id =  $_GET['id'];
+                   $query = "UPDATE available_appointments SET service ='".$service."',date= '".$date."',time ='".$time."' WHERE appointment_id='".$id."'";
                 $result=mysqli_query($database, $query);
                 if($result)
                        header("location: availableAppointments.php");
