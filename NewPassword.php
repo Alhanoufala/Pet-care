@@ -59,7 +59,7 @@ if (!mysqli_select_db($database, "Pet_care"))
 
     </div>
     <div class="container2">
-      <div class="title">Reset Password</div>
+      <div class="title"> <h2>New Password</h2></div>
 
       <form method = "post" action = "NewPassword.php">
 

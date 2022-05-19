@@ -95,7 +95,7 @@
     </div>
     <div class="container">
 
-      <h4>Forgot your Password ? </h4>
+      <h2>Forgot your Password ? </h2>
       <form method="post" action = "Forget Password.php">
       <p> Enter the email address associated with your account <br><br>
       <label> 
