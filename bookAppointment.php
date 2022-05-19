@@ -42,6 +42,10 @@
        
          
       </tr>
+</thead>
+
+<tbody>
+
 
       <?php
   
@@ -76,10 +80,9 @@ if ($result) {
 
   ?>
   
-    </tbody>
-  </table>
-    </thead>
-    <tbody>
+  </tbody>
+    </table>
+
     
 
 
