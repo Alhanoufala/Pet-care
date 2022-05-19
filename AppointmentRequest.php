@@ -90,7 +90,7 @@ if ($result) {
           <td> <a href=\"noteOwner.php?note=".$data[6]."\"><img src= 'images/sticky-note.png' ></a></td>
           <td>Waiting</td>
           <td> <a href=\"appointmentDetails.php?id=".$data[7]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
-          <td> <a href=\"cancelAppointmentsOwner.php?id=".$data[7]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
+          <td> <a href=\"cancelAppointmentsOwner.php?id=".$data[7]."&service=".$data[1]."&date=".$data[2]."&time=".$data[3]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
          }
    }
 }
