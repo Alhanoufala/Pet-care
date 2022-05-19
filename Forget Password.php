@@ -34,7 +34,7 @@
         //if its already exist, create random number and store it as verifaction code in the database
         //manager
         $OTP = generateNumericOTP();
-        //to store
+       
         if ($manager){
             $query = "UPDATE manager SET Verification = '$OTP' WHERE email = '$email' ";
 
@@ -54,13 +54,13 @@
       }
    
     function isEmailExists($db, $tableName, $email){
-        // SQL Statement
+      
         $sql = "SELECT * FROM ".$tableName." WHERE email='".$email."'";
-        // Process the query
+       
         $results = $db->query($sql);
-        // Fetch Associative array
+        
         $row = $results->fetch_assoc();
-        // Check if there is a result and response to  1 if email is existing
+            
         return (is_array($row) && count($row)>0);
       }
 
@@ -70,13 +70,13 @@
           for ($i = 1; $i <= 4; $i++) {
               $result .= substr($generator, (rand() % (strlen($generator))), 1);
             }
-            // Returning the result 
+            
             return $result;
         }
 
         function function_alert($message) {
       
-            // Display the alert box
+          
             echo "<script>alert('$message');</script>";
         }
 ?>

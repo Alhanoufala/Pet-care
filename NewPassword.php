@@ -68,14 +68,14 @@ if (!mysqli_select_db($database, "Pet_care"))
             <label> Password </label>
           </div>
    
-        <div class="field">
+        <div>
           <input type="password" size = "18" name ="rePassword"required>
           <label> ReWrite Password </label>
         </div> 
 
   
     
-          <div class="field" >
+          <div  >
           <a href="Forget Password.php"><button type="button">Cancel</button></a>
                 
                 <input class =  "update" name ="cahnge" type="submit" value="Update">

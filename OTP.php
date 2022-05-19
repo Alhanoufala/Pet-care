@@ -22,7 +22,7 @@ if (!mysqli_select_db($database, "Pet_care"))
       $singleRow = mysqli_fetch_row($result);
       $OTP = $singleRow['0'];
 
-      //Second we will move the user to next page 
+      // move the user to next page 
       if ($OTP == $code)
       header('Location: NewPassword.php');
       
@@ -35,20 +35,20 @@ if (!mysqli_select_db($database, "Pet_care"))
   }
 
     function isEmailExists($db, $tableName, $email){
-        // SQL Statement
+        
         $sql = "SELECT * FROM ".$tableName." WHERE email='".$email."'";
-        // Process the query
+        
         $results = $db->query($sql);
-        // Fetch Associative array
+       
         $row = $results->fetch_assoc();
-        // Check if there is a result and response to  1 if email is existing
+       
         return (is_array($row) && count($row)>0);
       }
 
 
       function function_alert($message) {
       
-        // Display the alert box
+        
         echo "<script>alert('$message');</script>";
     }
 ?>
@@ -73,7 +73,7 @@ if (!mysqli_select_db($database, "Pet_care"))
       
        <label id ="teVer">Verification code has been sent to your email to reset your password , enter it:</label>
 
-        <div class="field">
+        <div>
           <input type="text" size = "10" name ="Code"required>
 
           <label>Received Code</label>
@@ -81,7 +81,7 @@ if (!mysqli_select_db($database, "Pet_care"))
 
   
 
-        <div class="field" >
+        <div>
         <a href="Forget Password.php"><button type="button">Cancel</button></a>
         <input  type="submit" class = "update" name= "validate" value="Update">
 

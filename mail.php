@@ -20,7 +20,7 @@ function send_mail($recipient,$subject,$message)
   $mail->Password   = "nitvdhqclmnpmjgs";
 
   $mail->IsHTML(true);
-  $mail->AddAddress($recipient, "Pet Owner");
+  $mail->AddAddress($recipient, "User");
   $mail->SetFrom("raseelalrowais@gmail.com", "Pet Care");
  
   $mail->Subject = $subject;
@@ -28,12 +28,10 @@ function send_mail($recipient,$subject,$message)
 
   $mail->MsgHTML($content); 
   if(!$mail->Send()) {
-    //echo "Error while sending Email.";
-    //echo "<pre>";
-    //var_dump($mail);
+   
     return false;
   } else {
-    //echo "Email sent successfully";
+   
     return true;
   }
 
