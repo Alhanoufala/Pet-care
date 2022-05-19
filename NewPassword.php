@@ -64,12 +64,12 @@ if (!mysqli_select_db($database, "Pet_care"))
       <form method = "post" action = "NewPassword.php">
 
         <div class="field">
-            <input type="password" name ="Password"required>
+            <input type="password" size = "18" name ="Password"required>
             <label> Password </label>
           </div>
    
         <div class="field">
-          <input type="password" name ="rePassword"required>
+          <input type="password" size = "18" name ="rePassword"required>
           <label> ReWrite Password </label>
         </div> 
 
@@ -78,7 +78,7 @@ if (!mysqli_select_db($database, "Pet_care"))
           <div class="field" >
           <a href="Forget Password.php"><button type="button">Cancel</button></a>
                 
-                <input name ="cahnge" type="submit" value="Update">
+                <input class =  "update" name ="cahnge" type="submit" value="Update">
                 
 
             </div>

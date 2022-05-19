@@ -99,10 +99,13 @@
       <form method="post" action = "Forget Password.php">
       <p> Enter the email address associated with your account <br><br>
       <label> 
-        <input type="email" name="Email"  placeholder="email" size = "33">
-       
-        <p class="restbutton"><input name ="reset" type="submit" value="Update"></p>
+        <input id = "email "type="email" name="Email"  placeholder="email" size = "33">
         </label></p>
+         
+        <div>
+        <a href="logIn.php"><button type="button">Cancel</button></a>
+        <input class = "update" name ="reset" type="submit" value="Update">
+      </div> 
       </form>
       </div> 
       <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">

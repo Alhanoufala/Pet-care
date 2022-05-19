@@ -74,7 +74,7 @@ if (!mysqli_select_db($database, "Pet_care"))
        <label id ="teVer">Verification code has been sent to your email, enter it:</label>
 
         <div class="field">
-          <input type="text" name ="Code"required>
+          <input type="text" size = "10" name ="Code"required>
 
           <label>Received Code</label>
         </div>
@@ -83,7 +83,7 @@ if (!mysqli_select_db($database, "Pet_care"))
 
         <div class="field" >
         <a href="Forget Password.php"><button type="button">Cancel</button></a>
-        <input  type="submit" name= "validate" value="Update">
+        <input  type="submit" class = "update" name= "validate" value="Update">
 
               
 
