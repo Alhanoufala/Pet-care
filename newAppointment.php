@@ -71,7 +71,7 @@
         ?>
          </select></label></p>
        <br>
-       <p><label>Note    : <input name= "note" type ="text" required></label>
+       <p><label>Note    : <input name= "note" type ="text" ></label>
        <br><br><br>
       
        <p><a href="bookAppointment.php"><button type="submit">Book</button></a>

@@ -25,7 +25,10 @@
     
       $note= $_GET['note'];
     
-      print("<h3> $note</h3?");?>
+      if($note)
+      print("<h2> $note</h2>");
+      else
+      print("<h2>There is no note!</h2>");?>
    <br><br><br><br><br><br><br><br><br><br><br><br>
      <center> <a href="appointmentRequests.php"><Button type="button">done</Button></a></center>
      
