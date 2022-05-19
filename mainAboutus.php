@@ -5,7 +5,8 @@
     <title>About Us</title>
     <link rel="stylesheet" href="styles/manageraboutusatyle.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
-
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   </head>
 
   <body>
@@ -16,6 +17,11 @@
 <a href = "Pet Care.html">Home</a>
      
         </div> 
+        <div class="fixed-footer" > 
+        
+        <p class = "footer">  <i class="fa fa-phone"></i>  +966566923332 &nbsp;&nbsp; <i class="fa fa fa-envelope"></i> <a href="mailto:petcare@gmail.com">petcare@gmail.com</a> </p>     
+     
+     </div>  
       <!-- 
     <div class= "about"> <h2> About us </h2>  </div> 
     <br>
@@ -56,10 +62,10 @@ if ($result) {
    while ($data = mysqli_fetch_row($result)) {
     print(" <div class = 'container' >  
     <div class= 'about'> <h2> ".$data[0]." </h2> </div> 
-    <br>   
- 
+
   <br>".$data[1]."
   <br> 
+  
   Our location :
   <div class = 'map'>
 <iframe src='".$data[4]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>
