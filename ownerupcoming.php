@@ -33,6 +33,7 @@
           <th scope="col">Service </th>
           <th scope="col">Date</th>
           <th scope="col">Time</th>
+          <th scope="col">Note</th>
          
           
     
@@ -64,6 +65,7 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
+       <td> <a href=\"noteOwner.php?note=".$data[6]."\"><img src= 'images/sticky-note.png' ></a></td>
       ");
    }
 }

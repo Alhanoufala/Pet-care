@@ -29,6 +29,7 @@
           <th>Service</th>
           <th>Date</th>
           <th>Time</th>
+          <th>Note</th>
           <th>Requests</th>
           <th>Contact Owner</th>
         </tr>
@@ -56,6 +57,7 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
+       <td> <a href=\"noteManager.php?note=".$data[6]."\"><img src= 'images/sticky-note.png' ></a></td>
        <th><a href=\"addToUpcomingAppointments.php?id=".$data[7]."\"><input type='button' name='accept' value='Accept' style ='background-color:rgb(88, 194, 88);'></a>
        <a href=\"declineAppointments.php?id=".$data[7]."\"> <input type='button' name='decline' value='Decline' style ='background-color:rgb(255, 8, 8);'></a> </th>
        <th>  <a href="."mailto:".$data[4].""."> Contact ".$data[0]. "'s Owner  </a> </th>  </tr>");

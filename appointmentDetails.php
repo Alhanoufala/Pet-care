@@ -1,4 +1,7 @@
-+<!DOCTYPE html>
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,6 +30,7 @@
         <h2>Edit an appointment</h2>
         <?php $id = $_GET['id'];  ?>
         <form method='POST' action= <?php 'appointmentDetails.php?id='.$id ?>>
+        <p><label>Pet name: <select name = "pet_name" style="width:170px;">
         <?php 
          if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
          die( "<p>Could not connect to database</p>" );
@@ -37,14 +41,20 @@
           $query="SELECT * FROM appointments_requests WHERE id= $id";
           $result=mysqli_query($database, $query);
           $data = mysqli_fetch_row($result);
+           //retrive all pet names 
+        $owner_email = $_SESSION["OwnerEmail"];
+        $query2="SELECT * FROM pet WHERE owner_email=  '$owner_email' ";
+        $result2= mysqli_query($database, $query2);
+        while ($data2= mysqli_fetch_row( $result2)){
+            print("<option>".$data2[0]."</option>");
+
+        }
+  
         print("
-        
-        <p><label>Pet name: <input name = 'pet_name' type='text' value='".$data[0]."' required></label></p>
-     
-       <p><label>Email :  <input name= 'email' type ='text' value='".$data[4]."' required></label>
-      
+        </select></label></p>
+       
        <p><label>Note :  <input name= 'note' type ='text' value='".$data[6]."' ></label>
-       <p><a href='appointmentDetails.php'><button class ='l'type='submit'>Edit</button></a>
+      <center> <p><a href='appointmentDetails.php'><button class ='l'type='submit'>Edit</button></a></center>
     
     </form>
     </div>
@@ -53,10 +63,9 @@
           if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
                 $pet_name = $_POST["pet_name"];
-                 $email =  $_POST["email"];
                  $note =  $_POST["note"];
                  $id =  $_GET['id'];
-                 $query = "UPDATE appointments_requests SET pet_name ='".$pet_name."',owner_email = '".$email."',note ='".$note."' WHERE id='".$id."'";
+                 $query = "UPDATE appointments_requests SET pet_name ='".$pet_name."',note ='".$note."' WHERE id='".$id."'";
               $result=mysqli_query($database, $query);
                 if($result)
                        header("location: AppointmentRequest.php");

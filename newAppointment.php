@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,11 +51,29 @@
 
         <form method="POST" action=<?php echo "newAppointment.php?service=".$service."&date=".$date."&time=".$time."&id=".$id ?>> 
        <br>
-       <p><label>Pet Name:<input name = "PetName" type="text" required></label></p>
+       
+       <p><label>Pet name: <select name = "PetName">
+       <?php 
+       if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )
+       die( "<p>Could not connect to database</p>" );
+
+      if ( !mysqli_select_db( $database, "Pet_care") )
+       die( "<p>Could not open URL database</p>" );
+        //retrive all pet names 
+        $owner_email = $_SESSION["OwnerEmail"];
+        $query="SELECT * FROM pet WHERE owner_email=  '$owner_email' ";
+        $result= mysqli_query($database, $query);
+        while ($data= mysqli_fetch_row( $result)){
+            print("<option>".$data[0]."</option>");
+
+        }
+
+        ?>
+         </select></label></p>
        <br>
-       <p><label>Note:  <input name= "note" type ="text" required></label>
-       <br>
-       <p><label>owner email : <input name= "owner_email" type ="text" required></label>
+       <p><label>Note    : <input name= "note" type ="text" required></label>
+       <br><br><br>
+      
        <p><a href="bookAppointment.php"><button type="submit">Book</button></a>
     
     </form>
@@ -67,13 +88,13 @@
         if ( !mysqli_select_db( $database, "Pet_care") )
            die( "<p>Could not open URL database</p>" );
 
-           $owner_email = $_POST['owner_email']; 
+          
            if(filter_var(  $owner_email , FILTER_VALIDATE_EMAIL))
            {
            
             $name =  $_POST["PetName"];
             $note =   $_POST["note"];
-            $owner_email = $_POST['owner_email'];
+            $owner_email = $_SESSION["OwnerEmail"];
             $service= $_GET['service'];
             $date = $_GET['date'];
             $time = $_GET['time'];

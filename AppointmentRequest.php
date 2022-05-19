@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/AppointmentRequest.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
-
+   
     </head>
 </head>
 <body>
@@ -67,7 +67,8 @@ if ($result) {
   //time
   //owner_email ($data[4])
   //status ($data[5])
-  //note
+  //note sticky-note.png
+     
   //edit
   //cancel
   if($data[5] == 'declined'){
@@ -76,7 +77,7 @@ if ($result) {
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
        <td>".$data[3]."</td>
-         <td> --- </td>
+       <td> <a href=\"noteOwner.php?note=".$data[6]."\"><img src= 'images/sticky-note.png'></a></td>
          <td>Declined</td>
          <td> --- </td>
          <td> --- </td>");}
@@ -86,7 +87,7 @@ if ($result) {
           <td>".$data[1]."</td>
           <td>".$data[2]."</td>
           <td>".$data[3]."</td>
-          <td> --- </td>
+          <td> <a href=\"noteOwner.php?note=".$data[6]."\"><img src= 'images/sticky-note.png' ></a></td>
           <td>Waiting</td>
           <td> <a href=\"appointmentDetails.php?id=".$data[7]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
           <td> <a href=\"cancelAppointmentsOwner.php?id=".$data[7]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
