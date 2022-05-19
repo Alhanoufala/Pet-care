@@ -7,6 +7,7 @@
     <meta charset = "utf-8">
     <title>LogIn</title>
     <link rel="stylesheet" href="styles/login.css">
+           <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
     <link href="styles/login.css?<?=filemtime("styles/login.css")?>" rel="stylesheet" type="text/css" />
 
   </head>

@@ -1,61 +1,54 @@
-*
-{
-    font-family: 'optima', sans-serif	;
+* {
+  font-family: "optima", sans-serif;
 }
- 
-body{
-    background: url('../images/petFootSteps-left.png') repeat center center fixed; 
+
+body {
+  background: url("../images/petFootSteps-left.png") repeat center center fixed;
   margin-bottom: auto;
-    }
-
-.container{
-    color: #00556D;
-    width: 700px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-left: 380px;
-    align-items: center;
-    background-color:rgb(201, 230, 238);
-    border-radius: 15px;
-    padding: 25px 10px ;
-   
-}
-form{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    
 }
 
-
-.profilePic{
-    width: 100px;
-    height: 100px;
-padding-left: 760px;
+.container {
+  color: #00556d;
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 380px;
+  align-items: center;
+  background-color: rgb(201, 230, 238);
+  border-radius: 15px;
+  padding: 25px 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
-
-.buttons{
-    margin: 15px auto; 
-}
-button{
-    background-color: white;
-    color: rgb(119, 119, 119);
-    border: none;
-    padding: 8px 30px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px 25px;
-    align-items: baseline;
-}
-button:hover{
-    background-color: rgb(226, 226, 228);
-}
-p{
-    
-    color: #00556D;
-   
+.profilePic {
+  width: 100px;
+  height: 100px;
+  padding-left: 160px;
+  padding-bottom: -120px;
 }
 
+.buttons {
+  margin: 15px auto;
+}
+button {
+  background-color: white;
+  color: rgb(119, 119, 119);
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: baseline;
+}
+button:hover {
+  background-color: rgb(226, 226, 228);
+}
+p {
+  color: #00556d;
+}

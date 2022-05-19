@@ -1,94 +1,102 @@
-* { 
-    font-family: 'optima', sans-serif	;
+* {
+  font-family: "optima", sans-serif;
 }
 
-   #profile{
-       height : 33px ;
-       width : 33px ; 
-     }
-     .logo{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        margin-top: -20px;
-       width: 250px;
-       height: 140px;
-          
-      }
+#profile {
+  height: 33px;
+  width: 33px;
+}
 
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'optima', sans-serif	;
-    color: rgb(119, 119, 119);
-    padding-top: 25vh;
-    background: url('../images/layan\ -\ foot.png'); 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "optima", sans-serif;
+  color: rgb(119, 119, 119);
+  padding-top: 25vh;
+  background: url("../images/layan\ -\ foot.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
 }
 
-.container{
-    width: 425px;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    background-color:rgb(227, 231, 233);
-    background-color: #E2EAEC;
-    border-radius: 15px;
-    padding: 25px 10px ;
-
+.container {
+  width: 425px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  background-color: rgb(227, 231, 233);
+  background-color: #e2eaec;
+  border-radius: 15px;
+  padding: 25px 10px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    width: 79%;
-    
+form {
+  display: flex;
+  flex-direction: column;
+  width: 79%;
 }
-input{
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    margin: 15px ;
-    padding-left: 10px;
-    text-align: center;
-    font-size: 18px;
-    color: rgb(119, 119, 119);
-    background-color: white;
-
+input {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin: 15px;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(119, 119, 119);
+  background-color: white;
 }
-.restbutton{
-    margin: 15px auto;
+.restbutton {
+  margin: 15px auto;
 }
-button{
-    background-color: white;
-    color: rgb(119, 119, 119);
-    border: none;
-    padding: 8px 30px;
-    border-radius: 10px;
-    font-size: 18px;
-    margin: 5px 25px;
-    align-items: center;
-   
+button {
+  background-color: white;
+  color: rgb(119, 119, 119);
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: center;
 }
-button:hover{
-    background-color: rgb(226, 226, 228);
+button:hover {
+  background-color: rgb(226, 226, 228);
 }
-p{
-    font-size: 15px;
-    align-items: center;
+p {
+  font-size: 15px;
+  align-items: center;
 }
 
-      .loginbut{
-        margin: 15px auto;
-    }
-      
-   
+.loginbut {
+  margin: 15px auto;
+}
+
+.navbar {
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  margin-top: -210px;
+}
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #00556d;
+
+  text-align: center;
+  padding: 40px 35px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 /*
 body{
    background: url('../images/layan\ -\ foot.png'); 
