@@ -33,6 +33,7 @@
         <th scope="col">Service</th>
         <th scope="col">Date</th>
         <th scope="col">Time</th>
+        <th scope="col">Contact owner</th>
        
 
 
@@ -57,7 +58,8 @@ if ($result) {
        <th scope='row'><p>".$data[0]."</p>
        <td>".$data[1]."</td>
        <td>".$data[2]."</td>
-       <td>".$data[3]."</td>");
+       <td>".$data[3]."</td>
+       <th>  <a href="."mailto:".$data[4].""."> Contact ".$data[0]. "'s Owner  </a> </th>");
    }
 }
 

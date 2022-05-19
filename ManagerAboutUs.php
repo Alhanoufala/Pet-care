@@ -67,7 +67,7 @@ if ($result) {
    while ($data = mysqli_fetch_row($result)) {
     print(" <div class = 'container' >  
     <div class= 'about'> <h2> ".$data[0]." </h2> </div> 
-    <br>   
+    
  
   <br>".$data[1]."
   <br> 

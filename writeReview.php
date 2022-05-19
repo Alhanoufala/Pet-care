@@ -22,17 +22,18 @@
  <div class = "container" > 
 
   
-    <p id ="p">Thank you for visiting <br> please leave under your review on pet care!</p>
+ <center> <h2>Thank you for visiting <br> please leave under your review on pet care!</h2></center>
       <?php
       $id = $_GET['id'];
       $pet_name = $_GET['pet_name'];
       $owner_email = $_GET['owner_email'];?>
       
       <form method = "POST" action = <?php echo "\"writeReview.php?id=".$id."&pet_name=".$pet_name."&owner_email=".$owner_email."\"" ?>>
-      <label id= "label"> Review: </label>
-      <input name = "review" type = "text"> 
+    
+       <input name = "review" type = "text" style="height:100px; width:350px;"> 
+      <br><br><br><br><br><br>
         <div class="loginbut">    
-      <a href="ownerPreviousAppointment.php"><Button type="submit">submit</Button></a>
+     <center> <a href="ownerPreviousAppointment.php"><Button type="submit">submit</Button></a></center>
      </div>
 
 </form>
