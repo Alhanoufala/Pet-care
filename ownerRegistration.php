@@ -57,7 +57,9 @@
  
       if (!mysqli_select_db( $database, "Pet_care" ))
          die( "<p>Could not open URL database</p>" );
-   
+         $email=$_POST['email']; 
+         if(filter_var(  $email , FILTER_VALIDATE_EMAIL))
+           {
          $Fname=$_POST['Fname'];  
          $Lname=$_POST['Lname'];
          $email=$_POST['email']; 
@@ -76,7 +78,11 @@
          {  echo "<script>alert('an error occurred, could not register.')</script>"; 
           die(mysqli_error($database));
          }
-     }  
+     } 
+     echo "<script>alert('Invalid email format')</script>"; 
+
+     
+    }
  ?>
      <script>
        //var form = document.getElementById("form");
