@@ -24,9 +24,9 @@
         </label></p>
          
         <div>
-        <a href="logIn.php"><button type="button">Cancel</button></a>
-        <input class = "update" name ="reset" type="submit" value="reset password">
-      </div> 
+          <a href="logIn.php"><button class = "Cbutton"type="button">Cancel</button></a>
+        <input class = "Dbutton" class = "update" name ="reset" type="submit" value="reset password">
+    </div> 
       </form>
       </div> 
       <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">

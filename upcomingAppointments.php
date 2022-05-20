@@ -5,6 +5,7 @@
     <title>Upcoming Appointments </title>
     <link rel="stylesheet" href="styles/datatable.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+        <link href="styles/datatable.css?<?=filemtime("styles/datatable.css")?>" rel="stylesheet" type="text/css" />
 
    </head>
     
@@ -24,7 +25,7 @@
 </div> 
   <table class="content-table" id= "center">
     <br>
-    <h2>Upcoming Appointments:</h2>
+    <h2>Upcoming Appointments <br> </h2>
     <thead>
 
       <tr>

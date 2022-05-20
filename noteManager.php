@@ -4,6 +4,8 @@
     <meta charset = "utf-8">
     <title>note</title>
     <link rel="stylesheet" href="styles/writeReview.css">
+        <link href="styles/writeReview.css?<?=filemtime("styles/writeReview.css")?>" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>
@@ -30,7 +32,7 @@
       else
       print("<h2>There is no note!</h2>");?>
    <br><br><br><br><br><br><br><br><br><br><br><br>
-     <center> <a href="appointmentRequests.php"><Button type="button">done</Button></a></center>
+     <center> <a href="appointmentRequests.php"><Button type="button">Done</Button></a></center>
      
 </div>
 <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">

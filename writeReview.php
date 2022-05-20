@@ -33,7 +33,7 @@
        <input name = "review" type = "text" style="height:100px; width:350px;"> 
       <br><br><br><br><br><br>
         <div class="loginbut">    
-     <center> <a href="ownerPreviousAppointment.php"><Button type="submit">submit</Button></a></center>
+     <center> <a href="ownerPreviousAppointment.php"><Button type="submit">Submit</Button></a></center>
      </div>
 
 </form>

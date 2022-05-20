@@ -26,7 +26,7 @@
      </div> 
      
         <div class = "container">
-        <h2>Edit an appointment</h2>
+        <h2>Edit an appointment <br> </h2>
         <?php $id = $_GET['id'];  ?>
         <form method='POST' action= <?php 'appointmentDetails.php?id='.$id ?>>
         <p><label>Pet name: <select name = "pet_name" style="width:170px;">

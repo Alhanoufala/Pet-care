@@ -46,17 +46,17 @@ select {
   margin: 5px;
 }
 button {
-  background-color: white;
-  color: #00556d;
+  background-color: #00556d;
+  color: #ffffff;
 
   border: none;
   padding: 8px 30px;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   margin: 5px 25px;
 }
 button:hover {
-  background-color: rgb(226, 226, 228);
+  background-color: rgb(111, 204, 58);
 }
 
 .navbar {

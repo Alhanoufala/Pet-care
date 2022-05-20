@@ -7,7 +7,7 @@
  <title>Edit Pet Profile</title>
  <link rel="stylesheet" href="styles/ownerHeader.css">
  <link rel="stylesheet" href="styles/addPet.css">
-
+ <link href="styles/addPet.css?<?=filemtime("styles/addPet.css")?>" rel="stylesheet" type="text/css" />
 </head>
 
 <body>

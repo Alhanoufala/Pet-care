@@ -5,6 +5,8 @@
     <meta charset = "utf-8">
     <title>Set Appointment</title>
     <link rel="stylesheet" href="styles/editApp.css">
+        <link href="styles/editApp.css?<?=filemtime("styles/editApp.css")?>" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>

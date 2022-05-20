@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/Registration.css">
     <script src="ownerRegistration.js" defer></script>
 
+        <link href="styles/Registration.css?<?=filemtime("styles/Registration.css")?>" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>   
