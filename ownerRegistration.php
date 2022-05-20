@@ -64,12 +64,9 @@ function setSuccessFor(input){
     <div class="container">
       <h3>Register</h3>
         <form method="post" id = "form">
-          <div class="form-control">
+          
             <input type="text" name="Fname" id="Fname" placeholder="First name">
-            <small>Error message</small></div>
-            <div class="form-control">
             <input type="text" name="Lname" id="Lname" placeholder="Last name" require>
-            <small>Error message</small></div>
             <input type="text" name="email" id="email" placeholder="Email" require>
             <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number" require>
             <input type="password" name="pass" id="pass" placeholder="Password" require>
