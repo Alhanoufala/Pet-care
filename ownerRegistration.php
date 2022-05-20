@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset = "utf-8">
-    <title>Registration</title>
+    <title>Registration</title> 
     <link rel="stylesheet" href="styles/Registration.css">
     <link href="styles/Registration.css?<?=filemtime("styles/Registration.css")?>" rel="stylesheet" type="text/css" />
     
