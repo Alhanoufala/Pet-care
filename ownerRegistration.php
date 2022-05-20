@@ -96,7 +96,7 @@ if(Fname.value.length > 20 ){
   alert('Fisrt name must be less or equal to 20 characters');
   } else{
   }
-}
+
 
 if(Lname.value.length > 20 ){
   alert('Last name must be less or equal to 20 characters');
