@@ -58,7 +58,12 @@ button {
 button:hover {
   background-color: rgb(111, 204, 58);
 }
-
+.l2:hover {
+  background-color: rgb(111, 226, 58);
+}
+.l:hover {
+  background-color: rgb(255, 11, 11);
+}
 .navbar {
   background-color: #ffffff;
   position: absolute;

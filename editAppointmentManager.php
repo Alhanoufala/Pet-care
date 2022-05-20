@@ -49,7 +49,8 @@ print("
        <p><label>Date: <input name = 'date' type='date' value='".$data[1]."'></label></p>
        <br>
        <p><label>Time: <input name= 'time' type ='time'value='".$data[2]."'></label>
-       <p><a href='editAppointmentManager.php'><button type='submit'>Edit</button></a>
+       <a href='availableAppointments.php'><button class = 'l' type='button'>Cancel</button></a>
+       <a href='editAppointmentManager.php'><button class = 'l2' type='submit'>Edit</button></a>
     
     </form>
     </div>

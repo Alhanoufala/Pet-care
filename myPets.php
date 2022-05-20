@@ -13,7 +13,9 @@
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-   
+       <link href="styles/datatable.css?<?=filemtime("styles/datatable.css")?>" rel="stylesheet" type="text/css" />
+       <link href="styles/myPets.css?<?=filemtime("styles/myPets.css")?>" rel="stylesheet" type="text/css" />
+
 
   </head>
 
@@ -37,7 +39,7 @@
        <form action="myPets.php" method="POST" " >
       <table class="content-table" id= "center">
         <br>
-        <h2>My Pets:</h2>
+        <h2>My Pets</h2>
       <thead>
       <tr>
         <th scope="col">Pet photo</th>
@@ -84,7 +86,7 @@
      </form>
 
     <div class="addPetbut">
-    <a href="addPet.php"><button type="button">Add pet</button></a>
+    <a href="addPet.php"><button class = "add" type="button">Add pet</button></a>
   </div>
   <div class="fixed-footer" > 
           <p class = "footer">  <i class="fa fa-phone"></i>  +966566923332 &nbsp;&nbsp; <i class="fa fa fa-envelope"></i> <a href="mailto:petcare@gmail.com">petcare@gmail.com</a> </p>     

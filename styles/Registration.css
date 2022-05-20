@@ -12,9 +12,65 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff8f8;
+  background-color:#fff8f8;  
   color: rgb(73, 73, 73);
   padding-top: 25vh;
+    }
+
+.container{
+    width: 400px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    background-color: #E2EAEC;
+    border-radius: 15px;
+    padding: 25px 15px ;
+    color: #00556D;
+    margin-top: 100px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    
+}
+
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 5px ;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(119, 119, 119);
+    background-color: white;
+    display: block;
+
+}
+.registerbut{
+    margin: 15px auto;
+}
+button{
+    background-color: white;
+    color: rgb(119, 119, 119);
+    border: none;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px 25px;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(226, 226, 228);
+}
+p{
+    font-size: 15px;
+    align-items: center;
 }
 
 .container {
@@ -34,6 +90,13 @@ form {
   display: flex;
   flex-direction: column;
   width: 90%;
+}
+
+.l2:hover {
+  background-color: rgb(111, 226, 58);
+}
+.l:hover {
+  background-color: rgb(255, 11, 11);
 }
 input {
   height: 40px;

@@ -53,6 +53,12 @@ input {
 .restbutton {
   margin: 15px auto;
 }
+.l2:hover {
+  background-color: rgb(111, 226, 58);
+}
+.l:hover {
+  background-color: rgb(255, 11, 11);
+}
 button {
   background-color: #00556d;
   color: white;

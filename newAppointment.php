@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOK New Appointment</title>
+    <title>Book New Appointment</title>
     <link rel="stylesheet" href="styles/setApp.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -74,8 +74,10 @@
        <p><label>Note    : <input name= "note" type ="text" ></label>
        <br><br><br>
       
-       <p><a href="bookAppointment.php"><button type="submit">Book</button></a>
-    
+       <p>  <a href="bookAppointment.php"><button class= "l" type="submit">Cancel</button></a> 
+       <a href="bookAppointment.php"><button class= "l2" type="submit">Book</button></a>
+      
+
     </form>
 
 

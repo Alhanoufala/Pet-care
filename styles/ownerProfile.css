@@ -10,7 +10,7 @@ body {
 .container {
   color: #00556d;
   width: 700px;
-  height: 400px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -24,39 +24,43 @@ form {
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin-top: -140px;
+  align-items: center;
+  text-align: center;
 }
 
-.profilePic {
-  width: 100px;
-  height: 100px;
-  padding-left: 160px;
-  padding-bottom: -120px;
+button {
+  background-color: #00556d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: center;
+}
+button:hover {
+  background-color: rgb(238, 8, 8);
 }
 
 .container .buttons {
-  position:absolute;
+  position: absolute;
   margin: 15px auto;
-  bottom: 0%;
-  
+  margin-top: 527px;
 }
-button {
-  background-color: rgb(228, 228, 229);
-  color: #00556d;
-  padding: 8px 30px;
-  border-radius: 10px;
-  font-size: 20px;
-  margin: 5px 25px;
 
-}
-button:hover {
-  background-color: rgb(201, 201, 203);
-}
 .container p {
   color: #00556d;
   background-color: white;
   width: 250px;
-  padding: 5px 30px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 20px;
-  margin: 5px 25px;
+  padding: 10px;
+  margin: 4px;
+}
+
+.profilePic {
+  width: 130px;
+  height: 130px;
+  border-radius: 80%;
 }

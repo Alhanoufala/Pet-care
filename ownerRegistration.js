@@ -1,28 +1,43 @@
-const button = document.getElementById("b");
-button.addEventListener('submit', (e) => {
-    e.preventDefault();
+const form = document.getElementById('form');
+const Fname = document.getElementById('Fname');
+const Lname = document.getElementById('Lname');
+const email = document.getElementById('email');
+const phonenumber = document.getElementById('phonenumber');
+const pass = document.getElementById('pass');
 
-    validateform();
-    
-});
+form.addEventListener('sbmit', (e) => {
+  e.preventDefault();
 
-function validateform(){  
-    var Fname=document.getElementById("Fname"); 
-    var Lname=document.getElementById("Lname");
-    //var email=document.getElementById("email");
-    //var phonenumber=document.getElementById("phonenumber");  
-    var pass=document.getElementById("pass"); 
-      
-    if (Fname > 20 ){  
-      alert("Fisrt name must be less than or equal to 20");  
-      return false;  
-    }
-    if (Lname > 20 ){  
-        alert("Last name must be less than or equal to 20");  
-        return false;  
-      }
-    if(pass.length<6){  
-      alert("Password must be at least 6 characters long.");  
-      return false;  
-      }  
-    } 
+  valdateForm();
+} );
+
+function valdateForm() {
+  const FnameValue = Fname.value.trim();
+ // const LnameValue = Lname.value.trim();
+ // const mailValue = email.value.trim();
+ // const phonenumberValue = phonenumber.value.trim();
+ // const passValue = pass.value.trim();
+
+  if(FnameValue > 20 ){
+    setErrorFor(FnameValue, 'Fisrt name must be less or equal to 20 characters')
+  } else{
+    setSuccessFor(FnameValue)
+  }
+
+}
+
+function setErrorFor(input, message){
+  const formControl = input.parentElement; //.form-control
+  const small = formControl.querySelector('small');
+
+  small.innerText = message;
+
+  formControl.className = 'form-control error';
+
+}
+
+function setSuccessFor(input){
+  const formControl = input.parentElement; //.form-control
+  formControl.className = 'form-control success';
+
+}
