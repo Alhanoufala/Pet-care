@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/ownerHeader.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="styles/servicesstyle.css?<?=filemtime("styles/servicesstyle.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
 
@@ -85,8 +86,8 @@ if ($result) {
          </div>
          
        
-        </div>"
-       
+        </div> <br> "
+        
        
        );
    }
