@@ -50,41 +50,7 @@
     </div>
     <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
 
-    <?php
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {  
-      if (!( $database = mysqli_connect( "localhost", "root", "" )))
-         die( "<p>Could not connect to database</p>" );
- 
-      if (!mysqli_select_db( $database, "Pet_care" ))
-         die( "<p>Could not open URL database</p>" );
-         $email=$_POST['email']; 
-         if(filter_var(  $email , FILTER_VALIDATE_EMAIL))
-           {
-         $Fname=$_POST['Fname'];  
-         $Lname=$_POST['Lname'];
-         $email=$_POST['email']; 
-         $phonenumber=$_POST['phonenumber']; 
-         $pass=$_POST['pass']; 
-         $gender=$_POST['gender']; 
-         $profilePhotoFile=$_POST['profilePhotoFile']; 
-
-         $query="INSERT INTO pet_owner (email, password, Fname, Lname, gender, phone_no, photo ) VALUES ('".$email."','".$pass."','".$Fname."','".$Lname."','".$gender."','".$phonenumber."','".$profilePhotoFile."');";
-
-
-        if(mysqli_query($database, $query) )
-         {  header("location: login.php");
-            }
-        else  
-         {  echo "<script>alert('an error occurred, could not register.')</script>"; 
-          die(mysqli_error($database));
-         }
-     } 
-     echo "<script>alert('Invalid email format')</script>"; 
-
-     
-    }
- ?>
-     <script>
+    <script>
        //var form = document.getElementById("form");
 var Fname = document.getElementById("Fname");
 var Lname = document.getElementById("Lname");
@@ -106,6 +72,55 @@ if(Lname.value.length > 20 ){
 
 
 </script>
+
+    <?php
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {  
+      if (!( $database = mysqli_connect( "localhost", "root", "" )))
+         die( "<p>Could not connect to database</p>" );
+ 
+      if (!mysqli_select_db( $database, "Pet_care" ))
+         die( "<p>Could not open URL database</p>" );
+         $Fname=$_POST['Fname'];  
+         $Lname=$_POST['Lname'];
+         if(strlen(   $Fname) < 20 && strlen(  $Lname) < 20 ){
+         $email=$_POST['email']; 
+         if(filter_var(  $email , FILTER_VALIDATE_EMAIL)){
+         $phonenumber=$_POST['phonenumber']; 
+         if(preg_match('/^[0-9]{10}+$/', $phonenumber))
+           {
+         $Fname=$_POST['Fname'];  
+         $Lname=$_POST['Lname'];
+         $email=$_POST['email']; 
+         $phonenumber=$_POST['phonenumber']; 
+         $pass=$_POST['pass']; 
+         $gender=$_POST['gender']; 
+         $profilePhotoFile=$_POST['profilePhotoFile']; 
+
+         $query="INSERT INTO pet_owner (email, password, Fname, Lname, gender, phone_no, photo ) VALUES ('".$email."','".$pass."','".$Fname."','".$Lname."','".$gender."','".$phonenumber."','".$profilePhotoFile."');";
+
+
+        if(mysqli_query($database, $query) )
+         {  header("location: login.php");
+            }
+        else  
+         {  echo "<script>alert('an error occurred, could not register.')</script>"; 
+          die(mysqli_error($database));
+         }
+     } 
+     echo "<script>alert('Invalid phone number format')</script>"; 
+    }
+    echo "<script>alert('Invalid email format')</script>"; 
+  }
+    echo "<script>alert('length of name should be less than 20 ch')</script>";    
+    
+}
+ 
+
+
+
+    
+ ?>
+
   </body>
 
 </html>
