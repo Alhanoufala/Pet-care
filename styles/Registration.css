@@ -28,7 +28,7 @@
     align-items: center;
     background-color: #E2EAEC;
     border-radius: 15px;
-    padding: 25px 10px ;
+    padding: 25px 15px ;
     color: #00556D;
     margin-top: 100px;
    
@@ -39,6 +39,28 @@ form{
     width: 90%;
     
 }
+.form-control{
+ 
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control small{
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.form-control.sucess input{
+  border-color: #72eb96;
+}
+.form-control.error input{
+  border-color: #eb4f4f;
+}
+.form-control.error small{
+  visibility: hidden;
+  color: #eb4f4f;
+}
+
 input{
     height: 40px;
     border-radius: 10px;
@@ -49,6 +71,7 @@ input{
     font-size: 18px;
     color: rgb(119, 119, 119);
     background-color: white;
+    display: block;
 
 }
 .registerbut{

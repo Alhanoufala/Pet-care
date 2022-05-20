@@ -7,7 +7,55 @@
     <meta charset = "utf-8">
     <title>Registration</title>
     <link rel="stylesheet" href="styles/Registration.css">
-    <script src="ownerRegistration.js" defer></script>
+    <link href="styles/Registration.css?<?=filemtime("styles/Registration.css")?>" rel="stylesheet" type="text/css" />
+    <script>const form = document.getElementById('form');
+const Fname = document.getElementById('Fname');
+const Lname = document.getElementById('Lname');
+const email = document.getElementById('email');
+const phonenumber = document.getElementById('phonenumber');
+const pass = document.getElementById('pass');
+
+form.addEventListener('sbmit', (e) => {
+  e.preventDefault();
+
+  valdateForm();
+} );
+
+function valdateForm() {
+  const FnameValue = Fname.value.trim();
+  const LnameValue = Lname.value.trim();
+ // const mailValue = email.value.trim();
+ // const phonenumberValue = phonenumber.value.trim();
+ // const passValue = pass.value.trim();
+
+  if(FnameValue.length > 20 ){
+    setErrorFor(FnameValue, 'Fisrt name must be less or equal to 20 characters')
+  } else{
+    setSuccessFor(FnameValue)
+  }
+  if(LnameValue.length > 20 ){
+    setErrorFor(LnameValue, 'Last name must be less or equal to 20 characters')
+  } else{
+    setSuccessFor(FnameValue)
+  }
+
+}
+
+function setErrorFor(input, message){
+  const formControl = input.parentElement; //.form-control
+  const small = formControl.querySelector('small');
+
+  small.innerText = message;
+
+  formControl.className = 'form-control error';
+
+}
+
+function setSuccessFor(input){
+  const formControl = input.parentElement; //.form-control
+  formControl.className = 'form-control success';
+
+}</script>
 
   </head>
 
@@ -15,9 +63,13 @@
     <div class="navbar"> <a href="Pet Care.html">Home</a></div>
     <div class="container">
       <h3>Register</h3>
-        <form method="post">
-            <input type="text" name="Fname" id="Fname" placeholder="First name" require>
+        <form method="post" id = "form">
+          <div class="form-control">
+            <input type="text" name="Fname" id="Fname" placeholder="First name">
+            <small>Error message</small></div>
+            <div class="form-control">
             <input type="text" name="Lname" id="Lname" placeholder="Last name" require>
+            <small>Error message</small></div>
             <input type="text" name="email" id="email" placeholder="Email" require>
             <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number" require>
             <input type="password" name="pass" id="pass" placeholder="Password" require>
