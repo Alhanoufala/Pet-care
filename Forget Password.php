@@ -86,6 +86,8 @@
     <meta charset = "utf-8">
     <title>Forget Password </title>
     <link rel="stylesheet" href="styles/forgetpassword.css">
+    <link href="styles/forgetpassword.css?<?=filemtime("styles/forgetpassword.css")?>" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>
@@ -104,7 +106,7 @@
          
         <div>
         <a href="logIn.php"><button type="button">Cancel</button></a>
-        <input class = "update" name ="reset" type="submit" value="Update">
+        <input class = "update" name ="reset" type="submit" value="reset password">
       </div> 
       </form>
       </div> 
