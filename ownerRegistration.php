@@ -15,7 +15,7 @@
     <div class="navbar"> <a href="Pet Care.html">Home</a></div>
     <div class="container">
       <h3>Register</h3>
-        <form method="post" id = "form">
+        <form method="post" id =  "form">
           
             <input type="text" name="Fname" id="Fname" placeholder="First name" require>
             <input type="text" name="Lname" id="Lname" placeholder="Last name" require>
