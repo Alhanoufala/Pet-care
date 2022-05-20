@@ -28,7 +28,7 @@
         <br>
         
    <h2 class = "h1"> <center> We are open for all your pet's veterinary care needs! </center></h2>
- <h1 class = "h1"> <center> Our Services : </center> </h1>
+ <h1 class = "h1"> <center> Our Services </center> </h1>
  
  
 <!--

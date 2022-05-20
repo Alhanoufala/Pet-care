@@ -34,19 +34,15 @@ form {
 }
 
 .container .buttons {
-  position:absolute;
+  position: absolute;
   margin: 15px auto;
   bottom: 0%;
-  
 }
 button {
   background-color: rgb(228, 228, 229);
   color: #00556d;
-  padding: 8px 30px;
   border-radius: 10px;
   font-size: 20px;
-  margin: 5px 25px;
-
 }
 button:hover {
   background-color: rgb(201, 201, 203);

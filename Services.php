@@ -5,6 +5,9 @@
     <title>Services</title>
     <link rel="stylesheet" href="styles/servicesstyle.css">
     <link rel="stylesheet" href="styles/ownerHeader.css">
+<link href="styles/servicesstyle.css?<?=filemtime("styles/servicesstyle.css")?>" rel="stylesheet" type="text/css" />
+<link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+
 <!--MANAGER -->
   </head>
 

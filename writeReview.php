@@ -4,6 +4,7 @@
     <meta charset = "utf-8">
     <title>Write Review</title>
     <link rel="stylesheet" href="styles/writeReview.css">
+       <link href="styles/writeReview.css?<?=filemtime("styles/writeReview.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
 
@@ -33,7 +34,9 @@
        <input name = "review" type = "text" style="height:100px; width:350px;"> 
       <br><br><br><br><br><br>
         <div class="loginbut">    
-     <center> <a href="ownerPreviousAppointment.php"><Button type="submit">Submit</Button></a></center>
+            <a href="ownerPreviousAppointment.php"><Button class= "l" type="submit">Cancel</Button></a>
+ <a href="ownerPreviousAppointment.php"><Button class= "l2" >Submit</Button></a>
+
      </div>
 
 </form>

@@ -30,6 +30,7 @@ body {
   font-family: Cursive;
   line-height: 430%;
   color: #00556d;
+  text-align: center;
 }
 
 input {
@@ -92,6 +93,12 @@ label {
   padding-top: 40px;
 }
 
+.l:hover {
+  background-color: rgb(111, 226, 58);
+}
+.l2:hover {
+  background-color: rgb(255, 11, 11);
+}
 .logo {
   position: absolute;
   top: 0px;

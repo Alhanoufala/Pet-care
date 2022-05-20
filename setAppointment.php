@@ -46,8 +46,9 @@
        <p><label>Date: <input name = "date" type="date" required></label></p>
        <br>
        <p><label>Time: <input name= "time" type ="time" required></label>
-       <p><a href="availableAppointments.php"><button type="submit">Add</button></a>
-    
+    <a href="availableAppointments.php"><button class = "l"type="button">Cancel</button></a>
+    <a href="availableAppointments.php"><button class = "l2" type="submit">Add</button></a>
+
     </form>
     <?php
              if ($_SERVER["REQUEST_METHOD"] == "POST") {
