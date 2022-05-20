@@ -8,7 +8,6 @@
     <title>Registration</title>
     <link rel="stylesheet" href="styles/Registration.css">
     <script src="ownerRegistration.js" defer></script>
-
         <link href="styles/Registration.css?<?=filemtime("styles/Registration.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
@@ -38,8 +37,9 @@
             <input type="file" id="profilePhotoFile" name="profilePhotoFile" accept="image/*">
 
            <div class="registerbut">
-            
-            <a href="ownerRegisration.php"><button type="submit" id="b">Register</button></a>
+       <a href='logIn.php'><button class = 'l' type='button'>Cancel</button></a>
+            <a href="ownerRegisration.php"><button class= "l2" type="submit" id="b">Register</button></a>
+
            </div>
            
         
