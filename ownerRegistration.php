@@ -82,7 +82,7 @@ if(Lname.value.length > 20 ){
          die( "<p>Could not open URL database</p>" );
          $Fname=$_POST['Fname'];  
          $Lname=$_POST['Lname'];
-         if(strlen(   $Fname) < 20 && strlen(  $Lname) < 20 ){
+         if(strlen($Fname) < 20 && strlen(  $Lname) < 20 ){
          $email=$_POST['email']; 
          if(filter_var(  $email , FILTER_VALIDATE_EMAIL)){
          $phonenumber=$_POST['phonenumber']; 
@@ -105,20 +105,20 @@ if(Lname.value.length > 20 ){
         else  
          {  echo "<script>alert('an error occurred, could not register.')</script>"; 
           die(mysqli_error($database));
-         }
-     } 
+     }
+     }
+     else 
      echo "<script>alert('Invalid phone number format')</script>"; 
+    
     }
+    else
     echo "<script>alert('Invalid email format')</script>"; 
   }
+  else
     echo "<script>alert('length of name should be less than 20 ch')</script>";    
     
 }
- 
-
-
-
-    
+   
  ?>
 
   </body>

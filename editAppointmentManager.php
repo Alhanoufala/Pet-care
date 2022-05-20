@@ -6,6 +6,7 @@
     <title>Set Appointment</title>
     <link rel="stylesheet" href="styles/editApp.css">
         <link href="styles/editApp.css?<?=filemtime("styles/editApp.css")?>" rel="stylesheet" type="text/css" />
+       <link href="styles/footer2.css?<?=filemtime("styles/footer2.css")?>" rel="stylesheet" type="text/css" />
 
 </head>
 
