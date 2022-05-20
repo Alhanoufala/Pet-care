@@ -57,18 +57,19 @@
   $query="SELECT * FROM pet_owner WHERE email= '$OwnerEmail' ";
   $result=mysqli_query($database, $query);
   $row = mysqli_fetch_array($result);
-  echo "<p>".$row[2]."</p>";
-  echo "<p>".$row[3]."</p>";
-  echo "<p>".$row[4]."</p>";
-  echo "<p>".$row[0]."</p>";
-  echo "<p>".$row[5]."</p>";
-
+ 
   if(is_null($row[6])) {
     echo "<div class='profilePic'> <img src = 'images/profileEdit.png' class= 'profilePic' alt='Profile Picture'> </div>";
   }
   else {
     echo "<div class='profilePic'> <img src= 'images/" .$row[6]. "' class= 'profilePic' alt='Profile Picture'> </div>";
   }
+   echo "<p>".$row[2]."</p>";
+  echo "<p>".$row[3]."</p>";
+  echo "<p>".$row[4]."</p>";
+  echo "<p>".$row[0]."</p>";
+  echo "<p>".$row[5]."</p>";
+
   //cheack if not null, edit size
   //echo "<div class='profilePic'> <img src= 'images/" .$row[6]. "' class= 'profile' alt='Pet Picture'> </div>";
 
