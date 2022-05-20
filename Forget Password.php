@@ -1,4 +1,36 @@
-<?php
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Forget Password </title>
+    <link rel="stylesheet" href="styles/forgetpassword.css">
+    <link href="styles/forgetpassword.css?<?=filemtime("styles/forgetpassword.css")?>" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+    <div class="navbar">
+        <a href= "Pet Care.html">Home </a>
+
+    </div>
+    <div class="container">
+
+      <h2>Forgot your Password ? </h2>
+      <form method="post" action = "Forget Password.php">
+      <p> Enter the email address associated with your account <br><br>
+      <label> 
+        <input id = "email "type="email" name="Email"  placeholder="email" size = "33">
+        </label></p>
+         
+        <div>
+        <a href="logIn.php"><button type="button">Cancel</button></a>
+        <input class = "update" name ="reset" type="submit" value="reset password">
+      </div> 
+      </form>
+      </div> 
+      <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
+      <?php
 
     require "mail.php";
 
@@ -22,7 +54,7 @@
             $isExist = isEmailExists($database, "manager", $email);
 
             if($isExist != 1){            
-            function_alert("Email dosent exist, sign up");
+            function_alert("Email dosent exist, Pet Owner ? sign up ! ");
             exit();}
 
             $manager = true;
@@ -80,36 +112,5 @@
             echo "<script>alert('$message');</script>";
         }
 ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset = "utf-8">
-    <title>Forget Password </title>
-    <link rel="stylesheet" href="styles/forgetpassword.css">
-    <link href="styles/forgetpassword.css?<?=filemtime("styles/forgetpassword.css")?>" rel="stylesheet" type="text/css" />
-
-  </head>
-
-  <body>
-    <div class="navbar">
-        <a href= "Pet Care.html">Home </a>
-
-    </div>
-    <div class="container">
-
-      <h2>Forgot your Password ? </h2>
-      <form method="post" action = "Forget Password.php">
-      <p> Enter the email address associated with your account <br><br>
-      <label> 
-        <input id = "email "type="email" name="Email"  placeholder="email" size = "33">
-        </label></p>
-         
-        <div>
-        <a href="logIn.php"><button type="button">Cancel</button></a>
-        <input class = "update" name ="reset" type="submit" value="reset password">
-      </div> 
-      </form>
-      </div> 
-      <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
   </body>
 </html>
