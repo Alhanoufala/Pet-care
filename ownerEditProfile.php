@@ -80,7 +80,18 @@
 
       
       if ($_SERVER["REQUEST_METHOD"] == "POST") {  
-      
+
+        if (!mysqli_select_db( $database, "Pet_care" ))
+        die( "<p>Could not open URL database</p>" );
+        $Fname=$_POST['Fname'];  
+        $Lname=$_POST['Lname'];
+        if(strlen($Fname) < 20 && strlen(  $Lname) < 20 ){
+        $email=$_POST['email']; 
+        if(filter_var(  $email , FILTER_VALIDATE_EMAIL)){
+        $phonenumber=$_POST['phonenumber']; 
+        if(preg_match('/^[0-9]{10}+$/', $phonenumber))
+          {
+
          $Fname=$_POST['Fname'];  
          $Lname=$_POST['Lname']; 
          $phonenumber=$_POST['phonenumber']; 
@@ -95,7 +106,18 @@
          
         else  
            echo "<script>alert('an error occurred, could not edit profile.')</script>";  
-     }  
+     }
+     else 
+     echo "<script>alert('Invalid phone number format')</script>"; 
+    
+    }
+    else
+    echo "<script>alert('Invalid email format')</script>"; 
+  }
+  else
+    echo "<script>alert('length of name should be less than or equal to 20 characters')</script>";    
+    
+}  
  ?>
 
   </body>

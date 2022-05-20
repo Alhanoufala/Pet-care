@@ -115,7 +115,7 @@ if(Lname.value.length > 20 ){
     echo "<script>alert('Invalid email format')</script>"; 
   }
   else
-    echo "<script>alert('length of name should be less than 20 ch')</script>";    
+    echo "<script>alert('length of name should be less than or equal to 20 characters')</script>";    
     
 }
    
