@@ -12,7 +12,7 @@
     <link href="styles/ownerEditProfile.css?<?=filemtime("styles/ownerEditProfile.css")?>" rel="stylesheet" type="text/css" /> 
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-   
+
   </head>
 
   <body>
@@ -47,19 +47,20 @@
           <div class='profilePic'>
             <img src = 'images/profileEdit.png'  class= 'profilePic'  alt= 'Profile image' height='200' width='200'>
             <input type='file' id='profilePhotoFile' name='profilePhotoFile' accept='image/*'>
+         
           </div>
           
 
           <div class='phone details'>
-           
-            <p>First name:
-            <input type='text' name='Fname' value='".$row[2]."' > </p>
-            <p>Last name:
-            <input type='text'  name='Lname' value='".$row[3]."' > </p>
-            <p>Phone number:
-            <input type='text'  name='phonenumber'value='".$row[5]."' ></p>
-            <p>Password:
-            <input type='text'  name='pass' value='".$row[1]."' ></p>
+           <br><br>
+            <p>First name: <br>
+            <input type='text' name='Fname' value='".$row[2]."' required> </p>
+            <p>Last name:<br>
+            <input type='text'  name='Lname' value='".$row[3]."' required> </p>
+            <p>Phone number:<br>
+            <input type='text'  name='phonenumber'value='".$row[5]."'required ></p>
+            <p>Password:<br>
+            <input type='text'  name='pass' value='".$row[1]."' required ></p>
   
           </div>
           
@@ -67,8 +68,8 @@
           <br>
           <br>
          <div class='editbutton'>
-          <a href='ownerProfile.php'><button type='button'>Cancel</button></a>
-          <a href='ownerEditProfile.php'><button type='submit'>Save</button></a>
+          <a href='ownerProfile.php'><button class='l2' type='button'>Cancel</button></a>
+          <a href='ownerEditProfile.php'><button class='l' type='submit'>Save</button></a>
         </div> 
 
       </div>
