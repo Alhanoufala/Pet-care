@@ -51,6 +51,7 @@ if (!mysqli_select_db($database, "Pet_care"))
 
     <link rel="stylesheet" href="styles/forgetpassword.css">
     <link href="styles/forgetpassword.css?<?=filemtime("styles/forgetpassword.css")?>" rel="stylesheet" type="text/css" />
+    <script src="newpasswordvalidation.js"></script>
 
   </head>
   <body>
@@ -105,7 +106,7 @@ var length = document.getElementById("length");
 myInput.onfocus = function() {
   document.getElementById("message").style.display = "block";
 }
-
+//deleteeeee this 
 // When the user clicks outside of the password field, hide the message box
 myInput.onblur = function() {
   document.getElementById("message").style.display = "none";
