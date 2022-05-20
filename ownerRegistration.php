@@ -37,7 +37,7 @@
 
            <div class="registerbut">
             
-            <a href="ownerHomePage.html"><button type="submit" id="b">Register</button></a>
+            <a href="ownerRegisration.php"><button type="submit" id="b">Register</button></a>
            </div>
            
         
@@ -68,10 +68,10 @@
 
 
         if(mysqli_query($database, $query) )
-         {  header("location: ownerHomePage.html");
-            $_SESSION["OwnerEmail"]=$email; }
+         {  header("location: login.php");
+            }
         else  
-         {  echo "<script>alert('an error occurred, could not add pet.')</script>"; 
+         {  echo "<script>alert('an error occurred, could not register.')</script>"; 
           die(mysqli_error($database));
          }
      }  

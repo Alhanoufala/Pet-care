@@ -47,7 +47,7 @@
                     <div class='content'>
                       <div class='radio'>
                        <label for='gender'>Gender: </label>
-                          <input type='radio' name='gender' id='gender' value='male' required>
+                          <input type='radio' name='gender' id='gender'  required>
                           <label for='male'>male</label>
                           <input type='radio' name='gender' id='gender' value='female' required>
                           <label for='female'>female</label>
