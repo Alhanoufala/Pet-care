@@ -5,7 +5,8 @@
         <meta charset = "utf-8">
         <title>Add a Service</title>
         <link rel="stylesheet" href="styles/addService.css">
-       
+           <link href="styles/addService.css?<?=filemtime("styles/addService.css")?>" rel="stylesheet" type="text/css" />
+
     </head>
     <body>
         <div class="navbar"></div>
@@ -27,8 +28,8 @@
 
                <div class="but">
                 
-                <a href="Services.php"><button type="button">Cancel</button></a>
-                <a href="Services.php"><button type="submit">Add</button></a>
+                <a href="Services.php"><button class = "Cbutton" type="button">Cancel</button></a>
+                <a href="Services.php"><button class = "Dbutton" type="submit">Add</button></a>
                </div>
                
                 

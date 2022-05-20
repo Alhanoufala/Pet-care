@@ -53,9 +53,15 @@ input {
 .restbutton {
   margin: 15px auto;
 }
+.l2:hover {
+  background-color: rgb(111, 226, 58);
+}
+.l:hover {
+  background-color: rgb(255, 11, 11);
+}
 button {
-  background-color: white;
-  color: rgb(119, 119, 119);
+  background-color: #00556d;
+  color: white;
   border: none;
   padding: 8px 30px;
   border-radius: 10px;
@@ -64,7 +70,7 @@ button {
   align-items: center;
 }
 button:hover {
-  background-color: rgb(226, 226, 228);
+  background-color: rgb(111, 226, 58);
 }
 p {
   font-size: 15px;

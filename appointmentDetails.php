@@ -26,7 +26,7 @@
      </div> 
      
         <div class = "container">
-        <h2>Edit an appointment</h2>
+        <h2>Edit an appointment <br> </h2>
         <?php $id = $_GET['id'];  ?>
         <form method='POST' action= <?php 'appointmentDetails.php?id='.$id ?>>
         <p><label>Pet name: <select name = "pet_name" style="width:170px;">
@@ -51,10 +51,9 @@
   
         print("
         </select></label></p>
-       
-       <p><label>Note :  <input name= 'note' type ='text' value='".$data[6]."' ></label>
-      <center> <p><a href='appointmentDetails.php'><button class ='l'type='submit'>Edit</button></a></center>
-    
+     <p> <label> Note :  <input name= 'note' type ='text' value='".$data[6]."'> </label> 
+     <a href='appointmentDetails.php'><button class ='l2'type='submit'>Cancel</button></a>
+     <a href='appointmentDetails.php'><button class ='l'type='submit'>Edit</button></a> 
     </form>
     </div>
     ");

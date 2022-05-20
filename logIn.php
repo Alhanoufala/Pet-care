@@ -26,8 +26,8 @@
           <input type="password" name="pass" id="pass" placeholder="password" required>
 
          <div class="loginbut">
-          
-          <a href="ownerHomePage.html"><button type="submit">Login</button></a>
+           <a href='Pet Care.html'><button class = 'l' type='button'>Cancel</button></a>
+          <a href="ownerHomePage.html"><button class = 'l2' type="submit">Login</button></a>
          </div>
          
           

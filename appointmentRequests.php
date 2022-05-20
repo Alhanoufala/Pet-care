@@ -5,6 +5,7 @@
     <title>View Requests</title>
     <link rel="stylesheet" href="styles/datatable.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+        <link href="styles/datatable.css?<?=filemtime("styles/datatable.css")?>" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
@@ -22,7 +23,7 @@
 </div> 
     <table class="content-table" id= "center">
       <br>
-      <h2>Appointment Requests:</h2>
+      <h2>Appointment Requests <br> </h2>
       <thead>
         <tr>
           <th>Pet name</th>

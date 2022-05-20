@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Previous Appointments</title>
+    <title>Previous Appointments <br> </title>
     <link rel="stylesheet" href="styles/AppointmentRequest.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles/footer2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-   
+           <link href="styles/datatable.css?<?=filemtime("styles/datatable.css")?>" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
 
@@ -48,7 +49,7 @@
   </thead>
   <tbody>
     <br>
-    <h2>Previous appointments: </h2>
+    <h2>Previous appointments  <br> </h2>
     
     <?php
       if ( !( $database = mysqli_connect( "localhost", "root", "" ) ) )

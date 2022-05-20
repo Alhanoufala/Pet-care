@@ -8,6 +8,8 @@
     <title>add a Pet</title>
     <link rel="stylesheet" href="styles/ownerHeader.css">
     <link rel="stylesheet" href="styles/addPet.css">
+      <link href="styles/addPet.css?<?=filemtime("styles/addPet.css")?>" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>
@@ -61,8 +63,9 @@
   
              <div class="submitbut">
               
-              <a href = "addPet.php"><input type = "submit" value="Add"></a>
-              
+              <a href="myPets.php"><button class = "Cbutton"type="button">Cancel</button></a>
+               <a href = "addPet.php"><input class = "Dbutton" type = "submit" value="Add"></a>
+
              </div>
 
              

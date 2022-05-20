@@ -6,7 +6,8 @@
         <title>Edit About Us </title>
         <link rel="stylesheet" href="styles/editaboutus.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
+                <link href="styles/editaboutus.css?<?=filemtime("styles/editaboutus.css")?>" rel="stylesheet" type="text/css" />
+
         <script src="editAboutUs.js"></script>
 
     </head>
@@ -49,8 +50,8 @@ print("
 
     
                <div class='editbut'>
-                <a href='ManagerAboutUs.php'><button type='button'>Cancel</button></a>
-                <a href='ManagerAboutUs.php'><button type='submit'>Update</button></a>
+                <a href='ManagerAboutUs.php'><button class ='Cbutton' type='button'>Cancel</button></a>
+                <a href='ManagerAboutUs.php'><button class ='Dbutton'type='submit'>Update</button></a>
 
                </div>
                 
