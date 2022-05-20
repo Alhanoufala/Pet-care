@@ -7,6 +7,7 @@
     <meta charset = "utf-8">
     <title>Registration</title>
     <link rel="stylesheet" href="styles/Registration.css">
+    <script src="ownerRegistration.js" defer></script>
 
   </head>
 
@@ -15,11 +16,11 @@
     <div class="container">
       <h3>Register</h3>
         <form method="post">
-            <input type="text" name="Fname" id="Fname" placeholder="First name">
-            <input type="text" name="Lname" id="Lname" placeholder="Last name">
-            <input type="text" name="email" id="email" placeholder="Email">
-            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number">
-            <input type="password" name="pass" id="pass" placeholder="Password">
+            <input type="text" name="Fname" id="Fname" placeholder="First name" require>
+            <input type="text" name="Lname" id="Lname" placeholder="Last name" require>
+            <input type="text" name="email" id="email" placeholder="Email" require>
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number" require>
+            <input type="password" name="pass" id="pass" placeholder="Password" require>
              
             <div class="content">
               <div class="radio">
@@ -36,7 +37,7 @@
 
            <div class="registerbut">
             
-            <a href="ownerHomePage.html"><button type="submit">Register</button></a>
+            <a href="ownerHomePage.html"><button type="submit" id="b">Register</button></a>
            </div>
            
         
@@ -64,14 +65,13 @@
          $profilePhotoFile=$_POST['profilePhotoFile']; 
 
          $query="INSERT INTO pet_owner (email, password, Fname, Lname, gender, phone_no, photo ) VALUES ('".$email."','".$pass."','".$Fname."','".$Lname."','".$gender."','".$phonenumber."','".$profilePhotoFile."');";
-        
 
-        $result = mysqli_query($database, $query);
-        if($result )
+
+        if(mysqli_query($database, $query) )
          {  header("location: ownerHomePage.html");
             $_SESSION["OwnerEmail"]=$email; }
         else  
-         {  //echo "<script>alert('an error occurred, could not add pet.')</script>"; 
+         {  echo "<script>alert('an error occurred, could not add pet.')</script>"; 
           die(mysqli_error($database));
          }
      }  

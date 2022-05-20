@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/datatable.css">
     <link rel="stylesheet" href="styles/myPets.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   
 
   </head>
 
@@ -66,13 +69,12 @@
       while ($data = mysqli_fetch_row($result)) {
         print("
         <tr>
-          <td> <img src= 'images/" .$data[1]. "' class= 'petPic' alt='Pet Picture'> </td>
-          <td> ".$data[0]." </td>
-          <td> <a href='petProfile.php?name=" .$data[0]. "'> Pet Profile </a> </td>
-          <td> <a href='deletePet.php?name=".$data[0]."'> <img src= 'images/icons8-multiply-15.png' ></a></td>
+          <td> <img src= 'images/" .$data[2]. "' class= 'petPic' alt='Pet Picture'> </td>
+          <td> ".$data[1]." </td>
+          <td> <a href='petProfile.php?ID=" .$data[0]. "'> Pet Profile </a> </td>
+          <td> <a href='deletePet.php?ID=".$data[0]."'> <img src= 'images/icons8-multiply-15.png' ></a></td>
       </tr> ");
      
-      //<a href='managerPetProfile.php?owner_email=".$data[4]."&pet_name=".$data[0]."'>
       }
    }
 
@@ -84,5 +86,8 @@
     <div class="addPetbut">
     <a href="addPet.php"><button type="button">Add pet</button></a>
   </div>
+  <div class="fixed-footer" > 
+          <p class = "footer">  <i class="fa fa-phone"></i>  +966566923332 &nbsp;&nbsp; <i class="fa fa fa-envelope"></i> <a href="mailto:petcare@gmail.com">petcare@gmail.com</a> </p>     
+       </div> 
   </body>
 </html>

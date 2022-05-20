@@ -92,7 +92,7 @@
 
          $OwnerEmail = $_SESSION["OwnerEmail"];
 
-         $query="INSERT INTO pet VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$gender."','".$OwnerEmail."')";
+         $query="INSERT INTO pet (name, photo, birthDate, breed, pet_status, medicalHistory, vaccinations, gender , owner_email)VALUES ('".$Pname."','".$petPhotoFile."','".$PetBD."','".$Pbreed."','".$status."','".$medFile."','".$vacFile."','".$gender."','".$OwnerEmail."')";
         
         $result = mysqli_query($database, $query);
         if($result)
@@ -100,7 +100,7 @@
          
         else  
         die(mysqli_error($database ));
-         //echo "<script>alert('an error occurred, could not add pet.')</script>";  
+         echo "<script>alert('an error occurred, could not add pet.')</script>";  
      }  
  ?>
 

@@ -1,6 +1,7 @@
 *
 {
     font-family: 'optima', sans-serif	;
+    font-size: 20px;
 }
  
 body{
@@ -27,7 +28,7 @@ form{
     width: 90%;
     
 }
-input{
+/*input{
     height: 40px;
     width: 250px;
     border-radius: 10px;
@@ -39,7 +40,7 @@ input{
     color: rgb(119, 119, 119);
     background-color: white;
 
-}
+}*/
 
 .container .profilePic{
     position: absolute;
@@ -48,24 +49,27 @@ input{
 }
 
 
-.buttons{
-    margin: 10px auto; 
-}
-button{
-    background-color: white;
-    color: rgb(119, 119, 119);
-    border: none;
+.container .buttons {
+    position:absolute;
+    margin: 15px auto;
+    bottom: 10%;
+    
+  }
+button {
+    background-color: rgb(228, 228, 229);
+    color: #00556d;
     padding: 8px 30px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 20px;
     margin: 5px 25px;
-    align-items: baseline;
-}
-button:hover{
-    background-color: rgb(226, 226, 228);
-}
-p{
-    font-size: 15px;
-    align-items: center;
-}
+  
+  }
+  button:hover {
+    background-color: rgb(201, 201, 203);
+  }
+  .container p {
+    color: #00556d;
+    font-size: 20px;
+   
+  }
 
