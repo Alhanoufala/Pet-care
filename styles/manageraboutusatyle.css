@@ -52,8 +52,9 @@ margin-left: 100px;
   width : 33px ; 
 }
 img{
-  height: 300px;
-  width : 350px;
+  height: 270px;
+  width : 320px;
+  
 
 }
 #logout{
@@ -80,16 +81,17 @@ img{
 
 .container1 {
 width: 400px;
-margin-top: -680px;
-margin-left: 950px;
+margin-top: -705px;
+margin-left: 900px;
 margin-bottom: 33px;
 background-color: #d6e7ed;
 
 }
 .container2{
-  width: 400px;
-margin-top: -11px;
-margin-left: 950px;
+  width: 350px;
+  border-radius: 11px;
+margin-top: 45px;
+margin-left: 1000px;
 margin-bottom: 33px;
 background-color: #d6e7ed;
 }

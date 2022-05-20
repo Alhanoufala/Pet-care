@@ -7,6 +7,8 @@
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="styles/manageraboutusatyle.css?<?=filemtime("styles/manageraboutusatyle.css")?>" rel="stylesheet" type="text/css" />
+
   </head>
 
   <body>
@@ -76,9 +78,7 @@ if ($result) {
 
 <div class='cont'>
 
-       <div class='container1'>
-        
-          
+       <div class='container1'>         
          <div id = 'image1 '> <img  src= 'images/".$data[2]."' alt='cheakup pic'> </div>
          </div>
          <div class='container2'>
