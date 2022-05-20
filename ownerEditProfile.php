@@ -12,6 +12,7 @@
     <link href="styles/ownerEditProfile.css?<?=filemtime("styles/ownerEditProfile.css")?>" rel="stylesheet" type="text/css" /> 
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+     <link href="styles/footer.css?<?=filemtime("styles/footer.css")?>" rel="stylesheet" type="text/css" />
 
   </head>
 
