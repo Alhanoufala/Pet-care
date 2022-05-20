@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="styles/AppointmentRequest.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles/footer2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   
 
     </head>
 </head>
@@ -24,6 +27,11 @@
  <img src="images/logo.png"  class= "logo" alt= "logo of pet care" >
  
      </div> 
+     <div class="fixed-footer" > 
+        
+        <p class = "footer">  <i class="fa fa-phone"></i>  +966566923332 &nbsp;&nbsp; <i class="fa fa fa-envelope"></i> <a href="mailto:petcare@gmail.com">petcare@gmail.com</a> </p>     
+     
+     </div>  
 
        <table class="content-table" id= "center">
         <thead>

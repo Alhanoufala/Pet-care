@@ -6,7 +6,7 @@
     <title>BOOK New Appointment</title>
     <link rel="stylesheet" href="styles/datatable.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/footer2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
    
    
