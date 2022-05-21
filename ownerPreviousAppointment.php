@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Previous Appointments <br> </title>
+    <title>Previous Appointments </title>
     <link rel="stylesheet" href="styles/AppointmentRequest.css">
     <link href="styles/ownerHeader.css?<?=filemtime("styles/ownerHeader.css")?>" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="styles/footer2.css">
