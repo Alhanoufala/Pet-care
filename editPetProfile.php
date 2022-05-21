@@ -74,8 +74,8 @@
                       <input type='file' id='medFile' name='medFile' ></p>
         
                    <div class='submitbut'>
-                   <a href='petProfile.php?ID=$ID'><button type='button'>Cancel</button></a>
-                   <a href='editPetProfile.php'><button type='submit'>Save</button></a>
+                   <a href='petProfile.php?ID=$ID'><button class ='Cbutton' type='button'>Cancel</button></a>
+                   <a href='editPetProfile.php'><button class ='Dbutton' type='submit'>Save</button></a>
                    
 
                    </div>

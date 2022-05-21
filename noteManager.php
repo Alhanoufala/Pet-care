@@ -6,16 +6,9 @@
     <link rel="stylesheet" href="styles/writeReview.css">
         <link href="styles/writeReview.css?<?=filemtime("styles/writeReview.css")?>" rel="stylesheet" type="text/css" />
        <link href="styles/footer.css?<?=filemtime("styles/footer.css")?>" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
   </head>
 
-  <div class="fixed-footer" > 
-        
-        <p class = "footer">  <i class="fa fa-phone"></i>  +966566923332 &nbsp;&nbsp; <i class="fa fa fa-envelope"></i> <a href="mailto:petcare@gmail.com">petcare@gmail.com</a> </p>     
-     
-     </div>  
-  
   <body>
   <div class="navbar">
   <a href="allReviews.php"> Reviews</a>
