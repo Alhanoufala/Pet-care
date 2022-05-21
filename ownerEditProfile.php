@@ -47,11 +47,11 @@
         <form method='post'>
           <div class='profilePic'>
             <img src = 'images/profileEdit.png'  class= 'profilePic'  alt= 'Profile image' height='200' width='200'>
-            <input type='file' id='profilePhotoFile' name='profilePhotoFile' accept='image/*'>
+           
          
           </div>
           
-
+          <input type='file' id='profilePhotoFile' name='profilePhotoFile'>
           <div class='phone details'>
            <br><br>
             <p>First name: <br>
@@ -69,12 +69,14 @@
           
           <br>
           <br>
+          
          <div class='editbutton'>
           <a href='ownerProfile.php'><button class='l2' type='button'>Cancel</button></a>
           <a href='ownerEditProfile.php'><button class='l' type='submit'>Save</button></a>
         </div> 
 
       </div>
+      </form>
       <div class='fixed-footer' > 
           <p class = 'footer'>  <i class='fa fa-phone'></i>  +966566923332 &nbsp;&nbsp; <i class='fa fa fa-envelope'></i> <a href='mailto:petcare@gmail.com'>petcare@gmail.com</a> </p>     
        </div>");
