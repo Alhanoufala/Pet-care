@@ -17,11 +17,11 @@
       <h3>Register</h3>
         <form method="post" id =  "form">
           
-            <input type="text" name="Fname" id="Fname" placeholder="First name" require>
-            <input type="text" name="Lname" id="Lname" placeholder="Last name" require>
-            <input type="text" name="email" id="email" placeholder="Email" require>
-            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number" require>
-            <input type="password" name="pass" id="pass" placeholder="Password" require>
+            <input type="text" name="Fname" id="Fname" placeholder="First name" required>
+            <input type="text" name="Lname" id="Lname" placeholder="Last name" required>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="Phone number" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" required>
              
             <div class="content">
               <div class="radio">
