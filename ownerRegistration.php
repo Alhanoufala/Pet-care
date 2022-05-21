@@ -50,29 +50,6 @@
     </div>
     <img  src= "images/logo.png"  class = "logo" alt="logo of pet care">
 
-    <script>
-       //var form = document.getElementById("form");
-var Fname = document.getElementById("Fname");
-var Lname = document.getElementById("Lname");
-//var email = document.getElementById("email");
-//var phonenumber = document.getElementById("phonenumber");
-//var pass = document.getElementById("pass");
-
-if(Fname.value.length > 20 ){
-  alert('Fisrt name must be less or equal to 20 characters');
-  } else{
-  }
-
-
-if(Lname.value.length > 20 ){
-  alert('Last name must be less or equal to 20 characters');
-  } else{
-   
-  }
-
-
-</script>
-
     <?php
       if ($_SERVER["REQUEST_METHOD"] == "POST") {  
       if (!( $database = mysqli_connect( "localhost", "root", "" )))
