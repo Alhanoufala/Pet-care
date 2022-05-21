@@ -53,7 +53,7 @@
         </select></label></p>
      <p> <label> Note :  <input name= 'note' type ='text' value='".$data[6]."'> </label> 
      <a href='appointmentDetails.php'><button class ='l2'type='submit'>Cancel</button></a>
-     <a href='appointmentDetails.php'><button class ='l'type='submit'>Edit</button></a> 
+     <a href='appointmentDetails.php'><button class ='l'type='submit'>Save</button></a> 
     </form>
     </div>
     ");

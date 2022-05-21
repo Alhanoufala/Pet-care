@@ -82,8 +82,8 @@ if (!mysqli_select_db($database, "Pet_care"))
   
 
         <div>
-        <a href="Forget Password.php"><button type="button">Cancel</button></a>
-        <input  type="submit" class = "update" name= "validate" value="reset password">
+        <a href="Forget Password.php"><button class = "Cbutton" type="button">Cancel</button></a>
+        <input  type="submit" class = "Dbutton" class = "update" name= "validate" value="reset password">
 
               
 
