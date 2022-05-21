@@ -69,7 +69,7 @@
   echo "<p>".$row[3]."</p>";
   echo "<p>".$row[4]."</p>";
   echo "<p>".$row[0]."</p>";
-  echo "<p>".$row[5]."</p>";
+  echo "<p>0".$row[5]."</p>";
 
   //cheack if not null, edit size
   //echo "<div class='profilePic'> <img src= 'images/" .$row[6]. "' class= 'profile' alt='Pet Picture'> </div>";
