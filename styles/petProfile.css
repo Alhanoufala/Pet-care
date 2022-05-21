@@ -42,7 +42,7 @@ form {
   margin: 15px auto;
   text-decoration: none;
 }
-button {
+.Dbutton {
   background-color: #00556d;
   color: #ffffff;
   border: none;
@@ -52,8 +52,21 @@ button {
   margin: 5px 25px;
   align-items: center;
 }
-button:hover {
+.Dbutton:hover {
   background-color: rgb(111, 226, 58);
+}
+.Cbutton {
+  background-color: #00556d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: center;
+}
+.Cbutton:hover {
+  background-color: rgb(238, 13, 13);
 }
 p,
 h2 {

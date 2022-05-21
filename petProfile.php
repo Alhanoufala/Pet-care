@@ -10,7 +10,7 @@
  <link rel="stylesheet" href="styles/footer.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
        <link href="styles/footer.css?<?=filemtime("styles/footer.css")?>" rel="stylesheet" type="text/css" />
-
+       <link href="styles/petProfile.css?<?=filemtime("styles/petProfile.css")?>" rel="stylesheet" type="text/css" />
 
 
 </head>
@@ -63,8 +63,8 @@
     
       <?php
       print("<div class='editbut'>
-      <a href = 'myPets.php'><button type='button'>Cancel</button></a>
-      <a href='editPetProfile.php?ID=$ID'><button type='button'>Edit</button></a>
+      <a href = 'myPets.php'><button class ='Cbutton' type='button'>Cancel</button></a>
+      <a href='editPetProfile.php?ID=$ID'><button class ='Dbutton' Classtype='button'>Edit</button></a>
       </div>");
       ?>
 
