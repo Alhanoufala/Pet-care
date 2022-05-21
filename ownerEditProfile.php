@@ -85,9 +85,8 @@
         die( "<p>Could not open URL database</p>" );
         $Fname=$_POST['Fname'];  
         $Lname=$_POST['Lname'];
-        if(strlen($Fname) < 20 && strlen(  $Lname) < 20 ){
-        $email=$_POST['email']; 
-        if(filter_var(  $email , FILTER_VALIDATE_EMAIL)){
+        if(strlen($Fname) < 20 && strlen(  $Lname) < 20 ){ 
+        if(filter_var(  $OwnerEmail , FILTER_VALIDATE_EMAIL)){
         $phonenumber=$_POST['phonenumber']; 
         if(preg_match('/^[0-9]{10}+$/', $phonenumber))
           {
