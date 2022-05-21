@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: May 21, 2022 at 03:52 AM
+-- Generation Time: May 21, 2022 at 11:21 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -90,17 +90,8 @@ CREATE TABLE `available_appointments` (
 --
 
 INSERT INTO `available_appointments` (`service`, `date`, `time`, `appointment_id`) VALUES
-('Grooming', '2022-05-24', '16:15', 24),
 ('Grooming', '2022-05-22', '14:15', 25),
-('Grooming', '2022-05-22', '16:15', 26),
-('Boarding', '2022-05-26', '17:15', 27),
 ('Boarding', '2022-05-25', '18:15', 28),
-('Checkup', '2022-05-25', '18:15', 30),
-('Checkup', '2022-05-26', '18:17', 33),
-('Checkup', '2022-05-22', '18:25', 34),
-('Checkup', '2022-05-25', '19:25', 36),
-('Checkup', '2022-05-30', '22:25', 37),
-('Checkup', '2022-05-30', '18:20', 38),
 ('Checkup', '2022-05-25', '13:25', 40);
 
 -- --------------------------------------------------------
@@ -146,8 +137,6 @@ CREATE TABLE `pet` (
 --
 
 INSERT INTO `pet` (`ID`, `name`, `photo`, `birthDate`, `breed`, `pet_status`, `medicalHistory`, `vaccinations`, `gender`, `owner_email`) VALUES
-(2, 'charile', 'charlie.png', '2021-01-10', 'cat', 'neutered', '', '', 'female', 'naadaalsomali@gmail.com'),
-(3, 'luna', 'dogR.png', '2019-03-20', 'dog', 'neutered', '', '', 'female', 'naadaalsomali@gmail.com'),
 (4, 'Milo', 'DemoDog.png', '2022-05-12', 'dog', 'neutered', '', '', 'female', 'layanalwadie22@gmail.com'),
 (5, 'Loki', 'catR2.png', '2022-03-15', 'cat', 'neutered', '', '', 'female', 'layanalwadie22@gmail.com'),
 (6, 'Zoey', 'catR.png', '2022-01-15', 'cat', 'neutered', '', '', 'female', 'S.i.AlShathri@gmail.com'),
@@ -175,8 +164,7 @@ CREATE TABLE `pet_owner` (
 --
 
 INSERT INTO `pet_owner` (`email`, `password`, `Fname`, `Lname`, `gender`, `phone_no`, `photo`, `Verification`) VALUES
-('layanalwadie22@gmail.com', 'Ll123456', 'Layan', 'alwadie', 'female', 505713122, 'ProfilePhoto.jpg', NULL),
-('naadaalsomali@gmail.com', 'Aa123456', 'Nada', 'Alsomali', 'female', 547383171, 'ProfilePhoto.jpg', NULL),
+('layanalwadie22@gmail.com', 'Ll123456', 'Layan', '.', 'female', 505713122, '', NULL),
 ('S.i.AlShathri@gmail.com', 'Ss123456', 'Sara', 'AlShathri', 'female', 582653424, 'ProfilePhoto.jpg', NULL);
 
 -- --------------------------------------------------------
