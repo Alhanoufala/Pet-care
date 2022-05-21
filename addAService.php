@@ -17,7 +17,7 @@
                 <input type="text" name="name" required >
 
                 Description :
-                <input type="text" name="Description" required >
+                <input type="text" style="height: 80px; width:350px;" name="Description" required >
 
                 Price :
                 <input type="text" name="price" required >

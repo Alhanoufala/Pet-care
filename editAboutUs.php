@@ -37,7 +37,7 @@ print("
                 <input type='text' name ='label' value ='".$data[0]."' >
 
                 Description:
-                <input type='text' name ='Description' value='".$data[1]."'> 
+                <input type='text' name ='Description' style='height: 80px; width:350px;'value='".$data[1]."'> 
                
                     photo 1 : 
                     <input type='file' id='PhotoFile' name='Photo1' value='".$data[2]."'>
