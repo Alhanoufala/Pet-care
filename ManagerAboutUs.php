@@ -70,8 +70,10 @@ if ($result) {
     
  
   <br>".$data[1]."
+  
+  
   <br> 
-  Our location :
+  Our location : 
   <div class = 'map'>
 <iframe src='".$data[4]."' width='200' height='250' style='border:0;' allowfullscreen='' loading='lazy'></iframe></div>
 

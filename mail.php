@@ -20,7 +20,7 @@ function send_mail($recipient,$subject,$message)
   $mail->Password   = "nitvdhqclmnpmjgs";
 
   $mail->IsHTML(true);
-  $mail->AddAddress($recipient, "User");
+  $mail->AddAddress($recipient, "Pet Care user");
   $mail->SetFrom("raseelalrowais@gmail.com", "Pet Care");
  
   $mail->Subject = $subject;

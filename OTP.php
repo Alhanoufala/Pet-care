@@ -67,11 +67,11 @@ if (!mysqli_select_db($database, "Pet_care"))
 
     </div>
     <div class="container1">
-      <div class="title"><h2>Reset Password</h2></div>
+      <div ><h2>Reset Password</h2></div>
 
       <form method = "post" action = "OTP.php">
       
-       <label id ="teVer">Verification code has been sent to your email to reset your password , enter it:</label>
+       <label>Verification code has been sent to your email to reset your password , enter it:</label>
 
         <div>
           <input class = "otpcode" type="text" size = "10" name ="Code"required>
