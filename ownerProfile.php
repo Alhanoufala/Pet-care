@@ -79,9 +79,9 @@
           <br>
           <br>
          <div class="buttons">
-          <a href="ownerEditProfile.php"><button type="button">Edit profile</button></a>
-          <a href = "deleteOwnerProfile.php"><button type="button">Delete profile</button></a>
-          <a href = "Pet Care.html"><button type="button">Log out</button></a>
+          <a href="ownerEditProfile.php"><button class = 'E' type="button">Edit profile</button></a>
+          <a href = "deleteOwnerProfile.php"><button class = 'D' type="button">Delete profile</button></a>
+          <a href = "Pet Care.html"><button class = 'L' type="button">Log out</button></a>
         </div> 
 </div>
 <div class="fixed-footer" > 

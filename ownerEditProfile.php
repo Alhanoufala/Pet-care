@@ -61,7 +61,8 @@
             <p>Phone number:<br>
             <input type='text'  name='phonenumber'value='".$row[5]."'required ></p>
             <p>Password:<br>
-            <input type='text'  name='pass' value='".$row[1]."' required ></p>
+            <input type='text'  name='pass' value='".$row[1]."' pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' title='Must contain at 
+            least one number and one uppercase and lowercase letter, and at least 8 or more characters' required ></p>
   
           </div>
           
