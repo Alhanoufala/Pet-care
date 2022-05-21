@@ -47,7 +47,7 @@
                    <p> <img class= 'lulu' src= 'images/".$data[4]."' alt='cheakup pic'>  </p>
                      <div class='name'>".$data[1]."'s Owner </div>
                      <p>  ".$data[3]." </p>
-                    <p> <a href="."mailto:".$data[2]."'".">  Contact ".$data[1]. "'s Owner  </a> </p>
+                    <p> <a href="."mailto:".$data[2]."".">  Contact ".$data[1]. "'s Owner  </a> </p>
                    </div>
                  </div>
                  ");
