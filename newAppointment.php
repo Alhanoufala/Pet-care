@@ -64,7 +64,7 @@
         $query="SELECT * FROM pet WHERE owner_email=  '$owner_email' ";
         $result= mysqli_query($database, $query);
         while ($data= mysqli_fetch_row( $result)){
-            print("<option>".$data[0]."</option>");
+            print("<option>".$data[1]."</option>");
 
         }
 
