@@ -29,7 +29,21 @@ form {
   text-align: center;
 }
 
-button {
+.E {
+  background-color: #00556d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: center;
+}
+.E:hover {
+  background-color: rgb(90, 151, 151);
+}
+
+.D {
   background-color: #00556d;
   color: #ffffff;
   border: none;
@@ -43,6 +57,19 @@ button:hover {
   background-color: rgb(238, 8, 8);
 }
 
+.L {
+  background-color: #00556d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px 25px;
+  align-items: center;
+}
+.L:hover {
+  background-color: rgb(238, 8, 8);
+}
 .container .buttons {
   position: absolute;
   margin: 15px auto;
