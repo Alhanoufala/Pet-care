@@ -51,7 +51,7 @@
          
           </div>
           
-          <input type='file' id='profilePhotoFile' name='profilePhotoFile'>
+          <input type='file' id='profilePhotoFile' name='profilePhotoFile' accept='image/*' required>
           <div class='phone details'>
            <br><br>
             <p>First name: <br>
