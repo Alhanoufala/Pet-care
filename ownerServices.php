@@ -85,11 +85,11 @@ if ($result) {
           <h4 >".$data[0]. "</h4> "
           .$data[1]. "<br> 
          price:" .$data[2]."SR
-         <div class = 'image1 '> <img  src= 'images/".$data[3]."' alt='cheakup pic'> </div>
+         <div class = 'image1 '> <img  src= 'images/".$data[3]."' alt='service pic'> </div>
          </div>
          
        
-        </div>"
+        </div> "
        
        
        );
