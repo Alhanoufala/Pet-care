@@ -67,7 +67,7 @@
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
   $owner_email = $_SESSION["OwnerEmail"];
-$query="SELECT * FROM appointments_requests WHERE status IS NULL OR status = 'declined' and owner_email= '$owner_email' ";
+$query="SELECT * FROM appointments_requests WHERE status IS NULL OR status = 'declined' ";
 $result=mysqli_query($database, $query);
 
 
@@ -83,6 +83,7 @@ if ($result) {
      
   //edit
   //cancel
+  if($owner_email === $data[4]){
   if($data[5] == 'declined'){
        print("<tr>      
        <th scope='row'>".$data[0]."</th> 
@@ -104,7 +105,8 @@ if ($result) {
           <td> <a href=\"appointmentDetails.php?id=".$data[7]."\"><img src= 'images/icons8-edit-20.png' ></a></td>
           <td> <a href=\"cancelAppointmentsOwner.php?id=".$data[7]."&service=".$data[1]."&date=".$data[2]."&time=".$data[3]."\"><img src= 'images/icons8-multiply-15.png' ></a></td></tr>");
          }
-   }
+        }
+}
 }
 
   ?>
