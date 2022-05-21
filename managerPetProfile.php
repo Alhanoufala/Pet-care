@@ -52,12 +52,12 @@
   if ($result) {
      while ($data = mysqli_fetch_row($result)) {
          print("<div class='container'>
-        <p> <img class='petPic' src= 'images/".$data[1]."' alt='cheakup pic'>  </p>
-         <h2>  ".$data[0]."'s Owner  </h2>
-         <p> Date of birth :".$data[2]." </p>
-         <p> Gender :".$data[7]." </p>
-         <p> Breed: ".$data[3]."</p>
-         <p> Status: ".$data[4]." </p> "
+        <p> <img class='petPic' src= 'images/".$data[2]."' alt='cheakup pic'>  </p>
+         <h2>  ".$data[1]."'s Owner  </h2>
+         <p> Date of birth :".$data[3]." </p>
+         <p> Gender :".$data[8]." </p>
+         <p> Breed: ".$data[4]."</p>
+         <p> Status: ".$data[5]." </p> "
         );
         }
   }
