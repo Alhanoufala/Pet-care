@@ -63,8 +63,8 @@
 
 if ( !mysqli_select_db($database, "Pet_care" ) )
   die( "<p>Could not open URL database</p>" );
-
-$query="SELECT * FROM appointments_requests WHERE status IS NULL OR status = 'declined' ";
+  $owner_email = $_SESSION["OwnerEmail"];
+$query="SELECT * FROM appointments_requests WHERE status IS NULL OR status = 'declined' and owner_email= '$owner_email' ";
 $result=mysqli_query($database, $query);
 
 
